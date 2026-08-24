@@ -1,0 +1,301 @@
+[
+  {
+    "objectID": "course-materials/index.html",
+    "href": "course-materials/index.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Lin300 - Speech Sounds\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Course Materials"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The plan for today",
+    "text": "The plan for today\n\n\nNames & Attendance\nCourse “Flightplan”\nSyllabus"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe make them with our bodies."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe hear them"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can record them"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nThey have acoustic properties"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Flight Plan",
+    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The Textbook",
+    "text": "The Textbook\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Course Evaluation",
+    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
+    "title": "Lin300 - Speech Sounds",
+    "section": "AI Policy",
+    "text": "AI Policy"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html",
+    "href": "course-materials/lecture-notes/00_welcome/index.html",
+    "title": "Lin300 - Speech Sounds",
+    "section": "",
+    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
+    "title": "Lin300 - Speech Sounds",
+    "section": "",
+    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe make them with our bodies.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe hear them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can record them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nThey have acoustic properties",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Flight Plan",
+    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The Textbook",
+    "text": "The Textbook\n\n\n\n\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Course Evaluation",
+    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
+    "title": "Lin300 - Speech Sounds",
+    "section": "AI Policy",
+    "text": "AI Policy",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/index.html",
+    "href": "course-materials/lecture-notes/index.html",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lin300 - Speech Sounds\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes"
+    ]
+  }
+]
