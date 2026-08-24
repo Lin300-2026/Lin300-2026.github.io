@@ -1,0 +1,133 @@
+---
+title: "Speech Anatomy 1"
+format: 
+  revealjs: 
+    output-file: anatomy1.html
+    logo: large
+  html: default
+  typst: default
+bibliography: references.bib
+draft: true
+---
+
+## Seeing Speech
+
+Maybe you think speech looks like this:
+
+:::: {.content-hidden when-format="typst"}
+::: {.ipa .r-stack style="font-size: 10em; margin: auto;"}
+ʒ
+:::
+::::
+
+::: {.content-visible when-format="typst"}
+ʒ
+:::
+
+:::: {.content-visible when-format="revealjs"}
+::: footer
+[Webpage](index.qmd)
+:::
+::::
+
+## Seeing speech
+
+Tools of the trade
+
+{{< video videos/xray.webm height="500">}}
+
+## Conceptualizing the head
+
+![](images/clipboard-2488540286.jpeg){width="100%"}
+
+## Conceptualizing the head
+
+::: {layout="[[20, 80]]"}
+![](images/flip.png){fig-align="left"}
+
+![](images/clipboard-3330841185.png)
+:::
+
+## Tools of the trade
+
+### X-Ray
+
+![](images/clipboard-28736525.png){fig-align="center" width="96%"}
+
+## Tools of the trade
+
+### Ultrasound tongue imaging
+
+![source: <https://www.articulateinstruments.com/ultrasound-imaging/?target=Micro%2FSonoSpeech>](images/headset4.jpg){fig-align="center" width="50%"}
+
+## Tools of the trade
+
+### Ultrasound tongue imaging
+
+:::: {layout-ncol="2" style="width: 100%;"}
+posterior ⬅️
+
+::: {style="text-align: right;"}
+➡️ anterior
+:::
+::::
+
+![](images/clipboard-3701411996.png){fig-align="center" width="90%"}
+
+@linGesturalReductionLexical2014
+
+## Tools of the trade
+
+### Electromagnetic Articulography (EMA)
+
+::: {layout="[[25, 75]]"}
+![Credit: Will Styler](images/ema_will_18.jpg){fig-align="center" width="100%"}
+
+![](images/M4_14_mview.jpg){fig-align="center" width="100%"}
+:::
+
+## Tools of the trade
+
+### MRI
+
+{{< video videos/mri.mp4 height="500">}}
+
+## Moving air around
+
+### Option 1: The lungs (pulmonic)
+
+- On the out-breath: "egressive"
+
+- On the in-breath: "ingressive"
+
+## Moving air around
+
+### Ingressive:
+
+> ~~\[...\] no language uses the pulmonic *ingressive* airstream in any systematic way.~~
+
+Many languages, including some Englishes, use ingressive speech for "backchannelling".
+
+## Terminology
+
+- "Sublaryngeal": below the larynx
+
+- "Supralaryngeal": above the larynx
+
+## Larynx and the voice
+
+:::: {layout="[[10, 90]]"}
+::: {}
+⬆️
+
+posterior
+
+anterior️
+
+⬇️
+:::
+
+{{< video videos/mel_blanc.mp4 >}}
+::::
+
+## References

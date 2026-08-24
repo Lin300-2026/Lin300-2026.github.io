@@ -1,0 +1,30 @@
+/*-- scss:rules --*/
+
+.ipa {
+  font-family: "Voces", "Sans-Serif";
+}
+
+.bigger {
+  font-size: 30em;
+}
+
+#quarto-sidebar a{
+  font-size: smaller;
+}
+
+#quarto-sidebar a:link{
+  color: theme-dim($body-color, 20%);
+}
+
+#quarto-sidebar a:visited{
+  color: theme-dim($body-color, 20%);
+}
+
+#quarto-sidebar {
+  // background: theme-dim($body-bg, 5%);
+  background-color: quarto-color.adjust(
+      $progress-bg,
+      $alpha: -0.65
+    );
+  color: $body-color;
+}

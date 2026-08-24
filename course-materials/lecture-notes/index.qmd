@@ -1,0 +1,8 @@
+---
+title: "Lecture Notes"
+format: html
+editor: visual
+listing: 
+  contents: 
+    - "*/index.qmd"
+---

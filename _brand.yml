@@ -1,0 +1,19 @@
+logo:
+  small: assets/logo_small.svg
+  medium: assets/logo.svg
+  large: assets/logo.svg
+
+typography:
+  fonts:
+    - family: Public Sans
+      source: google
+    - family: Roboto Mono
+      source: google
+    - family: Comfortaa
+      source: google
+    - family: Datatype
+      source: google
+
+  base: Public Sans
+  monospace: Roboto Mono
+  headings: Comfortaa

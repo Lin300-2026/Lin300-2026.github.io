@@ -1,0 +1,44 @@
+project:
+  type: website
+  preview:
+    port: 7100 
+
+website:
+  title: "Lin300-2026 - Sound Systems"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: course-materials/index.qmd
+  sidebar: 
+    - title: Home
+      style: docked
+      contents: /index.qmd
+    # - title: Policies
+    #   contents:
+    #   - auto: policies/
+    - title: Materials
+      collapse-level: 3
+      contents:
+      - auto: course-materials/
+
+format:
+  html:
+    theme:
+      - flatly
+      - brand
+      - styles/custom.scss
+    css: styles.css
+    toc: true
+  revealjs:
+    center: true
+    footer: |
+      [All Slides](/course-materials/lecture-notes)
+    theme:
+      - default
+      - brand
+      - styles/reveal.scss
+
+editor: visual
+
