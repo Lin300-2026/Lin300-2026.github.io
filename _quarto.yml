@@ -4,12 +4,12 @@ project:
     port: 7100 
 
 website:
-  title: "Lin300-2026 - Sound Systems"
+  title: "Lin300-2026 - Speech Sounds"
+  site-url: "https://Lin300-2026.github.io"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - href: course-materials/index.qmd
   sidebar: 
     - title: Home
@@ -34,11 +34,16 @@ format:
   revealjs:
     center: true
     footer: |
-      [All Slides](/course-materials/lecture-notes)
+      [HTML](./index.html) -- [PDF](./index.pdf)
     theme:
       - default
       - brand
       - styles/reveal.scss
+    revealjs-plugins:
+      - a11y
+  typst:
+    font-paths: 
+      - fonts/
 
 editor: visual
 

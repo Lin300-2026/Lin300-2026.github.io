@@ -2,4 +2,7 @@
 title: "Course Materials"
 format: html
 editor: visual
+listing: 
+  contents:
+    - "lecture-notes/*/*.qmd"
 ---
