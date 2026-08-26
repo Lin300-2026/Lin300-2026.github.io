@@ -1,0 +1,55 @@
+---
+title: "Speech Anatomy 2"
+subtitle: "Sub-laryngeal Anatomy"
+format: 
+  revealjs: 
+    output-file: anatomy2.html
+    logo: false
+  html: default
+  typst: default
+---
+
+## Sub vs Supra Laryngeal
+
+![](images/clipboard-1209314921.png){fig-align="center" width="100%"}
+
+## Sublaryngeal Vocal Tract
+
+![](images/clipboard-858594500.png){fig-align="center" width="100%"}
+
+## Moving air around
+
+### Option 1: The lungs (pulmonic)
+
+- On the out-breath: "egressive"
+
+- On the in-breath: "ingressive"
+
+## Moving air around
+
+### Ingressive:
+
+> ~~\[...\] no language uses the pulmonic *ingressive* airstream in any systematic way.~~
+
+Many languages, including some Englishes, use ingressive speech for "backchannelling".
+
+## Larynx
+
+![](images/clipboard-198246003.png){fig-align="center" width="100%"}
+
+## Larynx and the voice
+
+:::: {layout="[[10, 90]]"}
+::: {}
+⬆️
+
+posterior
+
+anterior️
+
+⬇️
+:::
+
+{{< video videos/mel_blanc.mp4 >}}
+::::
+

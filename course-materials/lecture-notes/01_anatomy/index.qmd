@@ -1,60 +1,90 @@
 ---
 title: "Speech Anatomy 1"
+subtitle: "Imaging"
 format: 
   revealjs: 
     output-file: anatomy1.html
-    logo: large
+    logo: false
   html: default
   typst: default
 bibliography: references.bib
-draft: true
 ---
 
 ## Seeing Speech
 
 Maybe you think speech looks like this:
 
-:::: {.content-hidden when-format="typst"}
-::: {.ipa .r-stack style="font-size: 10em; margin: auto;"}
-ʒ
-:::
-::::
-
-::: {.content-visible when-format="typst"}
-ʒ
-:::
-
-:::: {.content-visible when-format="revealjs"}
-::: footer
-[Webpage](index.qmd)
-:::
-::::
+![](typ-fig/all-ipa.svg){fig-align="center"}
 
 ## Seeing speech
 
-Tools of the trade
+Speech is a physical activity
 
 {{< video videos/xray.webm height="500">}}
 
+## Today
+
+- Tools we use for looking at speech.
+
+- Starting some anatomy.
+
 ## Conceptualizing the head
 
-![](images/clipboard-2488540286.jpeg){width="100%"}
+![](images/clipboard-2488540286.jpeg){fig-align="center" width="100%"}
+
+| Posterior | Anterior |
+|-----------|---------:|
+| "back"    |  "front" |
 
 ## Conceptualizing the head
 
 ::: {layout="[[20, 80]]"}
 ![](images/flip.png){fig-align="left"}
 
-![](images/clipboard-3330841185.png)
+![](typ-fig/all-ipa.svg)
 :::
 
 ## Tools of the trade
 
 ### X-Ray
 
-![](images/clipboard-28736525.png){fig-align="center" width="96%"}
+:::: {layout-ncol="2" style="width: 100%;"}
+anterior ⬅️
+
+::: {style="text-align: right;"}
+➡️ posterior
+:::
+::::
+
+![](images/clipboard-28736525.png){fig-align="center" width="100%"}
 
 ## Tools of the trade
+
+### X-Ray
+
+::::::: {layout-ncol="2"}
+:::: {}
+**Pros?**
+
+::: fragment
+- Better than nothing
+:::
+::::
+
+:::: {}
+**Cons?**
+
+::: fragment
+- Can't image fleshy bits well
+
+- Harmful to health
+
+- Static/low framerate
+:::
+::::
+:::::::
+
+## **To**ols of the trade
 
 ### Ultrasound tongue imaging
 
@@ -78,6 +108,32 @@ posterior ⬅️
 
 ## Tools of the trade
 
+### Ultrasound tongue imaging
+
+::::::: {layout-ncol="2"}
+:::: {}
+**Pros?**
+
+::: fragment
+- Relatively non-invasive.
+:::
+::::
+
+:::: {}
+**Cons?**
+
+::: fragment
+- Can *only* image fleshy bits.
+
+- Can't image across an air gap.
+
+- Relatively low frame rate.
+:::
+::::
+:::::::
+
+## Tools of the trade
+
 ### Electromagnetic Articulography (EMA)
 
 ::: {layout="[[25, 75]]"}
@@ -88,46 +144,78 @@ posterior ⬅️
 
 ## Tools of the trade
 
+### Electromagnetic Articulography (EMA)
+
+::::::: {layout-ncol="2"}
+:::: {}
+**Pros?**
+
+::: fragment
+- Very high time resolution.
+
+- Spatially precise.
+:::
+::::
+
+:::: {}
+**Cons?**
+
+::: fragment
+- Invasive.
+
+- Harder to visualize.
+
+- Expensive equipment.
+:::
+::::
+:::::::
+
+## Tools of the trade
+
 ### MRI
+
+:::: {layout-ncol="2" style="width: 100%;"}
+posterior ⬅️
+
+::: {style="text-align: right;"}
+➡️ anterior
+:::
+::::
 
 {{< video videos/mri.mp4 height="500">}}
 
-## Moving air around
+## Tools of the trade
 
-### Option 1: The lungs (pulmonic)
+### MRI
 
-- On the out-breath: "egressive"
+::::::: {layout-ncol="2"}
+:::: {}
+**Pros?**
 
-- On the in-breath: "ingressive"
+::: fragment
+- Non invasive.
 
-## Moving air around
-
-### Ingressive:
-
-> ~~\[...\] no language uses the pulmonic *ingressive* airstream in any systematic way.~~
-
-Many languages, including some Englishes, use ingressive speech for "backchannelling".
-
-## Terminology
-
-- "Sublaryngeal": below the larynx
-
-- "Supralaryngeal": above the larynx
-
-## Larynx and the voice
-
-:::: {layout="[[10, 90]]"}
-::: {}
-⬆️
-
-posterior
-
-anterior️
-
-⬇️
+- High quality images.
 :::
-
-{{< video videos/mel_blanc.mp4 >}}
 ::::
+
+:::: {}
+**Cons?**
+
+::: fragment
+- Low frame rate (but improving).
+
+- *Very* loud.
+
+- Speakers must be lying down.
+
+- Expensive equipment.
+:::
+::::
+:::::::
+
+## Seeing Speech
+
+[![](images/clipboard-2750300172.png)](https://www.seeingspeech.ac.uk/ipa-charts/)
 
 ## References
