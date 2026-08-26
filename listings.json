@@ -2,13 +2,17 @@
   {
     "listing": "/course-materials/index.html",
     "items": [
-      "/course-materials/lecture-notes/00_welcome/index.html"
+      "/course-materials/lecture-notes/00_welcome/index.html",
+      "/course-materials/lecture-notes/01_anatomy/index.html",
+      "/course-materials/lecture-notes/02_anatomy/index.html"
     ]
   },
   {
     "listing": "/course-materials/lecture-notes/index.html",
     "items": [
-      "/course-materials/lecture-notes/00_welcome/index.html"
+      "/course-materials/lecture-notes/00_welcome/index.html",
+      "/course-materials/lecture-notes/01_anatomy/index.html",
+      "/course-materials/lecture-notes/02_anatomy/index.html"
     ]
   }
 ]

@@ -1,0 +1,11 @@
+---
+title: "Speech Anatomy 2"
+subtitle: "Sub-laryngeal Anatomy"
+format: 
+  revealjs: 
+    output-file: anatomy2.html
+    logo: false
+  html: default
+  typst: default
+---
+
