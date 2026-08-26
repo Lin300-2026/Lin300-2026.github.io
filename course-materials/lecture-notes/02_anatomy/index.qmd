@@ -1,6 +1,7 @@
 ---
 title: "Speech Anatomy 2"
 subtitle: "Sub-laryngeal Anatomy"
+date: 2026-08-24
 format: 
   revealjs: 
     output-file: anatomy2.html
