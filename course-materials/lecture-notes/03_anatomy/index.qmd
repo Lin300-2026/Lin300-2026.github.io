@@ -12,6 +12,11 @@ format:
   typst: default
 filters:
   - shapes
+knitr: 
+  opts_chunk: 
+    echo: false
+    mesage: false
+bibliography: references.bib
 ---
 
 ## The Larynx
@@ -101,9 +106,10 @@ filters:
 :::::
 
 ## Voicing
+
+### Pitch
+
 ::: {.content-hidden when-format="typst"}
-
-
 ```{=html}
 <script src="https://unpkg.com/@strudel/embed@latest"></script>
 <strudel-repl>
@@ -117,5 +123,267 @@ filters:
 -->
 </strudel-repl>
 ```
-
 :::
+
+## Voice Quality
+
+### Modal Voice
+
+```{r}
+library(tidyverse)
+library(ggdist)
+set.seed(2026-09-01)
+```
+
+```{r}
+#| fig-width: 10
+#| fig-height: 2
+make_glot <- function(
+    peaks = seq(
+      0,20, by = 4
+    ),
+    open_prop = 0.6,
+    close_prop = 0.2
+  ) {
+
+  tibble(
+    peaks = peaks
+  ) |> 
+    mutate(
+      prev = lag(peaks),
+      diff = peaks - lag(peaks),
+      lead = lead(peaks) - peaks
+    ) |> 
+    filter(!is.na(prev)) |> 
+    fill(
+      lead
+    )-> 
+    peak_lag
+  
+  
+  peak_lag |> 
+    mutate(
+      open_traj = map2(
+        peaks, diff,
+        \(p, d){
+          tibble(
+            time = seq(
+              p - (d * open_prop), p,
+              length = 10
+            ),
+            open = plogis(seq(
+              -4, 4,
+              length = 10
+            )
+          ))
+        }
+      ),
+      close_traj = map2(
+        peaks, lead,
+        \(p, l){
+          tibble(
+            time = seq(
+              p, p+(l*close_prop),
+              length = 10
+            ),
+            open = plogis(seq(
+              4, -4,
+              length = 10
+            )
+            ))
+        }
+      ),
+      all_traj = map2(
+        open_traj, close_traj,
+        ~bind_rows(.x, .y)
+      )
+    ) |> 
+    unnest(all_traj) |> 
+    # bind_rows(
+    #   tibble(
+    #     time = c(0,24),
+    #     open = 0
+    #   )
+    # ) |> 
+    identity()
+}
+  
+```
+
+```{r}
+#| fig-width: 10
+#| fig-height: 2
+make_glot(
+  peaks = seq(
+    0, 20,
+    by = 2
+  ),
+  open_prop = 0.4,
+  close_prop = 0.15
+) |> 
+  ggplot(
+    aes(time, open)
+  ) + 
+  geom_line() +
+  labs(
+    x = "time",
+    y = "glottal airflow"
+  ) +
+  theme_ggdist() +
+  theme_sub_axis(
+    text = element_blank(),
+    ticks = element_blank()
+  )
+```
+
+## Voice Quality
+
+### Modal Voice
+
+- Very "periodic" - glottal pulses at a regular rhythm
+
+- High frequency
+
+## Voice Quality
+
+### Creaky Voice
+
+```{r}
+#| fig-width: 10
+#| fig-height: 2
+make_glot(
+  peaks = seq(
+    0, 20,
+    by = 3.5
+  ) + runif(
+    6, 
+    min = -1, max = 1
+  ),
+  open_prop = 0.2,
+  close_prop = 0.05
+) |> 
+  ggplot(
+    aes(time, open)
+  ) + 
+  geom_line() +
+  labs(
+    x = "time",
+    y = "glottal airflow"
+  ) +
+  ylim(0, 1.2) +
+  theme_ggdist() +
+  theme_sub_axis(
+    text = element_blank(),
+    ticks = element_blank()
+  )
+```
+
+## Voice Quality
+
+### Creaky Voice
+
+- Low frequency
+
+- Some irregular timing between opening phases
+
+- Lower airflow
+
+- Achieved by highly constricted glottis
+
+@keating2015
+
+## Voice Quality
+
+### Vocal Fry
+
+```{r}
+#| fig-width: 10
+#| fig-height: 2
+make_glot(
+  peaks = seq(
+    0, 20,
+    by = 3.5
+  ) ,
+  open_prop = 0.3,
+  close_prop = 0.1
+) |> 
+  ggplot(
+    aes(time, open)
+  ) + 
+  geom_line() +
+  labs(
+    x = "time",
+    y = "glottal airflow"
+  ) +
+  theme_ggdist() +
+  theme_sub_axis(
+    text = element_blank(),
+    ticks = element_blank()
+  )
+```
+
+## Voice Quality
+
+### Vocal Fry
+
+- Periodic (regular intervals)
+
+- Low frequency
+
+- Achieved by ??
+
+@keating2015
+
+## Voice Quality
+
+### Vocal Fry
+
+Almost everything you've heard about "vocal fry" in popular culture is bunk.
+
+- There's nothing harmful about it.
+
+- People really only complain about women doing it, even though men also do it [@slobe2016]
+
+- When people complain, they often also don't correctly identify what they're complaining about.
+
+## Voice Quality
+
+### Breathy voice
+
+```{r}
+#| fig-width: 10
+#| fig-height: 2
+make_glot(
+  peaks = seq(
+    0, 20,
+    by = 3
+  ) ,
+  open_prop = 0.7,
+  close_prop = 0.2
+) |> 
+  ggplot(
+    aes(time, open)
+  ) + 
+  geom_line() +
+  labs(
+    x = "time",
+    y = "glottal airflow"
+  ) +
+  theme_ggdist() +
+  theme_sub_axis(
+    text = element_blank(),
+    ticks = element_blank()
+  )
+```
+
+## Voice Quality
+
+### Breathy Voice
+
+- Periodic
+
+- High glottal airflow
+
+- Achieved by laxer vocal fold constriction
+
+## References
