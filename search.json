@@ -4,122 +4,700 @@
     "href": "course-materials/index.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Lin300 - Speech Sounds\n\n\n\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 1\n\n\nImaging\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 2\n\n\nSub-laryngeal Anatomy\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
+    "text": "Lin300 - Speech Sounds\n\n\n\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 1\n\n\nImaging\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 2\n\n\nSub-laryngeal Anatomy\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 3\n\n\nThe Larynx\n\n\n\n\n\n\n\n\nSep 1, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 4\n\n\nSupralaryngeal Vocal Tract\n\n\n\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Course Materials"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech",
-    "title": "Speech Anatomy 1",
-    "section": "Seeing Speech",
-    "text": "Seeing Speech\nMaybe you think speech looks like this:"
+    "objectID": "course-materials/lecture-notes/index.html",
+    "href": "course-materials/lecture-notes/index.html",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lin300 - Speech Sounds\n\n\n\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 1\n\n\nImaging\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 2\n\n\nSub-laryngeal Anatomy\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 3\n\n\nThe Larynx\n\n\n\n\n\n\n\n\nSep 1, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 4\n\n\nSupralaryngeal Vocal Tract\n\n\n\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes"
+    ]
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-1",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-1",
-    "title": "Speech Anatomy 1",
-    "section": "Seeing speech",
-    "text": "Seeing speech\nSpeech is a physical activity"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The plan for today",
+    "text": "The plan for today\n\n\nNames & Attendance\nCourse “Flightplan”\nSyllabus"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#today",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#today",
-    "title": "Speech Anatomy 1",
-    "section": "Today",
-    "text": "Today\n\nTools we use for looking at speech.\nStarting some anatomy."
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe make them with our bodies."
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head",
-    "title": "Speech Anatomy 1",
-    "section": "Conceptualizing the head",
-    "text": "Conceptualizing the head\n\n\n\n\nPosterior\nAnterior\n\n\n\n\n“back”\n“front”"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head-1",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head-1",
-    "title": "Speech Anatomy 1",
-    "section": "Conceptualizing the head",
-    "text": "Conceptualizing the head"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe hear them"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nX-Ray\n\n\n\nanterior ⬅️\n\n\n➡️ posterior"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can record them"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-1",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-1",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nX-Ray\n\n\n\nPros?\n\n\nBetter than nothing\n\n\n\n\nCons?\n\n\nCan’t image fleshy bits well\nHarmful to health\nStatic/low framerate"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nThey have acoustic properties"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-2",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-2",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nUltrasound tongue imaging\n\nsource: https://www.articulateinstruments.com/ultrasound-imaging/?target=Micro%2FSonoSpeech"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them."
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-3",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-3",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nUltrasound tongue imaging\n\n\n\nposterior ⬅️\n\n\n➡️ anterior\n\n\n\n\nLin et al. (2014)"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-4",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-4",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nUltrasound tongue imaging\n\n\n\nPros?\n\n\nRelatively non-invasive.\n\n\n\n\nCons?\n\n\nCan only image fleshy bits.\nCan’t image across an air gap.\nRelatively low frame rate."
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-5",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-5",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nElectromagnetic Articulography (EMA)\n\n\n\n\n\n\nCredit: Will Styler"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Flight Plan",
+    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-6",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-6",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nElectromagnetic Articulography (EMA)\n\n\n\nPros?\n\n\nVery high time resolution.\nSpatially precise.\n\n\n\n\nCons?\n\n\nInvasive.\nHarder to visualize.\nExpensive equipment."
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The Textbook",
+    "text": "The Textbook\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-7",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-7",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nMRI\n\n\n\n\nposterior ⬅️\n\n\n➡️ anterior"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Course Evaluation",
+    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-8",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-8",
-    "title": "Speech Anatomy 1",
-    "section": "Tools of the trade",
-    "text": "Tools of the trade\nMRI\n\n\n\nPros?\n\n\nNon invasive.\nHigh quality images.\n\n\n\n\nCons?\n\n\nLow frame rate (but improving).\nVery loud.\nSpeakers must be lying down.\nExpensive equipment."
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
+    "title": "Lin300 - Speech Sounds",
+    "section": "AI Policy",
+    "text": "AI Policy"
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-2",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-2",
-    "title": "Speech Anatomy 1",
-    "section": "Seeing Speech",
-    "text": "Seeing Speech"
+    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
+    "href": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context."
   },
   {
-    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#references",
-    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#references",
-    "title": "Speech Anatomy 1",
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html",
+    "href": "course-materials/lecture-notes/00_welcome/index.html",
+    "title": "Lin300 - Speech Sounds",
+    "section": "",
+    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
+    "title": "Lin300 - Speech Sounds",
+    "section": "",
+    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe make them with our bodies.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe hear them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe can record them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nThey have acoustic properties",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Speech Sounds",
+    "text": "Speech Sounds\nWe cognitively organize and distribute them",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Flight Plan",
+    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
+    "title": "Lin300 - Speech Sounds",
+    "section": "The Textbook",
+    "text": "The Textbook\n\n\n\n\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Course Evaluation",
+    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
+    "title": "Lin300 - Speech Sounds",
+    "section": "AI Policy",
+    "text": "AI Policy",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
+    "href": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
+    "title": "Lin300 - Speech Sounds",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Lin300  - Speech Sounds"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing-1",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing-1",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing-2",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing-2",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing-3",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing-3",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing-4",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing-4",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voicing-5",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voicing-5",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing\n\nPitch",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nModal Voice",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-1",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-1",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nModal Voice\n\nVery “periodic” - glottal pulses at a regular rhythm\nHigh frequency",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-2",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-2",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nCreaky Voice",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-3",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-3",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nCreaky Voice\n\nLow frequency\nSome irregular timing between opening phases\nLower airflow\nAchieved by highly constricted glottis\n\nKeating et al. (2015)",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-4",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-4",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nVocal Fry",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-5",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-5",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nVocal Fry\n\nPeriodic (regular intervals)\nLow frequency\nAchieved by ??\n\nKeating et al. (2015)",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-6",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-6",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nVocal Fry\nAlmost everything you’ve heard about “vocal fry” in popular culture is bunk.\n\nThere’s nothing harmful about it.\nPeople really only complain about women doing it, even though men also do it (Slobe 2016)\nWhen people complain, they often also don’t correctly identify what they’re complaining about.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-7",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-7",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nBreathy voice",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-8",
+    "href": "course-materials/lecture-notes/03_anatomy/index.html#voice-quality-8",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\n\nBreathy Voice\n\nPeriodic\nHigh glottal airflow\nAchieved by laxer vocal fold constriction",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 3"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#the-larynx",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#the-larynx",
+    "title": "Speech Anatomy 3",
+    "section": "The Larynx",
+    "text": "The Larynx"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-1",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-1",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-2",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-2",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-3",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-3",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-4",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-4",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-5",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voicing-5",
+    "title": "Speech Anatomy 3",
+    "section": "Voicing",
+    "text": "Voicing\nPitch"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nModal Voice"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-1",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-1",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nModal Voice\n\nVery “periodic” - glottal pulses at a regular rhythm\nHigh frequency"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-2",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-2",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nCreaky Voice"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-3",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-3",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nCreaky Voice\n\nLow frequency\nSome irregular timing between opening phases\nLower airflow\nAchieved by highly constricted glottis\n\nKeating et al. (2015)"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-4",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-4",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nVocal Fry"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-5",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-5",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nVocal Fry\n\nPeriodic (regular intervals)\nLow frequency\nAchieved by ??\n\nKeating et al. (2015)"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-6",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-6",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nVocal Fry\nAlmost everything you’ve heard about “vocal fry” in popular culture is bunk.\n\nThere’s nothing harmful about it.\nPeople really only complain about women doing it, even though men also do it (Slobe 2016)\nWhen people complain, they often also don’t correctly identify what they’re complaining about."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-7",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-7",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nBreathy voice"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-8",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#voice-quality-8",
+    "title": "Speech Anatomy 3",
+    "section": "Voice Quality",
+    "text": "Voice Quality\nBreathy Voice\n\nPeriodic\nHigh glottal airflow\nAchieved by laxer vocal fold constriction"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/03_anatomy/anatomy3.html#references",
+    "href": "course-materials/lecture-notes/03_anatomy/anatomy3.html#references",
+    "title": "Speech Anatomy 3",
     "section": "References",
-    "text": "References\n\n\n\n\nLin, Susan, Patrice Speeter Beddor, and Andries W. Coetzee. 2014. Gestural Reduction , Lexical Frequency , and Sound Change : A Study of Post-Vocalic / l /. 5 (1): 9–36. https://doi.org/10.1515/lp-2014-0002."
+    "text": "References\n\n\n\n\nKeating, Patricia A., Marc Garellek, and Jody Kreiman. 2015. “Acoustic Properties of Different Kinds of Creaky Voice.” Proceedings of the International Congress of Phonetic Science XVIII, no. 1. https://doi.org/10.1016/0167-8809(91)90080-H.\n\n\nSlobe, Tyanna. 2016. “This American Creak: Metaphors of Virus, Infection, and Contagion in Girls’ Social Networks.” Paper Presented at AAA 2016."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#sublaryngeal-vocal-tract",
+    "href": "course-materials/lecture-notes/02_anatomy/index.html#sublaryngeal-vocal-tract",
+    "title": "Speech Anatomy 2",
+    "section": "Sublaryngeal Vocal Tract",
+    "text": "Sublaryngeal Vocal Tract",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 2"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around",
+    "href": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around",
+    "title": "Speech Anatomy 2",
+    "section": "Moving air around",
+    "text": "Moving air around\n\nOption 1: The lungs (pulmonic)\n\nOn the out-breath: “egressive”\nOn the in-breath: “ingressive”",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 2"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around-1",
+    "href": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around-1",
+    "title": "Speech Anatomy 2",
+    "section": "Moving air around",
+    "text": "Moving air around\n\nIngressive:\n\n[…] no language uses the pulmonic ingressive airstream in any systematic way.\n\nMany languages, including some Englishes, use ingressive speech for “backchannelling”.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 2"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#larynx",
+    "href": "course-materials/lecture-notes/02_anatomy/index.html#larynx",
+    "title": "Speech Anatomy 2",
+    "section": "Larynx",
+    "text": "Larynx",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 2"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#larynx-and-the-voice",
+    "href": "course-materials/lecture-notes/02_anatomy/index.html#larynx-and-the-voice",
+    "title": "Speech Anatomy 2",
+    "section": "Larynx and the voice",
+    "text": "Larynx and the voice\n\n\n\n⬆️\nposterior\nanterior️\n⬇️",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Speech Anatomy 2"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sub-vs-supra-laryngeal",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sub-vs-supra-laryngeal",
+    "title": "Speech Anatomy 2",
+    "section": "Sub vs Supra Laryngeal",
+    "text": "Sub vs Supra Laryngeal"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sublaryngeal-vocal-tract",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sublaryngeal-vocal-tract",
+    "title": "Speech Anatomy 2",
+    "section": "Sublaryngeal Vocal Tract",
+    "text": "Sublaryngeal Vocal Tract"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around",
+    "title": "Speech Anatomy 2",
+    "section": "Moving air around",
+    "text": "Moving air around\nOption 1: The lungs (pulmonic)\n\nOn the out-breath: “egressive”\nOn the in-breath: “ingressive”"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around-1",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around-1",
+    "title": "Speech Anatomy 2",
+    "section": "Moving air around",
+    "text": "Moving air around\nIngressive:\n\n[…] no language uses the pulmonic ingressive airstream in any systematic way.\n\nMany languages, including some Englishes, use ingressive speech for “backchannelling”."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx",
+    "title": "Speech Anatomy 2",
+    "section": "Larynx",
+    "text": "Larynx"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx-and-the-voice",
+    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx-and-the-voice",
+    "title": "Speech Anatomy 2",
+    "section": "Larynx and the voice",
+    "text": "Larynx and the voice\n\n\n\n⬆️\nposterior\nanterior️\n⬇️"
   },
   {
     "objectID": "course-materials/lecture-notes/01_anatomy/index.html",
@@ -314,394 +892,324 @@
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sub-vs-supra-laryngeal",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sub-vs-supra-laryngeal",
-    "title": "Speech Anatomy 2",
-    "section": "Sub vs Supra Laryngeal",
-    "text": "Sub vs Supra Laryngeal"
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech",
+    "title": "Speech Anatomy 1",
+    "section": "Seeing Speech",
+    "text": "Seeing Speech\nMaybe you think speech looks like this:"
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sublaryngeal-vocal-tract",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#sublaryngeal-vocal-tract",
-    "title": "Speech Anatomy 2",
-    "section": "Sublaryngeal Vocal Tract",
-    "text": "Sublaryngeal Vocal Tract"
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-1",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-1",
+    "title": "Speech Anatomy 1",
+    "section": "Seeing speech",
+    "text": "Seeing speech\nSpeech is a physical activity"
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around",
-    "title": "Speech Anatomy 2",
-    "section": "Moving air around",
-    "text": "Moving air around\nOption 1: The lungs (pulmonic)\n\nOn the out-breath: “egressive”\nOn the in-breath: “ingressive”"
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#today",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#today",
+    "title": "Speech Anatomy 1",
+    "section": "Today",
+    "text": "Today\n\nTools we use for looking at speech.\nStarting some anatomy."
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around-1",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#moving-air-around-1",
-    "title": "Speech Anatomy 2",
-    "section": "Moving air around",
-    "text": "Moving air around\nIngressive:\n\n[…] no language uses the pulmonic ingressive airstream in any systematic way.\n\nMany languages, including some Englishes, use ingressive speech for “backchannelling”."
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head",
+    "title": "Speech Anatomy 1",
+    "section": "Conceptualizing the head",
+    "text": "Conceptualizing the head\n\n\n\n\nPosterior\nAnterior\n\n\n\n\n“back”\n“front”"
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx",
-    "title": "Speech Anatomy 2",
-    "section": "Larynx",
-    "text": "Larynx"
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head-1",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#conceptualizing-the-head-1",
+    "title": "Speech Anatomy 1",
+    "section": "Conceptualizing the head",
+    "text": "Conceptualizing the head"
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx-and-the-voice",
-    "href": "course-materials/lecture-notes/02_anatomy/anatomy2.html#larynx-and-the-voice",
-    "title": "Speech Anatomy 2",
-    "section": "Larynx and the voice",
-    "text": "Larynx and the voice\n\n\n\n⬆️\nposterior\nanterior️\n⬇️"
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nX-Ray\n\n\n\nanterior ⬅️\n\n\n➡️ posterior"
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#sublaryngeal-vocal-tract",
-    "href": "course-materials/lecture-notes/02_anatomy/index.html#sublaryngeal-vocal-tract",
-    "title": "Speech Anatomy 2",
-    "section": "Sublaryngeal Vocal Tract",
-    "text": "Sublaryngeal Vocal Tract",
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-1",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-1",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nX-Ray\n\n\n\nPros?\n\n\nBetter than nothing\n\n\n\n\nCons?\n\n\nCan’t image fleshy bits well\nHarmful to health\nStatic/low framerate"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-2",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-2",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nUltrasound tongue imaging\n\nsource: https://www.articulateinstruments.com/ultrasound-imaging/?target=Micro%2FSonoSpeech"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-3",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-3",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nUltrasound tongue imaging\n\n\n\nposterior ⬅️\n\n\n➡️ anterior\n\n\n\n\nLin et al. (2014)"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-4",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-4",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nUltrasound tongue imaging\n\n\n\nPros?\n\n\nRelatively non-invasive.\n\n\n\n\nCons?\n\n\nCan only image fleshy bits.\nCan’t image across an air gap.\nRelatively low frame rate."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-5",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-5",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nElectromagnetic Articulography (EMA)\n\n\n\n\n\n\nCredit: Will Styler"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-6",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-6",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nElectromagnetic Articulography (EMA)\n\n\n\nPros?\n\n\nVery high time resolution.\nSpatially precise.\n\n\n\n\nCons?\n\n\nInvasive.\nHarder to visualize.\nExpensive equipment."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-7",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-7",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nMRI\n\n\n\n\nposterior ⬅️\n\n\n➡️ anterior"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-8",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#tools-of-the-trade-8",
+    "title": "Speech Anatomy 1",
+    "section": "Tools of the trade",
+    "text": "Tools of the trade\nMRI\n\n\n\nPros?\n\n\nNon invasive.\nHigh quality images.\n\n\n\n\nCons?\n\n\nLow frame rate (but improving).\nVery loud.\nSpeakers must be lying down.\nExpensive equipment."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-2",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#seeing-speech-2",
+    "title": "Speech Anatomy 1",
+    "section": "Seeing Speech",
+    "text": "Seeing Speech"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/01_anatomy/anatomy1.html#references",
+    "href": "course-materials/lecture-notes/01_anatomy/anatomy1.html#references",
+    "title": "Speech Anatomy 1",
+    "section": "References",
+    "text": "References\n\n\n\n\nLin, Susan, Patrice Speeter Beddor, and Andries W. Coetzee. 2014. Gestural Reduction , Lexical Frequency , and Sound Change : A Study of Post-Vocalic / l /. 5 (1): 9–36. https://doi.org/10.1515/lp-2014-0002."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#nasopharynx",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#nasopharynx",
+    "title": "Speech Anatomy 4",
+    "section": "Nasopharynx",
+    "text": "Nasopharynx",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Speech Anatomy 2"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around",
-    "href": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around",
-    "title": "Speech Anatomy 2",
-    "section": "Moving air around",
-    "text": "Moving air around\n\nOption 1: The lungs (pulmonic)\n\nOn the out-breath: “egressive”\nOn the in-breath: “ingressive”",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Speech Anatomy 2"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around-1",
-    "href": "course-materials/lecture-notes/02_anatomy/index.html#moving-air-around-1",
-    "title": "Speech Anatomy 2",
-    "section": "Moving air around",
-    "text": "Moving air around\n\nIngressive:\n\n[…] no language uses the pulmonic ingressive airstream in any systematic way.\n\nMany languages, including some Englishes, use ingressive speech for “backchannelling”.",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-1",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-1",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nextrinsic muscles: muscles attached to the tongue\nintrinsic muscles: muscles within the tongue",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Speech Anatomy 2"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#larynx",
-    "href": "course-materials/lecture-notes/02_anatomy/index.html#larynx",
-    "title": "Speech Anatomy 2",
-    "section": "Larynx",
-    "text": "Larynx",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-2",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-2",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nMuscles are usually named for the what they attach to.\n\n“-glossus”: Attaching to the tongue",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Speech Anatomy 2"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/02_anatomy/index.html#larynx-and-the-voice",
-    "href": "course-materials/lecture-notes/02_anatomy/index.html#larynx-and-the-voice",
-    "title": "Speech Anatomy 2",
-    "section": "Larynx and the voice",
-    "text": "Larynx and the voice\n\n\n\n⬆️\nposterior\nanterior️\n⬇️",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-3",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-3",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nExtrinsic Muscles\n\n\n\n\n\nPulls tongue body back",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Speech Anatomy 2"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html",
-    "href": "course-materials/lecture-notes/00_welcome/index.html",
-    "title": "Lin300 - Speech Sounds",
-    "section": "",
-    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#styloid-process",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#styloid-process",
+    "title": "Speech Anatomy 4",
+    "section": "Styloid Process",
+    "text": "Styloid Process",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#the-plan-for-today",
-    "title": "Lin300 - Speech Sounds",
-    "section": "",
-    "text": "Names & Attendance\nCourse “Flightplan”\nSyllabus",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-4",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-4",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nExtrinsic Muscles\n\n\n\n\n\nPulls tongue body down",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe make them with our bodies.",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-5",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-5",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nExtrinsic Muscles\n\n\n\n\n\nPulls tongue up",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-1",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-6",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#the-tongue-6",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nExtrinsic Muscles\n\n\n\n\n\nDownward and forward",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-2",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe hear them",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#coordinating-it-all",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#coordinating-it-all",
+    "title": "Speech Anatomy 4",
+    "section": "Coordinating it all",
+    "text": "Coordinating it all\nEverything is connected to everything\n\nHyoglossus pulls down on tongue ➔\nTongue pulls on palatoglossus ➔\nPalatoglossus pulls on soft palate\n\nLow vowels are more likely to be nasalized than high vowels.",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-3",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe can record them",
+    "objectID": "course-materials/lecture-notes/04_anatomy/index.html#coordinating-it-all-1",
+    "href": "course-materials/lecture-notes/04_anatomy/index.html#coordinating-it-all-1",
+    "title": "Speech Anatomy 4",
+    "section": "Coordinating it all",
+    "text": "Coordinating it all\n\nTiming",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
-      "Lin300  - Speech Sounds"
+      "Speech Anatomy 4"
     ]
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-4",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nThey have acoustic properties",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#nasopharynx",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#nasopharynx",
+    "title": "Speech Anatomy 4",
+    "section": "Nasopharynx",
+    "text": "Nasopharynx"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-5",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them.",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-6",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-1",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-1",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\n\nextrinsic muscles: muscles attached to the tongue\nintrinsic muscles: muscles within the tongue"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#speech-sounds-7",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-2",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-2",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nMuscles are usually named for the what they attach to.\n\n“-glossus”: Attaching to the tongue"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#flight-plan",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Flight Plan",
-    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-3",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-3",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nExtrinsic Muscles\n\nPulls tongue body back"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#the-textbook",
-    "title": "Lin300 - Speech Sounds",
-    "section": "The Textbook",
-    "text": "The Textbook\n\n\n\n\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#styloid-process",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#styloid-process",
+    "title": "Speech Anatomy 4",
+    "section": "Styloid Process",
+    "text": "Styloid Process"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#course-evaluation",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Course Evaluation",
-    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-4",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-4",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nExtrinsic Muscles\n\nPulls tongue body down"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#ai-policy",
-    "title": "Lin300 - Speech Sounds",
-    "section": "AI Policy",
-    "text": "AI Policy",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-5",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-5",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nExtrinsic Muscles\n\nPulls tongue up"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
-    "href": "course-materials/lecture-notes/00_welcome/index.html#lecture-slides",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Lecture Slides",
-    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context.",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes",
-      "Lin300  - Speech Sounds"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-6",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#the-tongue-6",
+    "title": "Speech Anatomy 4",
+    "section": "The Tongue",
+    "text": "The Tongue\nExtrinsic Muscles\n\nDownward and forward"
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-plan-for-today",
-    "title": "Lin300 - Speech Sounds",
-    "section": "The plan for today",
-    "text": "The plan for today\n\n\nNames & Attendance\nCourse “Flightplan”\nSyllabus"
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#coordinating-it-all",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#coordinating-it-all",
+    "title": "Speech Anatomy 4",
+    "section": "Coordinating it all",
+    "text": "Coordinating it all\nEverything is connected to everything\n\nHyoglossus pulls down on tongue ➔\nTongue pulls on palatoglossus ➔\nPalatoglossus pulls on soft palate\n\nLow vowels are more likely to be nasalized than high vowels."
   },
   {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe make them with our bodies."
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-1",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe can cross-categorize them many ways\n\n\n\n\n\n\nflowchart TD\n  A[airstream] --&gt; P[pulmonic]\n  A --&gt; G[glottalic]\n  A --&gt; V[velaric]\n  P --&gt; Pe[egressive]\n  G --&gt; Ge[egressive]\n  G --&gt; Gi[ingressive]\n  V --&gt; Vi[ingressive]\n  Pe --&gt; Pes[\"[p, t, k,...]\"]\n  Ge --&gt; Ges[\"[pʼ, tʼ, kʼ, ...]\"]\n  Gi --&gt; Gis[\"[ɓ, ɗ, ɠ, ...]\"]\n  Vi --&gt; Vis[\"[ʘ, ǃ, ...]\"]"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-2",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe hear them"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-3",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe can record them"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-4",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nThey have acoustic properties"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-5",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them."
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-6",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#speech-sounds-7",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Speech Sounds",
-    "text": "Speech Sounds\nWe cognitively organize and distribute them"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#flight-plan",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Flight Plan",
-    "text": "Flight Plan\n\nSpeech Anatomy & Articulatory Classifications\nSpeech Perception & Acoustics\nPhonological Contrast & Alternation\nPhonological Features & Rules\nPhonological Constraints\nProsodic Structure"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#the-textbook",
-    "title": "Lin300 - Speech Sounds",
-    "section": "The Textbook",
-    "text": "The Textbook\n\nZsiga, Elizabeth C (2024) The Sounds of Language, Wiley-Blackwell ISBN: 978-1-119-87850-6"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#course-evaluation",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Course Evaluation",
-    "text": "Course Evaluation\n\nWeekly comprehension quizzes\nLanguage Puzzles\nIPA transcription exercises\nIn-class midterm (Oct 6)\nIn-person final exam (Dec 17)\nParticipation"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#ai-policy",
-    "title": "Lin300 - Speech Sounds",
-    "section": "AI Policy",
-    "text": "AI Policy"
-  },
-  {
-    "objectID": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
-    "href": "course-materials/lecture-notes/00_welcome/welcome.html#lecture-slides",
-    "title": "Lin300 - Speech Sounds",
-    "section": "Lecture Slides",
-    "text": "Lecture Slides\nThe lecture slides, in general, serve to support the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context."
-  },
-  {
-    "objectID": "course-materials/lecture-notes/index.html",
-    "href": "course-materials/lecture-notes/index.html",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lin300 - Speech Sounds\n\n\n\n\n\nSlides for syllabus day\n\n\n\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 1\n\n\nImaging\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\n\n\n\n\n\n\n\nSpeech Anatomy 2\n\n\nSub-laryngeal Anatomy\n\n\n\n\n\n\n\n\nAug 27, 2026\n\n\nDr. Josef Fruehwald\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Course Materials",
-      "Lecture Notes"
-    ]
+    "objectID": "course-materials/lecture-notes/04_anatomy/anatomy4.html#coordinating-it-all-1",
+    "href": "course-materials/lecture-notes/04_anatomy/anatomy4.html#coordinating-it-all-1",
+    "title": "Speech Anatomy 4",
+    "section": "Coordinating it all",
+    "text": "Coordinating it all\nTiming"
   }
 ]
