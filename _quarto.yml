@@ -3,6 +3,9 @@ project:
   preview:
     port: 7100 
 
+execute: 
+  freeze: auto
+
 website:
   title: "Lin300-2026 - Speech Sounds"
   site-url: "https://Lin300-2026.github.io"

@@ -1,0 +1,121 @@
+---
+title: "Speech Anatomy 3"
+subtitle: "The Larynx"
+date: 2026-09-01
+order: 3
+editor: visual
+format: 
+  revealjs: 
+    output-file: anatomy3.html
+    logo: false
+  html: default
+  typst: default
+filters:
+  - shapes
+---
+
+## The Larynx
+
+:::::::: r-stack
+:::: {layout-ncol="2"}
+![](images/full-mid-sag.png){fig-align="center"}
+
+::: {.fragment fragment-index="2"}
+![](images/larynx.png){style="border-style=\"solid\"; border-color:blue;" fig-align="center"}
+:::
+::::
+
+::::: {.content-visible when-format="revealjs"}
+:::: {.fragment fragment-index="1"}
+::: {.shape-square .absolute bottom="100" left="200" fill="none" stroke="blue" size="12rem"}
+:::
+::::
+:::::
+::::::::
+
+## Voicing
+
+:::: {layout="[[30,30,90]]"}
+![](images/top-down.png){fig-align="center" width="10%"}
+
+::: {}
+:::
+
+![](images/clipboard-3254585349.png){fig-align="center" width="60%"}
+::::
+
+## Voicing
+
+::::: {.content-hidden when-format="typst"}
+:::: {layout="[[30,30,90]]"}
+![](images/top-down.png){fig-align="center" width="10%"}
+
+::: {}
+:::
+
+![](images/clipboard-3924176407.gif){fig-align="center" width="60%"}
+::::
+:::::
+
+:::: {.content-visible when-format="typst"}
+::: {layout-ncol="2"}
+![](images/clipboard-3657731021.png){width="50%"}
+
+![](images/clipboard-1651444756.png){width="50%"}
+:::
+::::
+
+## Voicing
+
+:::: {layout="[[30,30,90]]"}
+![](images/front.png){fig-align="center" width="20%"}
+
+::: {}
+:::
+
+![](images/closing.png){fig-align="center" width="60%"}
+::::
+
+## Voicing
+
+:::: {layout="[[30,30,90]]"}
+![](images/front.png){fig-align="center" width="20%"}
+
+::: {}
+:::
+
+![](images/opening.png){fig-align="center" width="60%"}
+::::
+
+::::: {.content-hidden when-format="typst"}
+## Voicing
+
+:::: {layout="[[30,10,90]]"}
+![](images/front.png){fig-align="center" width="20%"}
+
+::: {}
+:::
+
+![](images/pulse.gif){fig-align="center" width="60%"}
+::::
+:::::
+
+## Voicing
+::: {.content-hidden when-format="typst"}
+
+
+```{=html}
+<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<strudel-repl>
+<!--  
+  setcpm(60) 
+  s("pink")
+  .replicate(slider(4, 4, 200, 4)) 
+  .clip(0.05)
+  .lpf(1000)
+  ._spectrum()
+-->
+</strudel-repl>
+```
+
+:::

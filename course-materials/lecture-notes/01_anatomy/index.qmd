@@ -1,7 +1,8 @@
 ---
 title: "Speech Anatomy 1"
 subtitle: "Imaging"
-date: 2026-08-26
+date: 2026-08-27
+order: 1
 format: 
   revealjs: 
     output-file: anatomy1.html
@@ -171,9 +172,11 @@ posterior ⬅️
 ::::
 :::::::
 
-## Tools of the trade
+## Tools of the trade {.smaller}
 
 ### MRI
+
+{{< video videos/mri.mp4 height="500">}}
 
 :::: {layout-ncol="2" style="width: 100%;"}
 posterior ⬅️
@@ -182,8 +185,6 @@ posterior ⬅️
 ➡️ anterior
 :::
 ::::
-
-{{< video videos/mri.mp4 height="500">}}
 
 ## Tools of the trade
 

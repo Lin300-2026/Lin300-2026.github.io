@@ -2,6 +2,7 @@
 title: "Lin300  - Speech Sounds"
 description: |
   Slides for syllabus day
+order: 0
 format: 
   revealjs: 
     output-file: welcome.html

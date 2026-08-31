@@ -1,0 +1,64 @@
+---
+title: "Speech Anatomy 4"
+subtitle: Supralaryngeal Vocal Tract
+order: 3
+editor: visual
+format: 
+  revealjs: 
+    output-file: anatomy4.html
+    logo: false
+  html: default
+  typst: default
+---
+
+##  {background-image="images/supra1.png" background-size="contain"}
+
+::: {.content-hidden when-format="revealjs"}
+![](images/supra1.png){fig-align="center"}
+:::
+
+## Nasopharynx
+
+::: {.content-hidden when-format="typst"}
+![](images/nasal-airflow.gif){fig-align="center"}
+:::
+
+:::: {.content-visible when-format="typst"}
+::: {layout-ncol="2"}
+![](images/clipboard-3436022196.png)
+
+![](images/clipboard-1171903575.png)
+:::
+::::
+
+## The Tongue
+
+![](images/tongue.gif){fig-align="center"}
+
+## The Tongue
+
+- **extrinsic** muscles: muscles attached to the tongue
+
+- **intrinsic** muscles: muscles within the tongue
+
+## The Tongue
+
+Muscles are usually named for the what they attach to.
+
+- "-glossus": Attaching to the tongue
+
+## The Tongue
+
+### Extrinsic Muscles
+
+![](images/styloglossus.png){fig-align="center"}
+
+Pulls tongue body back
+
+## The Tongue
+
+### Extrinsic Muscles
+
+![](images/hyoglossus.png){fig-align="center"}
+
+Pulls tongue body down
