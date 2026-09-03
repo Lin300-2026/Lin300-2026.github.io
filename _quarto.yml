@@ -34,6 +34,7 @@ format:
       - styles/custom.scss
     css: styles.css
     toc: true
+    #include-before-body: "includes/_typst-render.qmd"
   revealjs:
     center: true
     footer: |
@@ -47,6 +48,7 @@ format:
   typst:
     font-paths: 
       - fonts/
+    bibliographystyle: "apa"
 
 editor: visual
 

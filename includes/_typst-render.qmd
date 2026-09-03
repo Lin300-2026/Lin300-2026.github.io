@@ -1,0 +1,3 @@
+```{r}
+source(here::here("_extensions/mcanouil/typst-render/_resources/typst_define.R"))
+```

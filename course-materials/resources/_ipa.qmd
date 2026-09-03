@@ -1,0 +1,51 @@
+---
+title: "ipa"
+format: 
+  html: default
+  typst:
+    margin:
+      x: 0.25cm
+editor: visual
+echo: false
+---
+
+```{r}
+
+library(tibble)
+library(tinytable)
+library(purrr)
+```
+
+```{=typst}
+#set text(font: "Noto Sans", size: 8pt, hyphenate: false)
+#set align(center)
+```
+```{r}
+#| classes: ".ipa"
+
+tribble(
+  ~manner, ~Bilabial, ~Labiodental, ~Dental, ~Alveolar, ~Postalveolar, ~Retroflex, ~Palatal, ~Velar, ~Uvular, ~Pharyngeal, ~ph2, ~Glottal,
+  "Plosives", "p b", "",  "t d","", "", "ʈ ɖ", "c ɟ", "k g", "q ɢ", "", "", "ʔ",
+  "Nasal", "m", "ɱ", "n", "", "", "ɳ", "ɲ", "ŋ", "ɴ", "", "","",
+  "Trill", "ʙ", "", "r", "", "", "", "", "", "ʀ", "", "", "",
+  "Tap or Flap", "", "ⱱ", "ɾ", "", "", "ɽ" , "", "", "", "", "", ""
+) |> 
+  tt() |> 
+  style_tt(
+    align = "c",
+    line = "tblr"
+  ) |> 
+  style_tt(
+    i = 1:4, 
+    j = 4,
+    colspan = 3,
+    align = "c"
+  ) |> 
+  style_tt(
+    i = c(0,2:4),
+    j = 11,
+    colspan = 2,
+    align = "c"
+  )  |>
+  identity()
+```
