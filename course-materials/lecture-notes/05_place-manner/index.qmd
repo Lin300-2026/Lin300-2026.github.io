@@ -223,7 +223,7 @@ Most articulations have an *active* and a *passive* articulator
 
 - Passive: the articulator that gets moved to
 
-Most places of articulation and named for the location of the passive articulator.
+Most places of articulation are named for the location of the passive articulator.
 
 ## Place
 
