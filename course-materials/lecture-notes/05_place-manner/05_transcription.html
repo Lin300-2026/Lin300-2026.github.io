@@ -192,7 +192,7 @@ Dr.&nbsp;Josef Fruehwald
 <h2>Notation</h2>
 <p>But what <em>is</em> “A”?</p>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.svg" alt="A sine wave at 440 Hz." width="960" class="r-stretch"></section>
+<img data-src="index_files/figure-html/unnamed-chunk-5-1.svg" alt="A sine wave at 440 Hz." width="672" class="r-stretch"></section>
 <section id="transcription-2" class="slide level2 center">
 <h2>Transcription</h2>
 <p>There have been different conventions for what frequency “Concert A” should be!</p>
@@ -230,7 +230,7 @@ $: A4
 </section>
 <section id="hz-how" class="slide level2 center">
 <h2>440Hz how?</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2" style="font-size: 7em">
+<div class="quarto-layout-panel" style="font-size: 7em" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>🎷</p>
@@ -1055,44 +1055,6 @@ Sproat, R, and O Fujimura. 1993. <span>“Allophonic Variation in English /l/ an
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

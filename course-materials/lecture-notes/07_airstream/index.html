@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Josef Fruehwald">
-<meta name="dcterms.date" content="2026-08-27">
+<meta name="dcterms.date" content="2026-09-08">
 
-<title>Speech Anatomy 2 – Lin300-2026 - Speech Sounds</title>
+<title>Voicing and Airstream – Lin300-2026 - Speech Sounds</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -28,7 +28,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -53,8 +72,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-4800f66dd941310d7c96e9bd82d7fbe2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark-c7900443ba8fe726c81c38b7cc3d79d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-4800f66dd941310d7c96e9bd82d7fbe2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/02_anatomy/index.html">Speech Anatomy 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/07_airstream/index.html">Voicing and Airstream</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -177,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-materials/lecture-notes/02_anatomy/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../course-materials/lecture-notes/02_anatomy/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Speech Anatomy 2</span></a>
   </div>
 </li>
@@ -195,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-materials/lecture-notes/07_airstream/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../course-materials/lecture-notes/07_airstream/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Voicing and Airstream</span></a>
   </div>
 </li>
@@ -230,28 +247,55 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sub-vs-supra-laryngeal" id="toc-sub-vs-supra-laryngeal" class="nav-link active" data-scroll-target="#sub-vs-supra-laryngeal">Sub vs Supra Laryngeal</a></li>
-  <li><a href="#sublaryngeal-vocal-tract" id="toc-sublaryngeal-vocal-tract" class="nav-link" data-scroll-target="#sublaryngeal-vocal-tract">Sublaryngeal Vocal Tract</a></li>
-  <li><a href="#moving-air-around" id="toc-moving-air-around" class="nav-link" data-scroll-target="#moving-air-around">Moving air around</a>
+  <li><a href="#voicing" id="toc-voicing" class="nav-link active" data-scroll-target="#voicing">Voicing</a>
   <ul class="collapse">
-  <li><a href="#option-1-the-lungs-pulmonic" id="toc-option-1-the-lungs-pulmonic" class="nav-link" data-scroll-target="#option-1-the-lungs-pulmonic">Option 1: The lungs (pulmonic)</a></li>
+  <li><a href="#voicing-1" id="toc-voicing-1" class="nav-link" data-scroll-target="#voicing-1">Voicing</a></li>
+  <li><a href="#voicing-2" id="toc-voicing-2" class="nav-link" data-scroll-target="#voicing-2">Voicing</a></li>
+  <li><a href="#voicing-3" id="toc-voicing-3" class="nav-link" data-scroll-target="#voicing-3">Voicing</a></li>
+  <li><a href="#voicing-4" id="toc-voicing-4" class="nav-link" data-scroll-target="#voicing-4">Voicing</a></li>
   </ul></li>
-  <li><a href="#moving-air-around-1" id="toc-moving-air-around-1" class="nav-link" data-scroll-target="#moving-air-around-1">Moving air around</a>
+  <li><a href="#voice-onset-time" id="toc-voice-onset-time" class="nav-link" data-scroll-target="#voice-onset-time">Voice Onset Time</a>
   <ul class="collapse">
-  <li><a href="#ingressive" id="toc-ingressive" class="nav-link" data-scroll-target="#ingressive">Ingressive:</a></li>
+  <li><a href="#pulmonic-stops" id="toc-pulmonic-stops" class="nav-link" data-scroll-target="#pulmonic-stops">Pulmonic Stops</a></li>
+  <li><a href="#pulmonic-stops-1" id="toc-pulmonic-stops-1" class="nav-link" data-scroll-target="#pulmonic-stops-1">Pulmonic Stops</a></li>
+  <li><a href="#pulmonic-stops-2" id="toc-pulmonic-stops-2" class="nav-link" data-scroll-target="#pulmonic-stops-2">Pulmonic Stops</a></li>
+  <li><a href="#fully-voiced-stops" id="toc-fully-voiced-stops" class="nav-link" data-scroll-target="#fully-voiced-stops">Fully Voiced Stops</a></li>
+  <li><a href="#fully-voiced-stops-1" id="toc-fully-voiced-stops-1" class="nav-link" data-scroll-target="#fully-voiced-stops-1">Fully Voiced Stops</a></li>
+  <li><a href="#short-lag-voice-onset-time" id="toc-short-lag-voice-onset-time" class="nav-link" data-scroll-target="#short-lag-voice-onset-time">Short Lag Voice Onset Time</a></li>
+  <li><a href="#short-lag-voice-onset-time-1" id="toc-short-lag-voice-onset-time-1" class="nav-link" data-scroll-target="#short-lag-voice-onset-time-1">Short Lag Voice Onset Time</a></li>
+  <li><a href="#long-lag-voice-onset-time" id="toc-long-lag-voice-onset-time" class="nav-link" data-scroll-target="#long-lag-voice-onset-time">Long Lag Voice Onset Time</a></li>
+  <li><a href="#short-lag-voice-onset-time-2" id="toc-short-lag-voice-onset-time-2" class="nav-link" data-scroll-target="#short-lag-voice-onset-time-2">Short Lag Voice Onset Time</a></li>
+  <li><a href="#voice-onset-time-1" id="toc-voice-onset-time-1" class="nav-link" data-scroll-target="#voice-onset-time-1">Voice Onset Time</a></li>
+  <li><a href="#voice-onset-time-2" id="toc-voice-onset-time-2" class="nav-link" data-scroll-target="#voice-onset-time-2">Voice Onset Time</a></li>
+  <li><a href="#transcribing-different-vots" id="toc-transcribing-different-vots" class="nav-link" data-scroll-target="#transcribing-different-vots">Transcribing different VOTs</a></li>
+  <li><a href="#transcribing-vots" id="toc-transcribing-vots" class="nav-link" data-scroll-target="#transcribing-vots">Transcribing VOTs</a></li>
+  <li><a href="#transcribing-vot" id="toc-transcribing-vot" class="nav-link" data-scroll-target="#transcribing-vot">Transcribing VOT</a></li>
   </ul></li>
-  <li><a href="#larynx" id="toc-larynx" class="nav-link" data-scroll-target="#larynx">Larynx</a></li>
-  <li><a href="#larynx-and-the-voice" id="toc-larynx-and-the-voice" class="nav-link" data-scroll-target="#larynx-and-the-voice">Larynx and the voice</a></li>
+  <li><a href="#non-pulmonic-stops" id="toc-non-pulmonic-stops" class="nav-link" data-scroll-target="#non-pulmonic-stops">Non-Pulmonic Stops</a>
+  <ul class="collapse">
+  <li><a href="#non-pulmonic-stops-1" id="toc-non-pulmonic-stops-1" class="nav-link" data-scroll-target="#non-pulmonic-stops-1">Non-Pulmonic Stops</a></li>
+  <li><a href="#ejectives" id="toc-ejectives" class="nav-link" data-scroll-target="#ejectives">Ejectives</a></li>
+  <li><a href="#ejectives-1" id="toc-ejectives-1" class="nav-link" data-scroll-target="#ejectives-1">Ejectives</a></li>
+  <li><a href="#ejectives-2" id="toc-ejectives-2" class="nav-link" data-scroll-target="#ejectives-2">Ejectives</a></li>
+  <li><a href="#practicing-ejectives" id="toc-practicing-ejectives" class="nav-link" data-scroll-target="#practicing-ejectives">Practicing Ejectives</a></li>
+  <li><a href="#implosives" id="toc-implosives" class="nav-link" data-scroll-target="#implosives">Implosives</a></li>
+  <li><a href="#implosives-1" id="toc-implosives-1" class="nav-link" data-scroll-target="#implosives-1">Implosives</a></li>
+  <li><a href="#implosives-2" id="toc-implosives-2" class="nav-link" data-scroll-target="#implosives-2">Implosives</a></li>
+  <li><a href="#clicks" id="toc-clicks" class="nav-link" data-scroll-target="#clicks">Clicks</a></li>
+  <li><a href="#clicks-1" id="toc-clicks-1" class="nav-link" data-scroll-target="#clicks-1">Clicks</a></li>
+  <li><a href="#clicks-2" id="toc-clicks-2" class="nav-link" data-scroll-target="#clicks-2">Clicks</a></li>
+  <li><a href="#clicks-in-xhosa-ǁoːsa" id="toc-clicks-in-xhosa-ǁoːsa" class="nav-link" data-scroll-target="#clicks-in-xhosa-ǁoːsa">Clicks In Xhosa <span class="ipa">[ǁoːsa]</span></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="anatomy2.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="07_airstream.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/02_anatomy/index.html">Speech Anatomy 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/07_airstream/index.html">Voicing and Airstream</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Speech Anatomy 2</h1>
-<p class="subtitle lead">Sub-laryngeal Anatomy</p>
+<h1 class="title">Voicing and Airstream</h1>
 </div>
 
 
@@ -268,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 27, 2026</p>
+      <p class="date">September 8, 2026</p>
     </div>
   </div>
   
@@ -280,70 +324,493 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="sub-vs-supra-laryngeal" class="level2">
-<h2 class="anchored" data-anchor-id="sub-vs-supra-laryngeal">Sub vs Supra Laryngeal</h2>
+<section id="voicing" class="level1">
+<h1>Voicing</h1>
+<section id="voicing-1" class="level2">
+<h2 class="anchored" data-anchor-id="voicing-1">Voicing</h2>
+<p>Previously:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/clipboard-1209314921.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><a href="https://lin300-2026.github.io/course-materials/lecture-notes/03_anatomy/anatomy3.html#/the-larynx"><img src="images/clipboard-2080888173.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%" alt="Screenshot of course slides"></a></p>
 </figure>
 </div>
 </section>
-<section id="sublaryngeal-vocal-tract" class="level2">
-<h2 class="anchored" data-anchor-id="sublaryngeal-vocal-tract">Sublaryngeal Vocal Tract</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-858594500.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</section>
-<section id="moving-air-around" class="level2">
-<h2 class="anchored" data-anchor-id="moving-air-around">Moving air around</h2>
-<section id="option-1-the-lungs-pulmonic" class="level3">
-<h3 class="anchored" data-anchor-id="option-1-the-lungs-pulmonic">Option 1: The lungs (pulmonic)</h3>
-<ul>
-<li><p>On the out-breath: “egressive”</p></li>
-<li><p>On the in-breath: “ingressive”</p></li>
-</ul>
-</section>
-</section>
-<section id="moving-air-around-1" class="level2">
-<h2 class="anchored" data-anchor-id="moving-air-around-1">Moving air around</h2>
-<section id="ingressive" class="level3">
-<h3 class="anchored" data-anchor-id="ingressive">Ingressive:</h3>
-<blockquote class="blockquote">
-<p><del>[…] no language uses the pulmonic <em>ingressive</em> airstream in any systematic way.</del></p>
-</blockquote>
-<p>Many languages, including some Englishes, use ingressive speech for “backchannelling”.</p>
-</section>
-</section>
-<section id="larynx" class="level2">
-<h2 class="anchored" data-anchor-id="larynx">Larynx</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-198246003.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</section>
-<section id="larynx-and-the-voice" class="level2">
-<h2 class="anchored" data-anchor-id="larynx-and-the-voice">Larynx and the voice</h2>
-<div class="quarto-layout-panel" data-layout="[[10, 90]]">
+<section id="voicing-2" class="level2">
+<h2 class="anchored" data-anchor-id="voicing-2">Voicing</h2>
+<p>Voicing requires a pressure differential.</p>
+<div class="quarto-layout-panel" data-layout="[20, 45, 45]">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
-<p>⬆️</p>
-<p>posterior</p>
-<p>anterior️</p>
-<p>⬇️</p>
+<div class="quarto-layout-cell" style="flex-basis: 18.2%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/03_anatomy/images/front.png" class="img-fluid"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 90.0%;justify-content: flex-start;">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/mel_blanc.mp4"></video></div>
+<div class="quarto-layout-cell" style="flex-basis: 40.9%;justify-content: flex-start;">
+<p>voicing possible <img src="images/pos-pressure.png" class="img-fluid"></p>
 </div>
+<div class="quarto-layout-cell" style="flex-basis: 40.9%;justify-content: flex-start;">
+<p>voicing not possible <img src="images/eq-pressure.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="voicing-3" class="level2">
+<h2 class="anchored" data-anchor-id="voicing-3">Voicing</h2>
+<p>No problem for sounds with incomplete closure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/voiced-fricative.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="voiced fricative"></p>
+</figure>
+</div>
+</section>
+<section id="voicing-4" class="level2">
+<h2 class="anchored" data-anchor-id="voicing-4">Voicing</h2>
+<p>With complete closure, air pressure equalizes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/voiced-stop.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A voiced stop"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="voice-onset-time" class="level1">
+<h1>Voice Onset Time</h1>
+<section id="pulmonic-stops" class="level2">
+<h2 class="anchored" data-anchor-id="pulmonic-stops">Pulmonic Stops</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Pulmonic</td>
+<td>Egressive</td>
+<td>Stop</td>
+</tr>
+<tr class="even">
+<td>“Air pressure from lungs”</td>
+<td>“outward airflow”</td>
+<td>“full closure”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pulmonic-stops-1" class="level2">
+<h2 class="anchored" data-anchor-id="pulmonic-stops-1">Pulmonic Stops</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pulmonic-stops.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Diagram of possible pulmonic stop points of constriction."></p>
+</figure>
+</div>
+</section>
+<section id="pulmonic-stops-2" class="level2">
+<h2 class="anchored" data-anchor-id="pulmonic-stops-2">Pulmonic Stops</h2>
+<p>The articulators involved with making stops don’t <em>spatially</em> interfere with the glottis.</p>
+<p>How might constrictions and the glottis interact <em>temporally</em>?</p>
+</section>
+<section id="fully-voiced-stops" class="level2">
+<h2 class="anchored" data-anchor-id="fully-voiced-stops">Fully Voiced Stops</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/voiced stop 2.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A fully voiced stop"></p>
+</figure>
+</div>
+</section>
+<section id="fully-voiced-stops-1" class="level2">
+<h2 class="anchored" data-anchor-id="fully-voiced-stops-1">Fully Voiced Stops</h2>
+<p>Also known as “negative voice onset time”</p>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/./assets/typst-render/index/typst-block-1.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#vot(
+  -50,
+  voicing-stroke: 1pt+purple
+)"></p>
+</div>
+</section>
+<section id="short-lag-voice-onset-time" class="level2">
+<h2 class="anchored" data-anchor-id="short-lag-voice-onset-time">Short Lag Voice Onset Time</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/short-lag.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A short-lag vot stop"></p>
+</figure>
+</div>
+</section>
+<section id="short-lag-voice-onset-time-1" class="level2">
+<h2 class="anchored" data-anchor-id="short-lag-voice-onset-time-1">Short Lag Voice Onset Time</h2>
+<p>There is a brief lag between releasing the closure and the onset of voicing.</p>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/./assets/typst-render/index/typst-block-2.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#vot(
+  10,
+  voicing-stroke: 1pt+purple
+)"></p>
+</div>
+</section>
+<section id="long-lag-voice-onset-time" class="level2">
+<h2 class="anchored" data-anchor-id="long-lag-voice-onset-time">Long Lag Voice Onset Time</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/long-lag.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Long lag vot"></p>
+</figure>
+</div>
+</section>
+<section id="short-lag-voice-onset-time-2" class="level2">
+<h2 class="anchored" data-anchor-id="short-lag-voice-onset-time-2">Short Lag Voice Onset Time</h2>
+<p>There is a long lag between releasing the closure and the onset of voicing.</p>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/./assets/typst-render/index/typst-block-3.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#vot(
+  50,
+  voicing-stroke: 1pt+purple
+)"></p>
+</div>
+</section>
+<section id="voice-onset-time-1" class="level2">
+<h2 class="anchored" data-anchor-id="voice-onset-time-1">Voice Onset Time</h2>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/./assets/typst-render/index/typst-block-4.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;)
+
+#table(
+  columns: (20em, 20em),
+  align: (horizon+left, left),
+  //stroke: none,
+  &quot;Fully voiced "></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="voice-onset-time-2" class="level2">
+<h2 class="anchored" data-anchor-id="voice-onset-time-2">Voice Onset Time</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-12-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="citation" data-cites="chodroffCovariationStopVoice2019">Chodroff et al. (<a href="#ref-chodroffCovariationStopVoice2019" role="doc-biblioref">2019</a>)</span></p>
+</section>
+<section id="transcribing-different-vots" class="level2">
+<h2 class="anchored" data-anchor-id="transcribing-different-vots">Transcribing different VOTs</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">VOT</th>
+<th style="text-align: center;">IPA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">fully voiced</td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="1">[b]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">short lag</td>
+<td style="text-align: center;"><span class="fragment" data-fragment-index="3">?</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">long lag</td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="2">[pʰ]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="transcribing-vots" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="transcribing-vots">Transcribing VOTs</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">fully voiced</th>
+<th style="text-align: center;">short lag</th>
+<th style="text-align: center;">long lag</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="fragment" data-fragment-index="1">English, German</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="1">[b d g]</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="1">[pʰ tʰ kʰ]</span></td>
+</tr>
+<tr class="even">
+<td><span class="fragment" data-fragment-index="2">Cantonese</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="2">[p t k]</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="2">[pʰ tʰ kʰ]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="fragment" data-fragment-index="3">Spanish, Dutch, Hungarian</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="3">[b d g]</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="3">[p t k]</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="fragment" data-fragment-index="4">Eastern Armenian, Thai</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="4">[b d g]</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="4">[p t k]</span></td>
+<td style="text-align: center;"><span class="ipa fragment" data-fragment-index="4">[pʰ tʰ kʰ]</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="citation" data-cites="liskerCrossLanguageStudyVoicing1964">Lisker and Abramson (<a href="#ref-liskerCrossLanguageStudyVoicing1964" role="doc-biblioref">1964</a>)</span></p>
+</section>
+<section id="transcribing-vot" class="level2">
+<h2 class="anchored" data-anchor-id="transcribing-vot">Transcribing VOT</h2>
+<p>Lesson: A lot of transcription is analysis in disguise!</p>
+</section>
+</section>
+<section id="non-pulmonic-stops" class="level1">
+<h1>Non-Pulmonic Stops</h1>
+<section id="non-pulmonic-stops-1" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="non-pulmonic-stops-1">Non-Pulmonic Stops</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>egressive (+ air pressure)</th>
+<th>ingressive (- air pressure)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>glottalic (closure at the glottis)</td>
+<td>“ejectives”</td>
+<td>“implosives”</td>
+</tr>
+<tr class="even">
+<td>velaric (closure at the velum)</td>
+<td></td>
+<td>“clicks”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ejectives" class="level2">
+<h2 class="anchored" data-anchor-id="ejectives">Ejectives</h2>
+<ol type="1">
+<li>An oral closure is made.</li>
+<li>The glottis is tightly closed.</li>
+<li>The larynx is raised.</li>
+<li>Pressure builds behind the oral closure.</li>
+<li>The oral closure is released.</li>
+<li>The built up pressure rushes out.</li>
+</ol>
+</section>
+<section id="ejectives-1" class="level2">
+<h2 class="anchored" data-anchor-id="ejectives-1">Ejectives</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ejective.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Ejective"></p>
+</figure>
+</div>
+</section>
+<section id="ejectives-2" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="ejectives-2">Ejectives</h2>
+<p>You can have an ejective at any point of closure, and it’s transcribed with <span class="ipa">[’]</span> (a regular apostrophe)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">bilabial</th>
+<th style="text-align: center;">alveolar</th>
+<th style="text-align: center;">retroflex</th>
+<th style="text-align: center;">palatal</th>
+<th style="text-align: center;">velar</th>
+<th style="text-align: center;">uvular</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="ipa">[p’]</span></td>
+<td style="text-align: center;"><span class="ipa">[t’]</span></td>
+<td style="text-align: center;"><span class="ipa">[ʈ’]</span></td>
+<td style="text-align: center;"><span class="ipa">[c’]</span></td>
+<td style="text-align: center;"><span class="ipa">[k’]</span></td>
+<td style="text-align: center;"><span class="ipa">[q’]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Ejective fricatives and affricates are also possible.</p>
+</section>
+<section id="practicing-ejectives" class="level2">
+<h2 class="anchored" data-anchor-id="practicing-ejectives">Practicing Ejectives</h2>
+<p>Try holding your breath (thus closing your glottis) and articulating “t t t t” repeatedly.</p>
+</section>
+<section id="implosives" class="level2">
+<h2 class="anchored" data-anchor-id="implosives">Implosives</h2>
+<ol type="1">
+<li>An oral closure is made.</li>
+<li>The glottis is tightly closed.</li>
+<li>The larynx lowers.</li>
+<li>Pressure drops behind the oral closure.</li>
+<li>The oral closure is released.</li>
+<li>Air rushes in, normalizing the low pressure.</li>
+</ol>
+</section>
+<section id="implosives-1" class="level2">
+<h2 class="anchored" data-anchor-id="implosives-1">Implosives</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/implosive.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Implosive"></p>
+</figure>
+</div>
+</section>
+<section id="implosives-2" class="level2">
+<h2 class="anchored" data-anchor-id="implosives-2">Implosives</h2>
+<p>Implosives can be made at any point of closure, and their IPA symbols tend to have a little hooktop.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">bilabial</th>
+<th style="text-align: center;">alveolar</th>
+<th style="text-align: center;">velar</th>
+<th style="text-align: center;">uvular</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="ipa">[</span>ɓ<span class="ipa">]</span></td>
+<td style="text-align: center;"><span class="ipa">[</span>ɗ<span class="ipa">]</span></td>
+<td style="text-align: center;"><span class="ipa">[</span>ɠ<span class="ipa">]</span></td>
+<td style="text-align: center;"><span class="ipa">[</span>ʛ<span class="ipa">]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clicks" class="level2">
+<h2 class="anchored" data-anchor-id="clicks">Clicks</h2>
+<ol type="1">
+<li>A closure is made somewhere in front of the velum.</li>
+<li>While that closure is maintained, the tongue body moves back.</li>
+<li>A vacuum is created between the point of closure and the velum.</li>
+<li>The closure is released.</li>
+<li>Air rushes in normalizing air pressure.</li>
+</ol>
+</section>
+<section id="clicks-1" class="level2">
+<h2 class="anchored" data-anchor-id="clicks-1">Clicks</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/click.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Click"></p>
+</figure>
+</div>
+</section>
+<section id="clicks-2" class="level2">
+<h2 class="anchored" data-anchor-id="clicks-2">Clicks</h2>
+<p>You can only have clicks with active articulators that don’t interfere with the tongue body.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">bilabial</th>
+<th style="text-align: center;">dental</th>
+<th style="text-align: center;">palatal</th>
+<th>lateral</th>
+<th style="text-align: center;">post-alveolar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="ipa">[ʘ]</span></td>
+<td style="text-align: center;"><span class="ipa">[ǀ]</span></td>
+<td style="text-align: center;"><span class="ipa">[ǂ]</span></td>
+<td><span class="ipa">[ǁ]</span></td>
+<td style="text-align: center;"><span class="ipa">[ǃ]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clicks-in-xhosa-ǁoːsa" class="level2">
+<h2 class="anchored" data-anchor-id="clicks-in-xhosa-ǁoːsa">Clicks In Xhosa <span class="ipa">[ǁoːsa]</span></h2>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/n-4U2hfMpnk" width="700" height="500" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-chodroffCovariationStopVoice2019" class="csl-entry" role="listitem">
+Chodroff, Eleanor, Alessandra Golden, and Colin Wilson. 2019. <span>“Covariation of Stop Voice Onset Time Across Languages: Evidence for a Universal Constraint on Phonetic Realization.”</span> <em>The Journal of the Acoustical Society of America</em> 145 (1): EL109–15. <a href="https://doi.org/10.1121/1.5088035">https://doi.org/10.1121/1.5088035</a>.
+</div>
+<div id="ref-liskerCrossLanguageStudyVoicing1964" class="csl-entry" role="listitem">
+Lisker, Leigh, and Arthur S. Abramson. 1964. <span>“A Cross-Language Study of Voicing in Initial Stops: Acoustical Measurements.”</span> <em>WORD</em> 20 (3): 384–422. <a href="https://doi.org/10.1080/00437956.1964.11659830">https://doi.org/10.1080/00437956.1964.11659830</a>.
 </div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -745,7 +1212,6 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
