@@ -1,0 +1,853 @@
+---
+title: "Vowels"
+date: 2026-09-10
+order: 8
+format: 
+  revealjs: 
+    output-file: "08_vowels1.html"
+  html: default
+  typst: default
+editor: visual
+filters: 
+  - typst-render
+engine: knitr
+---
+
+```{r}
+source(here::here("_extensions/mcanouil/typst-render/_resources/typst_define.R"))
+source(here::here("_defaults.R"))
+
+library(tidyverse)
+library(ggplot2)
+library(colorspace)
+library(tidynorm)
+library(ggdensity)
+library(scales)
+library(geomtextpath)
+```
+
+```{r}
+reul_tri <- function(theta, n=3){
+  tau <- 2 * pi
+  f = floor(
+    ((n * (theta-pi))/tau) + 0.5
+  )
+  a = cos(theta - (tau/n)*f)
+  
+  a + sqrt(1 + (2*cos(pi/n)) + (a^2))
+}
+```
+
+## Vowels
+
+What is a vowel?
+
+::: incremental
+- Not a consonant.
+:::
+
+## Vowels
+
+Clues in the name
+
+|   | English | Dutch |
+|------------------------|-----------------------:|-----------------------:|
+| V | [(sonant?)]{.fragment fragment-index="4"} | [klinker]{.fragment fragment-index="2"} |
+| C | [consonant]{.fragment fragment-index="1"} | [medeklinker]{.fragment fragment-index="3"} |
+
+## Vowels
+
+In general, a more open, unconstricted, artiulation compared to consonants.
+
+## Vowels - Articulatory Dimensions {.smaller}
+
+Tongue body and Tongue Root
+
+![](images/tb-tr.gif){fig-alt="Tongue body and tongue root" fig-align="center"}
+
+## Vowels {.smaller}
+
+|   | Front | Back |
+|------------------|---------------------------|---------------------------|
+| High | ![i](images/i-vowel.png){width="55%"} | ![u](images/u-vowel.png){width="55%"} |
+| Low | ![ae](images/ae-vowel.png){width="55%"} | ![](images/a-vowel.png){width="55%"} |
+
+## Vowels - Dimensions
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+//| fig-align: center
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#vowels(
+  "i \\ae a u A"
+)
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#vowels(
+  "i \\ae a u A"
+)
+```
+:::
+
+## Vowels - Transcription
+
+Vowels *fundamentally* exist in a continuous phonetic space, making the transcription problem especially tricky.
+
+- It can be tricky putting a categorical label on a continuous space.
+
+- Many "conventional" transcriptions use symbols that aren't technically accurate.
+
+## Vowels - Transcription
+
+::: {.ipa style="text-align: center; font-size:3em;"}
+"goose"
+
+guːs
+:::
+
+?
+
+## Vowels - Transcription
+
+```{r}
+anae <- read_rds("~/OneDrive - University of Kentucky/Corpora/ANAE/rds_data/anaeUNNORM.rds")
+```
+
+```{r}
+anae |> 
+  norm_nearey(
+    .by = TS,
+    F1:F2
+  ) -> 
+  anae_norm
+
+anae_norm |> 
+  ggplot(
+    aes(F2_lm, F1_lm)
+  ) +
+  stat_hdr(
+    probs = 0.95,
+    color = "black",
+    fill = "grey90",
+    show.legend = F
+  ) +
+  scale_x_reverse() +
+  scale_y_reverse() +
+  theme_no_x() +
+  theme_no_y() + 
+  coord_fixed() ->
+  anae_base
+
+make_means <- function(df){
+  df |> 
+    summarise(
+      .by = matches("[^xy]"),
+      across(c(x,y), mean)
+    )
+}
+```
+
+```{r}
+anae_norm |> 
+ summarise(
+    .by = c(TS, VClass),
+    across(F1_lm:F2_lm, mean)
+  ) ->
+  speaker_means
+
+speaker_means |> 
+  filter(VClass %in% c("iy", "uw", "ae", "o")) |> 
+  mutate(
+    vowel = recode_values(
+      VClass,
+      "iy" ~ "iː",
+      "ae" ~ "æ",
+      "uw" ~ "uː",
+      "o" ~ "ɑ"
+    )
+  ) |> 
+  mutate(
+    vowel = fct_reorder(vowel, F1_lm)
+  ) ->
+  vpoints
+```
+
+:::: {layout-ncol="2"}
+```{r}
+#| fig-format: svg
+#| fig-width: 4
+#| fig-asp: 1
+#| out-width: 100%
+anae_base +
+  geom_point(
+    data = vpoints,
+    aes(color = vowel),
+    show.legend = F
+  ) + 
+  geom_label(
+    data = vpoints,
+    aes(color = vowel, label = vowel),
+    family = "Noto Sans",
+    stat = "manual",
+    fun = make_means,
+    show.legend = F
+  )
+```
+
+::: {}
+Data from the Atlas of North American English
+
+1 point = 1 speaker
+:::
+::::
+
+## Vowels - Transcription
+
+### High Vowels
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+//| fig-align: center
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+
+#let focus = (
+  "i",
+  "y",
+  "1",
+  "0",
+  "W",
+  "u"
+)
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#vowels(
+  "i \\ae a u A
+  y 1 0 W
+  ",
+  phoneme-colors: redden(focus)
+)
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#let focus = (
+  "i",
+  "y",
+  "1",
+  "0",
+  "W",
+  "u"
+)
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#vowels(
+  "i \\ae a u A
+  y 1 0 W
+  ",
+  phoneme-colors: redden(focus)
+)
+```
+:::
+
+## Vowel - Transcription
+
+```{r}
+#| fig-align: center
+#| fig-width: 4
+#| fig-asp: 1
+#| fig-format: svg
+anae_base +
+  geom_label(
+    data = vpoints,
+    aes(color = vowel, label = vowel),
+    family = "Noto Sans",
+    stat = "manual",
+    fun = make_means,
+    show.legend = F
+  ) +  
+  geom_point(
+    data = vpoints |> filter(VClass == "uw"),
+    aes(color = vowel),
+    show.legend = F
+  ) +
+  geom_label(
+    data = vpoints |>  filter(VClass == "uw"),
+    aes(color = vowel, label = vowel),
+    family = "Noto Sans",
+    stat = "manual",
+    fun = make_means,
+    show.legend = F
+  )    
+
+```
+
+## Vowels - Transcription
+
+::: {.ipa style="text-align: center;font-size:2em"}
+gɨs?
+
+gʉs?
+:::
+
+## Vowels - Transcription
+
+::: {.ipa style="text-align: center; font-size:2em;"}
+"thought"
+
+θɔt
+:::
+
+?
+
+## Vowels - Transcription
+
+::::: {layout-ncol="2"}
+::: {}
+```{r}
+#| fig-align: center
+#| fig-width: 4
+#| fig-asp: 1
+#| fig-format: svg
+#| out-width: 100%
+anae_norm |> 
+  filter(VClass %in% c("oh")) |> 
+  summarise(
+    .by = c(TS, VClass),
+    across(F1_lm:F2_lm, mean)
+  ) |> 
+  mutate(
+    vowel = case_match(
+      VClass,
+      "oh" ~ "ɔ"
+    )
+  ) |> 
+  mutate(
+    vowel = fct_reorder(vowel, F1_lm)
+  ) ->
+  oh
+
+anae_base +
+  geom_point(
+    data = oh,
+    aes(color = vowel),
+    show.legend = F
+  ) + 
+  geom_label(
+    data = oh,
+    aes(color = vowel, label = vowel),
+    family = "Noto Sans",
+    stat = "manual",
+    fun = make_means,
+    show.legend = F
+  ) +
+  geom_label(
+    data = vpoints,
+    aes(label = vowel),
+    family = "Noto Sans",
+    stat = "manual",
+    fun = make_means,
+    show.legend = F,
+    size = 4
+  ) +  
+  theme(
+    text = element_text(family = "Voces")
+  )
+```
+:::
+
+::: {}
+Data from the Atlas of North American English
+
+1 point = 1 speaker
+:::
+:::::
+
+## Vowels - Transcription
+
+### Back Vowels
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+//| fig-align: center
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+
+#let focus = (
+ "U", "7", 
+ "o", "2",  
+ "O", "6",
+ "W", "u",
+ "A"
+)
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#vowels(
+  "i \\ae a u A
+  y 1 0 W
+  U 7 o 2 O 6
+  ",
+  phoneme-colors: redden(focus)
+)
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#let focus = (
+ "U", "7", 
+ "o", "2",  
+ "O", "6",
+ "W", "u"
+ "A"
+)
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#vowels(
+  "i \\ae a u A
+  y 1 0 W
+  U 7 o 2 O 6
+  ",
+  phoneme-colors: redden(focus)
+)
+```
+:::
+
+## Vowels - Transcription
+
+::: {.ipa style="text-align:center;font-size:2em;"}
+θot?
+
+θɔt?
+
+θɒt?
+:::
+
+## Vowels?
+
+```{r}
+#| echo: false
+#| fig-width: 4
+#| fig-asp: 1
+#| fig-format: svg
+#| fig-align: center
+#| out-width: 100%
+expand_grid(
+  x = seq(-1, 1, length = 20),
+  y = seq(-1, 1, length = 20)
+) |> 
+  mutate(
+    row = as.numeric(as.factor(y))
+  ) |> 
+  mutate(
+    .by = row,
+    mindiff = min(diff(x))/2
+  ) |> 
+  mutate(
+     x = x + ((row %% 2) * mindiff),
+    angle = atan2(y,x),
+     angle = case_when(
+      angle < 0 ~ angle + (2*pi),
+      .default = angle
+    ),
+    deg = angle / (pi/180),
+    dist = sqrt((x^2) + (y^2)),
+    L =  ((dist + 0.5)/1.8) * 100,
+    extreme = plogis((dist - 0.55) * 6),
+    C = max_chroma(deg, L),
+    hex = polarLUV(L, C * extreme, deg-60) |> hex(fixup = T)
+  ) |>
+  filter(
+    dist <= reul_tri(angle + (pi/2), n = 3)
+  ) -> dat
+
+dat |> 
+  mutate(
+    row = as.numeric(as.factor(y)),
+    col = as.numeric(as.factor(x)),
+    id = str_glue("[{row},{col}]")
+  ) |> 
+  ggplot(
+    aes(x, y)
+  ) +
+  geom_hex(
+    stat = "identity",
+    fill = dat$hex,
+    color = "black",
+    linewidth = 0.1
+  ) +
+  geom_text(
+    aes(label = id),
+    size = 2
+  ) + 
+  coord_fixed()+
+  theme_void()
+```
+## Vowels - Transcription
+
+If *all* we have is paper and ink to describe phonetic detail, we should try to use the closest IPA character.
+
+Otherwise, we'll use symbols that best characterize lexical sets.
+
+::: {.ipa style="text-align:center;"}
+\[uː\] $\in$ {goose, coop, food}
+:::
+
+## Vowels
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+//| fig-align: center
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+#let vs = (
+  "i", "y",
+  "I", "Y",
+  "e", " \\o ",
+  "E", " \\oe ",
+  " \\ae ", 
+  "a", " \\OE ",
+
+  "1", "0",
+  "W", "u",
+  "U", "7", "o",
+  "2", "O",
+  "A", " 6",
+  "@"
+)
+
+#let to_shift = (
+  "8", "9",
+  "3", " \\closeepsilon ",
+  "5"
+)
+
+
+#vowels(
+  vs.join(),
+  shift: to_shift.map(x => (x, 0, 0)),
+  shift-color: black,
+  shift-size: 1.5em
+)
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#let vs = (
+  "i", "y",
+  "I", "Y",
+  "e", " \\o ",
+  "E", " \\oe ",
+  " \\ae ", 
+  "a", " \\OE ",
+
+  "1", "0",
+  "W", "u",
+  "U", "7", "o",
+  "2", "O",
+  "A", " 6",
+  "@"
+)
+
+#let to_shift = (
+  "8", "9",
+  "3", " \\closeepsilon ",
+  "5"
+)
+
+
+#vowels(
+  vs.join(),
+  shift: to_shift.map(x => (x, 0, 0)),
+  shift-color: black,
+  shift-size: 1.5em
+)
+```
+:::
+
+## Vowels - English Keywords
+
+![](images/keyword.svg){fig-align="center" width="100%"}
+
+## Vowels - Length
+In English
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+//| fig-align: center
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#text(fill: red)[*long*] vs #text(fill: blue)[*short*]
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#let bluen(a) = {
+  a.map(x => (x, blue)).to-dict()
+}
+
+
+#let long = (
+  "i", "e", 
+  "u", "o"
+)
+
+#let short = (
+  "I", "E", "\\ae", 
+  "a", "A", "2","U"
+)
+
+#vowels(
+  "english",
+  phoneme-colors: redden(long) + bluen(short)
+)
+
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/phonokit:0.5.14": *
+#set text(font: "Noto Sans")
+#phonokit-init(font: "Noto Sans")
+
+#text(fill: red)[*long*] vs #text(fill: blue)[*short*]
+
+#let redden(a) = {
+  a.map(x => (x, red)).to-dict()
+}
+
+#let bluen(a) = {
+  a.map(x => (x, blue)).to-dict()
+}
+
+
+#let long = (
+  "i", "e", 
+  "u", "o"
+)
+
+#let short = (
+  "I", "E", "\\ae", 
+  "a", "A", "2","U"
+)
+
+#vowels(
+  "english",
+  phoneme-colors: redden(long) + bluen(short)
+)
+
+```
+:::
+
+## Vowels - Length
+
+Length is transcribed with a [ː]{.ipa} symbol (which is different from :)!
+
+::: {.ipa style="text-align:center;font-size:2em;"}
+iː
+
+uː
+:::
+
+## Vowels - Length
+
+In English, the mid long vowels tend to be diphthongized.
+
+## Vowel - Length
+
+The mid long vowels in English tend to be diphthongized
+
+```{r}
+jean_lp <- read_csv("~/OneDrive - University of Kentucky/Corpora/PNC/derived_data/fave_results/PH06-2-1-AB-Jean_logparam.csv")
+```
+
+```{r}
+jean_lp |> 
+  filter(param == 0) |> 
+  mutate(across(F1:F2, \(x)x*sqrt(2))) |> 
+  ggplot(
+    aes(F2, F1)
+  )+
+  stat_hdr(
+    color = "black",
+    fill = "grey80",
+    probs = 0.95,
+    show.legend = F
+  ) +
+  scale_x_reverse() +
+  scale_y_reverse() + 
+  coord_fixed() +
+  theme_no_x() + 
+  theme_no_y() -> 
+  jean_base
+```
+
+:::: {layout-ncol="2"}
+```{r}
+#| fig-width: 4
+#| fig-asp: 0.8
+#| fig-format: svg
+#| out-width: 100%
+#| fig-align: center
+jean_lp |> 
+  filter(
+    label %in% c("ey", "ow"),
+    fol_seg != "l"
+  ) |> 
+  summarise(
+    .by = c(param, label),
+    across(F1:F2, mean)
+  ) |> 
+  reframe_with_idct(
+    .param_col = param,
+    .token_id_col = label,
+    F1:F2
+  ) |> 
+  mutate(
+    label = case_match(
+      label, 
+      "ey" ~ "eɪ",
+      "ow" ~ "oʊ"
+    )
+  ) ->
+  jean_ey_ow
+
+
+jean_base +
+  geom_textpath(
+    data = jean_ey_ow,
+    aes(
+      color = label,
+      label = label
+    ),
+    linewidth = 1,
+    arrow = arrow(
+      type = "closed",
+      length = unit(0.25, "cm"),
+      angle = 20
+    ),
+    family = "Noto Sans",
+    show.legend = F
+  )
+```
+::: {}
+Average \[[eɪ]{.ipa}\] and \[[oʊ]{.ipa}\] from one speaker from Philadelphia.
+:::
+::::
+
+
+## Vowels - Diphthongs
+
+```{r}
+jean_lp |> 
+  filter(
+    label %in% c("ay", "aw", "oy") 
+  ) |> 
+  summarise(
+    .by = c(param, label),
+    across(F1:F2, mean)
+  ) |> 
+  reframe_with_idct(
+    .param_col = param,
+    .token_id_col = label,
+    F1:F2
+  ) |> 
+  mutate(
+    label = case_match(
+      label, 
+      "ay" ~ "aɪ",
+      "aw" ~ "aʊ",
+      "oy" ~ "ɔɪ"
+    )
+  )->
+  jean_diph
+```
+
+::::: {layout-ncol="2"}
+::: {}
+```{r}
+#| fig-width: 4
+#| fig-asp: 0.8
+#| out-width: 100%
+#| fig-format: svg
+jean_base+
+  geom_textpath(
+    data = jean_diph,
+    aes(
+      color = label,
+      label = label
+    ),
+    linewidth = 1,
+    arrow = arrow(
+      type = "closed",
+      length = unit(0.25, "cm"),
+      angle = 20
+    ),
+    family = "Noto Sans",
+    show.legend = F
+  )
+```
+:::
+
+::: {}
+Three diphthongs from a speaker from Philadelphia
+:::
+:::::

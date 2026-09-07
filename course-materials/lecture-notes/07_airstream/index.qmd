@@ -8,6 +8,7 @@ format:
   typst: default
 editor: visual
 engine: knitr
+order: 7
 filters: 
   - typst-render
 bibliography: references.bib
@@ -402,5 +403,3 @@ You can only have clicks with active articulators that don't interfere with the 
 
 ::: {#refs}
 :::
-
-
