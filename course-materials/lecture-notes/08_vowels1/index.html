@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Josef Fruehwald">
-<meta name="description" content="Slides for syllabus day">
+<meta name="dcterms.date" content="2026-09-10">
 
-<title>Lin300 - Speech Sounds – Lin300-2026 - Speech Sounds</title>
+<title>Vowels – Lin300-2026 - Speech Sounds</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -53,8 +53,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-4800f66dd941310d7c96e9bd82d7fbe2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark-c7900443ba8fe726c81c38b7cc3d79d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-4800f66dd941310d7c96e9bd82d7fbe2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,10 +80,36 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -130,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/00_welcome/index.html">Lin300 - Speech Sounds</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/08_vowels1/index.html">Vowels</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -168,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-materials/lecture-notes/00_welcome/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../course-materials/lecture-notes/00_welcome/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lin300 - Speech Sounds</span></a>
   </div>
 </li>
@@ -204,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-materials/lecture-notes/08_vowels1/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../course-materials/lecture-notes/08_vowels1/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Vowels</span></a>
   </div>
 </li>
@@ -239,36 +263,48 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-plan-for-today" id="toc-the-plan-for-today" class="nav-link active" data-scroll-target="#the-plan-for-today">The plan for today</a></li>
-  <li><a href="#speech-sounds" id="toc-speech-sounds" class="nav-link" data-scroll-target="#speech-sounds">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-1" id="toc-speech-sounds-1" class="nav-link" data-scroll-target="#speech-sounds-1">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-2" id="toc-speech-sounds-2" class="nav-link" data-scroll-target="#speech-sounds-2">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-3" id="toc-speech-sounds-3" class="nav-link" data-scroll-target="#speech-sounds-3">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-4" id="toc-speech-sounds-4" class="nav-link" data-scroll-target="#speech-sounds-4">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-5" id="toc-speech-sounds-5" class="nav-link" data-scroll-target="#speech-sounds-5">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-6" id="toc-speech-sounds-6" class="nav-link" data-scroll-target="#speech-sounds-6">Speech Sounds</a></li>
-  <li><a href="#speech-sounds-7" id="toc-speech-sounds-7" class="nav-link" data-scroll-target="#speech-sounds-7">Speech Sounds</a></li>
-  <li><a href="#flight-plan" id="toc-flight-plan" class="nav-link" data-scroll-target="#flight-plan">Flight Plan</a></li>
-  <li><a href="#the-textbook" id="toc-the-textbook" class="nav-link" data-scroll-target="#the-textbook">The Textbook</a></li>
-  <li><a href="#course-evaluation" id="toc-course-evaluation" class="nav-link" data-scroll-target="#course-evaluation">Course Evaluation</a></li>
-  <li><a href="#ai-policy" id="toc-ai-policy" class="nav-link" data-scroll-target="#ai-policy">AI Policy</a></li>
-  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link" data-scroll-target="#lecture-slides">Lecture Slides</a></li>
+  <li><a href="#vowels" id="toc-vowels" class="nav-link active" data-scroll-target="#vowels">Vowels</a></li>
+  <li><a href="#vowels-1" id="toc-vowels-1" class="nav-link" data-scroll-target="#vowels-1">Vowels</a></li>
+  <li><a href="#vowels-2" id="toc-vowels-2" class="nav-link" data-scroll-target="#vowels-2">Vowels</a></li>
+  <li><a href="#vowels---articulatory-dimensions" id="toc-vowels---articulatory-dimensions" class="nav-link" data-scroll-target="#vowels---articulatory-dimensions">Vowels - Articulatory Dimensions</a></li>
+  <li><a href="#vowels-3" id="toc-vowels-3" class="nav-link" data-scroll-target="#vowels-3">Vowels</a></li>
+  <li><a href="#vowels---dimensions" id="toc-vowels---dimensions" class="nav-link" data-scroll-target="#vowels---dimensions">Vowels - Dimensions</a></li>
+  <li><a href="#vowels---transcription" id="toc-vowels---transcription" class="nav-link" data-scroll-target="#vowels---transcription">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-1" id="toc-vowels---transcription-1" class="nav-link" data-scroll-target="#vowels---transcription-1">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-2" id="toc-vowels---transcription-2" class="nav-link" data-scroll-target="#vowels---transcription-2">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-3" id="toc-vowels---transcription-3" class="nav-link" data-scroll-target="#vowels---transcription-3">Vowels - Transcription</a>
+  <ul class="collapse">
+  <li><a href="#high-vowels" id="toc-high-vowels" class="nav-link" data-scroll-target="#high-vowels">High Vowels</a></li>
+  </ul></li>
+  <li><a href="#vowel---transcription" id="toc-vowel---transcription" class="nav-link" data-scroll-target="#vowel---transcription">Vowel - Transcription</a></li>
+  <li><a href="#vowels---transcription-4" id="toc-vowels---transcription-4" class="nav-link" data-scroll-target="#vowels---transcription-4">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-5" id="toc-vowels---transcription-5" class="nav-link" data-scroll-target="#vowels---transcription-5">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-6" id="toc-vowels---transcription-6" class="nav-link" data-scroll-target="#vowels---transcription-6">Vowels - Transcription</a></li>
+  <li><a href="#vowels---transcription-7" id="toc-vowels---transcription-7" class="nav-link" data-scroll-target="#vowels---transcription-7">Vowels - Transcription</a>
+  <ul class="collapse">
+  <li><a href="#back-vowels" id="toc-back-vowels" class="nav-link" data-scroll-target="#back-vowels">Back Vowels</a></li>
+  </ul></li>
+  <li><a href="#vowels---transcription-8" id="toc-vowels---transcription-8" class="nav-link" data-scroll-target="#vowels---transcription-8">Vowels - Transcription</a></li>
+  <li><a href="#vowels-4" id="toc-vowels-4" class="nav-link" data-scroll-target="#vowels-4">Vowels?</a></li>
+  <li><a href="#vowels---transcription-9" id="toc-vowels---transcription-9" class="nav-link" data-scroll-target="#vowels---transcription-9">Vowels - Transcription</a></li>
+  <li><a href="#vowels-5" id="toc-vowels-5" class="nav-link" data-scroll-target="#vowels-5">Vowels</a></li>
+  <li><a href="#vowels---english-keywords" id="toc-vowels---english-keywords" class="nav-link" data-scroll-target="#vowels---english-keywords">Vowels - English Keywords</a></li>
+  <li><a href="#vowels---length" id="toc-vowels---length" class="nav-link" data-scroll-target="#vowels---length">Vowels - Length</a></li>
+  <li><a href="#vowels---length-1" id="toc-vowels---length-1" class="nav-link" data-scroll-target="#vowels---length-1">Vowels - Length</a></li>
+  <li><a href="#vowels---length-2" id="toc-vowels---length-2" class="nav-link" data-scroll-target="#vowels---length-2">Vowels - Length</a></li>
+  <li><a href="#vowel---length" id="toc-vowel---length" class="nav-link" data-scroll-target="#vowel---length">Vowel - Length</a></li>
+  <li><a href="#vowels---diphthongs" id="toc-vowels---diphthongs" class="nav-link" data-scroll-target="#vowels---diphthongs">Vowels - Diphthongs</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="welcome.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="08_vowels1.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/00_welcome/index.html">Lin300 - Speech Sounds</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/08_vowels1/index.html">Vowels</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lin300 - Speech Sounds</h1>
+<h1 class="title">Vowels</h1>
 </div>
 
-<div>
-  <div class="description">
-    <p>Slides for syllabus day</p>
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -280,6 +316,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 10, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -289,161 +331,408 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-plan-for-today" class="level2">
-<h2 class="anchored" data-anchor-id="the-plan-for-today">The plan for today</h2>
-<div>
-<ul>
-<li><p>Names &amp; Attendance</p></li>
-<li><p>Course “Flightplan”</p></li>
-<li><p>Syllabus</p></li>
+<section id="vowels" class="level2">
+<h2 class="anchored" data-anchor-id="vowels">Vowels</h2>
+<p>What is a vowel?</p>
+<div class="incremental">
+<ul class="incremental">
+<li>Not a consonant.</li>
 </ul>
 </div>
 </section>
-<section id="speech-sounds" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds">Speech Sounds</h2>
-<p>We make them with our bodies.</p>
+<section id="vowels-1" class="level2">
+<h2 class="anchored" data-anchor-id="vowels-1">Vowels</h2>
+<p>Clues in the name</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">English</th>
+<th style="text-align: right;">Dutch</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>V</td>
+<td style="text-align: right;"><span class="fragment" data-fragment-index="4">(sonant?)</span></td>
+<td style="text-align: right;"><span class="fragment" data-fragment-index="2">klinker</span></td>
+</tr>
+<tr class="even">
+<td>C</td>
+<td style="text-align: right;"><span class="fragment" data-fragment-index="1">consonant</span></td>
+<td style="text-align: right;"><span class="fragment" data-fragment-index="3">medeklinker</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vowels-2" class="level2">
+<h2 class="anchored" data-anchor-id="vowels-2">Vowels</h2>
+<p>In general, a more open, unconstricted, artiulation compared to consonants.</p>
+</section>
+<section id="vowels---articulatory-dimensions" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="vowels---articulatory-dimensions">Vowels - Articulatory Dimensions</h2>
+<p>Tongue body and Tongue Root</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/body.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Schematic of body planes"></p>
+<p><img src="images/tb-tr.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Tongue body and tongue root"></p>
 </figure>
 </div>
 </section>
-<section id="speech-sounds-1" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-1">Speech Sounds</h2>
-<p>We can cross-categorize them many ways</p>
-<div class="ipa">
-<div class="cell" data-layout-align="default">
+<section id="vowels-3" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="vowels-3">Vowels</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 37%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Front</th>
+<th>Back</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High</td>
+<td><img src="images/i-vowel.png" class="img-fluid" style="width:55.0%" alt="i"></td>
+<td><img src="images/u-vowel.png" class="img-fluid" style="width:55.0%" alt="u"></td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td><img src="images/ae-vowel.png" class="img-fluid" style="width:55.0%" alt="ae"></td>
+<td><img src="images/a-vowel.png" class="img-fluid" style="width:55.0%"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vowels---dimensions" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---dimensions">Vowels - Dimensions</h2>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#vowels(
+  &quot;i \\ae a u A&quot;
+)
+"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="vowels---transcription" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription">Vowels - Transcription</h2>
+<p>Vowels <em>fundamentally</em> exist in a continuous phonetic space, making the transcription problem especially tricky.</p>
+<ul>
+<li><p>It can be tricky putting a categorical label on a continuous space.</p></li>
+<li><p>Many “conventional” transcriptions use symbols that aren’t technically accurate.</p></li>
+</ul>
+</section>
+<section id="vowels---transcription-1" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-1">Vowels - Transcription</h2>
+<div class="ipa" style="text-align: center; font-size:3em;">
+<p>“goose”</p>
+<p>guːs</p>
+</div>
+<p>?</p>
+</section>
+<section id="vowels---transcription-2" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-2">Vowels - Transcription</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-  A[airstream] --&gt; P[pulmonic]
-  A --&gt; G[glottalic]
-  A --&gt; V[velaric]
-  P --&gt; Pe[egressive]
-  G --&gt; Ge[egressive]
-  G --&gt; Gi[ingressive]
-  V --&gt; Vi[ingressive]
-  Pe --&gt; Pes["[p, t, k,...]"]
-  Ge --&gt; Ges["[pʼ, tʼ, kʼ, ...]"]
-  Gi --&gt; Gis["[ɓ, ɗ, ɠ, ...]"]
-  Vi --&gt; Vis["[ʘ, ǃ, ...]"]
-</pre>
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-8-1.svg" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
 </div>
-<p></p></figure><p></p>
 </div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Data from the Atlas of North American English</p>
+<p>1 point = 1 speaker</p>
 </div>
 </div>
 </div>
 </section>
-<section id="speech-sounds-2" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-2">Speech Sounds</h2>
-<p>We hear them</p>
+<section id="vowels---transcription-3" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-3">Vowels - Transcription</h2>
+<section id="high-vowels" class="level3">
+<h3 class="anchored" data-anchor-id="high-vowels">High Vowels</h3>
+<div class="cell">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ear.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Diagram of the ear"></p>
+<p><img src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-2.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+
+#let focus = (
+  &quot;i&quot;,
+  &quot;y&quot;,
+  &quot;1&quot;,
+  &quot;0&quot;,
+  &quot;W&quot;,
+  &quot;u&quot;
+)
+
+#let redden(a) = {
+  a.map(x => (x, re"></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="vowel---transcription" class="level2">
+<h2 class="anchored" data-anchor-id="vowel---transcription">Vowel - Transcription</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-11-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="vowels---transcription-4" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-4">Vowels - Transcription</h2>
+<div class="ipa" style="text-align: center;font-size:2em">
+<p>gɨs?</p>
+<p>gʉs?</p>
+</div>
+</section>
+<section id="vowels---transcription-5" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-5">Vowels - Transcription</h2>
+<div class="ipa" style="text-align: center; font-size:2em;">
+<p>“thought”</p>
+<p>θɔt</p>
+</div>
+<p>?</p>
+</section>
+<section id="vowels---transcription-6" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-6">Vowels - Transcription</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-12-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Data from the Atlas of North American English</p>
+<p>1 point = 1 speaker</p>
+</div>
+</div>
+</div>
+</section>
+<section id="vowels---transcription-7" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-7">Vowels - Transcription</h2>
+<section id="back-vowels" class="level3">
+<h3 class="anchored" data-anchor-id="back-vowels">Back Vowels</h3>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-3.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+
+#let focus = (
+ &quot;U&quot;, &quot;7&quot;, 
+ &quot;o&quot;, &quot;2&quot;,  
+ &quot;O&quot;, &quot;6&quot;,
+ &quot;W&quot;, &quot;u&quot;,
+ &quot;A&quot;
+)
+
+#let redden(a) = {
+  a.map("></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="vowels---transcription-8" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-8">Vowels - Transcription</h2>
+<div class="ipa" style="text-align:center;font-size:2em;">
+<p>θot?</p>
+<p>θɔt?</p>
+<p>θɒt?</p>
+</div>
+</section>
+<section id="vowels-4" class="level2">
+<h2 class="anchored" data-anchor-id="vowels-4">Vowels?</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-15-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="vowels---transcription-9" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---transcription-9">Vowels - Transcription</h2>
+<p>If <em>all</em> we have is paper and ink to describe phonetic detail, we should try to use the closest IPA character.</p>
+<p>Otherwise, we’ll use symbols that best characterize lexical sets.</p>
+<div class="ipa" style="text-align:center;">
+<p>[uː] <span class="math inline">\(\in\)</span> {goose, coop, food}</p>
+</div>
+</section>
+<section id="vowels-5" class="level2">
+<h2 class="anchored" data-anchor-id="vowels-5">Vowels</h2>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-4.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="vowels---english-keywords" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---english-keywords">Vowels - English Keywords</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/keyword.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </section>
-<section id="speech-sounds-3" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-3">Speech Sounds</h2>
-<p>We can record them</p>
+<section id="vowels---length" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---length">Vowels - Length</h2>
+<p>In English</p>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-5.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
+#set text(font: &quot;Noto Sans&quot;)
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#text(fill: red)[*long*] vs #text(fill: blue)[*short*]
+
+#let redden(a) = {
+  a.map(x => (x, red))."></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="vowels---length-1" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---length-1">Vowels - Length</h2>
+<p>Length is transcribed with a <span class="ipa">ː</span> symbol (which is different from :)!</p>
+<div class="ipa" style="text-align:center;font-size:2em;">
+<p>iː</p>
+<p>uː</p>
+</div>
+</section>
+<section id="vowels---length-2" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---length-2">Vowels - Length</h2>
+<p>In English, the mid long vowels tend to be diphthongized.</p>
+</section>
+<section id="vowel---length" class="level2">
+<h2 class="anchored" data-anchor-id="vowel---length">Vowel - Length</h2>
+<p>The mid long vowels in English tend to be diphthongized</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-revealjs/unnamed-chunk-22-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Average [<span class="ipa">eɪ</span>] and [<span class="ipa">oʊ</span>] from one speaker from Philadelphia.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="vowels---diphthongs" class="level2">
+<h2 class="anchored" data-anchor-id="vowels---diphthongs">Vowels - Diphthongs</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" alt="A waveform" width="672"></p>
+<p><img src="index_files/figure-revealjs/unnamed-chunk-24-1.svg" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="speech-sounds-4" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-4">Speech Sounds</h2>
-<p>They have acoustic properties</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" alt="A spectrogram" width="672"></p>
-</figure>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Three diphthongs from a speaker from Philadelphia</p>
 </div>
 </div>
 </div>
-</section>
-<section id="speech-sounds-5" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-5">Speech Sounds</h2>
-<p>We cognitively organize and distribute them.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="typ-fig/rule.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A phonological rule"></p>
-</figure>
-</div>
-</section>
-<section id="speech-sounds-6" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-6">Speech Sounds</h2>
-<p>We cognitively organize and distribute them</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="typ-fig/tableaux.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="An optimality theory tableaux"></p>
-</figure>
-</div>
-</section>
-<section id="speech-sounds-7" class="level2">
-<h2 class="anchored" data-anchor-id="speech-sounds-7">Speech Sounds</h2>
-<p>We cognitively organize and distribute them</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="typ-fig/foot.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Prosodic tree for the word &quot;syllable&quot;"></p>
-</figure>
-</div>
-</section>
-<section id="flight-plan" class="level2">
-<h2 class="anchored" data-anchor-id="flight-plan">Flight Plan</h2>
-<ul>
-<li><p>Speech Anatomy &amp; Articulatory Classifications</p></li>
-<li><p>Speech Perception &amp; Acoustics</p></li>
-<li><p>Phonological Contrast &amp; Alternation</p></li>
-<li><p>Phonological Features &amp; Rules</p></li>
-<li><p>Phonological Constraints</p></li>
-<li><p>Prosodic Structure</p></li>
-</ul>
-</section>
-<section id="the-textbook" class="level2">
-<h2 class="anchored" data-anchor-id="the-textbook">The Textbook</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/textbook.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="The cover of Zsiga (2024)"></p>
-</figure>
-</div>
-<p>Zsiga, Elizabeth C (2024) <em>The Sounds of Language</em>, Wiley-Blackwell ISBN: 978-1-119-87850-6</p>
-</section>
-<section id="course-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="course-evaluation">Course Evaluation</h2>
-<ul>
-<li><p>Weekly comprehension quizzes</p></li>
-<li><p>Language Puzzles</p></li>
-<li><p>IPA transcription exercises</p></li>
-<li><p>In-class midterm (Oct 6)</p></li>
-<li><p>In-person final exam (Dec 17)</p></li>
-<li><p>Participation</p></li>
-</ul>
-</section>
-<section id="ai-policy" class="level2">
-<h2 class="anchored" data-anchor-id="ai-policy">AI Policy</h2>
-<div style="font-size: 10em;">
-<p><i class="fa-solid fa-ban" aria-label="ban"></i></p>
-</div>
-</section>
-<section id="lecture-slides" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-slides">Lecture Slides</h2>
-<p>The lecture slides, in general, serve to <em>support</em> the in-class discussion, and to augment your own notes. They won’t be overly wordy, and may not make sense outside of the classroom context.</p>
 
 
 </section>
 
 </main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
