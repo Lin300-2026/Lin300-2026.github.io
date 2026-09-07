@@ -1150,7 +1150,8 @@ Lateral constriction
 
 ## "Rhotics"
 
-Rhotics aren't a phonetically coherent set of sounds. Sounds classified as rhotics include
+Rhotics aren't a phonetically coherent set of sounds.
+Sounds classified as rhotics include
 
 - alveolar trills
 
@@ -1166,7 +1167,7 @@ Rhotics aren't a phonetically coherent set of sounds. Sounds classified as rhoti
 
 - alveolar approximants
 
-- whatever bunched [ɹ] is
+- whatever bunched \[ɹ\] is
 
 ## "Rhotics"
 

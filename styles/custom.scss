@@ -8,9 +8,15 @@
 }
 
 .ipa {
-  font-family: "Voces", "Sans-Serif";
+  font-family: "Noto Sans", "Sans-Serif";
 }
 
+h1.ipa {
+ font-variant-caps: all-small-caps;
+ font-size: 1em;
+ font-family: "Noto Sans";
+ margin-bottom: 1pt;
+}
 .bigger {
   font-size: 30em;
 }

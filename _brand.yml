@@ -13,6 +13,8 @@ typography:
       source: google
     - family: Datatype
       source: google
+    - family: Noto Sans
+      source: google      
 
   base: Public Sans
   monospace: Roboto Mono
