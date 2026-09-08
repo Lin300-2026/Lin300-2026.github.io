@@ -118,11 +118,6 @@ local function parse_options(kwargs)
   opts.label = get_kwarg(kwargs, "label", nil)
   opts.label_position = get_kwarg(kwargs, "label-position", "middle")  -- start, middle, end
   opts.label_offset = get_kwarg_number(kwargs, "label-offset", 10)
-  -- "auto" (default) renders as HTML only when the label contains math,
-  -- "true" forces HTML rendering, "false" forces the plain SVG <text> element
-  opts.label_math = get_kwarg(kwargs, "label-math", "auto")
-  opts.label_width = get_kwarg_number(kwargs, "label-width", 200)
-  opts.label_height = get_kwarg_number(kwargs, "label-height", 40)
 
   -- Accessibility
   opts.aria_label = get_kwarg(kwargs, "aria-label", nil)
@@ -394,93 +389,6 @@ local function get_label_position(adj_from, adj_to, adj_c1, adj_c2, position, of
     y = point.y + offset * math.sin(perp_angle),
     angle = math.deg(angle)
   }
-end
-
---------------------------------------------------------------------------------
--- Label Rendering
---------------------------------------------------------------------------------
-
--- Detect TeX math delimiters in a label string
-local function label_has_math(label)
-  if not label then return false end
-  return label:find("%$.-%$") ~= nil or label:find("\\%(") ~= nil
-end
-
--- Should this label be rendered as HTML inside a <foreignObject>?
-local function label_is_html(opts)
-  if opts.label_math == "false" then return false end
-  if opts.label_math == "true" then return true end
-  return label_has_math(opts.label)  -- "auto"
-end
-
--- The math method the document is actually being rendered with. MathJax and
--- KaTeX expect different markup (\(...\) delimiters vs. bare TeX), so the label
--- has to be written the same way Pandoc writes the rest of the document's math.
-local function doc_math_method()
-  local m = PANDOC_WRITER_OPTIONS and PANDOC_WRITER_OPTIONS.html_math_method
-  if type(m) == "table" then return m.method or "mathjax" end
-  if type(m) == "string" then return m end
-  return "mathjax"
-end
-
--- Convert a label written as Markdown (possibly containing $math$) to HTML.
--- Returns nil on failure.
-local function label_to_html(label)
-  local ok, doc = pcall(pandoc.read, label, "markdown")
-  if not ok or not doc then return nil end
-  local ok2, html = pcall(pandoc.write, doc, "html",
-    pandoc.WriterOptions({html_math_method = doc_math_method(), wrap_text = "none"}))
-  if not ok2 or not html then return nil end
-  html = html:gsub("^%s*(.-)%s*$", "%1")
-  -- Unwrap the enclosing paragraph so the label stays inline
-  html = html:gsub("^<p>(.*)</p>$", "%1")
-  return html
-end
-
--- Escape text for use inside an SVG <text> element
-local function escape_xml(str)
-  return (str:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
-end
-
--- Build the SVG label element (plain <text>, or <foreignObject> for HTML/math)
-local function build_label(opts, adj_from, adj_to, adj_c1, adj_c2)
-  if not opts.label or opts.label == "" then return "" end
-
-  local label_pos = get_label_position(adj_from, adj_to, adj_c1, adj_c2, opts.label_position, opts.label_offset)
-  -- Normalize angle to keep text readable (not upside down)
-  local angle = label_pos.angle
-  if angle > 90 or angle < -90 then
-    angle = angle + 180
-  end
-
-  local html = label_is_html(opts) and label_to_html(opts.label) or nil
-
-  if html then
-    -- Flag so the shortcode can emit a hidden Math element: Pandoc only pulls
-    -- in MathJax/KaTeX when the document contains a real Math element, and our
-    -- label lives inside raw HTML where Pandoc cannot see it
-    opts._math_label = label_has_math(opts.label)
-    -- foreignObject content lives in the XHTML namespace, so MathJax/KaTeX can
-    -- typeset it. The box is centered on the label position and overflows
-    -- visibly, so labels wider than label-width are not clipped.
-    local w, h = opts.label_width, opts.label_height
-    return string.format(
-      '<foreignObject x="%.1f" y="%.1f" width="%.1f" height="%.1f" transform="rotate(%.1f %.1f %.1f)" style="overflow: visible;">' ..
-      '<div xmlns="http://www.w3.org/1999/xhtml" class="arrow-label" ' ..
-      'style="display: flex; align-items: center; justify-content: center; width: %.1fpx; height: %.1fpx; ' ..
-      'color: %s; font-size: 12px; line-height: 1.2; text-align: center;">' ..
-      -- Inner span keeps the label a single flex item, so spaces between text
-      -- and math are not dropped
-      '<span style="white-space: nowrap;">%s</span></div>' ..
-      '</foreignObject>',
-      label_pos.x - w / 2, label_pos.y - h / 2, w, h,
-      angle, label_pos.x, label_pos.y,
-      w, h, opts.color, html)
-  end
-
-  return string.format(
-    '<text x="%.1f" y="%.1f" text-anchor="middle" dominant-baseline="middle" fill="%s" font-size="12" font-family="sans-serif" transform="rotate(%.1f %.1f %.1f)">%s</text>',
-    label_pos.x, label_pos.y, opts.color, angle, label_pos.x, label_pos.y, escape_xml(opts.label))
 end
 
 --------------------------------------------------------------------------------
@@ -775,7 +683,18 @@ local function build_svg(opts, bounds, path_d, marker_id, adj_from, adj_to, adj_
   end
 
   -- Build label element
-  local label_content = build_label(opts, adj_from, adj_to, adj_c1, adj_c2)
+  local label_content = ""
+  if opts.label and opts.label ~= "" then
+    local label_pos = get_label_position(adj_from, adj_to, adj_c1, adj_c2, opts.label_position, opts.label_offset)
+    -- Normalize angle to keep text readable (not upside down)
+    local angle = label_pos.angle
+    if angle > 90 or angle < -90 then
+      angle = angle + 180
+    end
+    label_content = string.format(
+      '<text x="%.1f" y="%.1f" text-anchor="middle" dominant-baseline="middle" fill="%s" font-size="12" font-family="sans-serif" transform="rotate(%.1f %.1f %.1f)">%s</text>',
+      label_pos.x, label_pos.y, opts.color, angle, label_pos.x, label_pos.y, opts.label)
+  end
 
   return string.format(
     '<svg width="%.1f" height="%.1f" viewBox="0 0 %.1f %.1f" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;"%s%s>%s%s%s%s</svg>',
@@ -1221,20 +1140,7 @@ function arrow(args, kwargs, meta, raw_args, context)
 
   -- Return format-appropriate output
   if quarto.doc.isFormat("html:js") then
-    local out = render_html(svg, opts, bounds)
-    if opts._math_label then
-      -- Hidden no-op math, purely so Pandoc includes the math renderer.
-      -- It must be non-empty: Quarto's KaTeX loop dereferences firstChild.data
-      -- and an empty span would throw, stopping it from typesetting anything.
-      local anchor = pandoc.Span(
-        {pandoc.Math(pandoc.InlineMath, "{}")},
-        pandoc.Attr("", {"arrow-math-anchor"}, {style = "display: none;"}))
-      if out.t == "RawBlock" then
-        return {out, pandoc.Plain({anchor})}
-      end
-      return {out, anchor}
-    end
-    return out
+    return render_html(svg, opts, bounds)
   elseif quarto.doc.isFormat("typst") then
     return render_typst(opts, adj_from, adj_to, adj_c1, adj_c2, adj_waypoints)
   elseif quarto.doc.isFormat("pdf") or quarto.doc.isFormat("latex") then

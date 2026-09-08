@@ -306,7 +306,7 @@ vot |>
 ## Transcribing VOTs {.smaller}
 
 |   | fully voiced | short lag | long lag |
-|------------------|:----------------:|:----------------:|:----------------:|
+|----|:--:|:--:|:--:|
 | [English, German]{.fragment fragment-index="1"} |  | [\[b d g\]]{.ipa .fragment fragment-index="1"} | [\[pʰ tʰ kʰ\]]{.ipa .fragment fragment-index="1"} |
 | [Cantonese]{.fragment fragment-index="2"} |  | [\[p t k\]]{.ipa .fragment fragment-index="2"} | [\[pʰ tʰ kʰ\]]{.ipa .fragment fragment-index="2"} |
 | [Spanish, Dutch, Hungarian]{.fragment fragment-index="3"} | [\[b d g\]]{.ipa .fragment fragment-index="3"} | [\[p t k\]]{.ipa .fragment fragment-index="3"} |  |
@@ -345,7 +345,7 @@ Lesson: A lot of transcription is analysis in disguise!
 You can have an ejective at any point of closure, and it's transcribed with [\['\]]{.ipa} (a regular apostrophe)
 
 | bilabial | alveolar | retroflex | palatal | velar | uvular |
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:--:|:--:|:--:|:--:|:--:|:--:|
 | [\[p'\]]{.ipa} | [\[t'\]]{.ipa} | [\[ʈ'\]]{.ipa} | [\[c'\]]{.ipa} | [\[k'\]]{.ipa} | [\[q'\]]{.ipa} |
 
 Ejective fricatives and affricates are also possible.
@@ -372,7 +372,7 @@ Try holding your breath (thus closing your glottis) and articulating "t t t t" r
 Implosives can be made at any point of closure, and their IPA symbols tend to have a little hooktop.
 
 | bilabial | alveolar | velar | uvular |
-|:----------------:|:----------------:|:----------------:|:----------------:|
+|:--:|:--:|:--:|:--:|
 | [\[]{.ipa}ɓ[\]]{.ipa} | [\[]{.ipa}ɗ[\]]{.ipa} | [\[]{.ipa}ɠ[\]]{.ipa} | [\[]{.ipa}ʛ[\]]{.ipa} |
 
 ## Clicks

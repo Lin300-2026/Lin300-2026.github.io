@@ -11,6 +11,16 @@
   background-image: url(' /assets/logo_small.svg') !important;
 }
 
+/* --
+.topalign > td {
+  valign: top;
+}
+--*/
+
+.topalign table td, .topalign table td {
+    vertical-align: top;
+}
+
 .ipa {
   font-family: "Noto Sans", "Sans-Serif";
 }

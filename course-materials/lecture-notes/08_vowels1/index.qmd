@@ -5,6 +5,8 @@ order: 8
 format: 
   revealjs: 
     output-file: "08_vowels1.html"
+    revealjs-plugins:
+      - fullscreen    
   html: default
   typst: default
 editor: visual
@@ -65,12 +67,14 @@ Tongue body and Tongue Root
 
 ![](images/tb-tr.gif){fig-alt="Tongue body and tongue root" fig-align="center"}
 
-## Vowels {.smaller}
+##  {.smaller fullscreen="true"}
 
+::: topalign
 |   | Front | Back |
-|------------------|---------------------------|---------------------------|
-| High | ![i](images/i-vowel.png){width="55%"} | ![u](images/u-vowel.png){width="55%"} |
-| Low | ![ae](images/ae-vowel.png){width="55%"} | ![](images/a-vowel.png){width="55%"} |
+|------------------:|---------------------------|---------------------------|
+| **High** | ![i](images/i-vowel.png){width="60%"} | ![u](images/u-vowel.png){width="60%"} |
+| **Low** | ![ae](images/ae-vowel.png){width="60%"} | ![a](images/a-vowel.png){width="60%"} |
+:::
 
 ## Vowels - Dimensions
 
@@ -524,6 +528,7 @@ dat |>
   coord_fixed()+
   theme_void()
 ```
+
 ## Vowels - Transcription
 
 If *all* we have is paper and ink to describe phonetic detail, we should try to use the closest IPA character.
@@ -571,7 +576,7 @@ Otherwise, we'll use symbols that best characterize lexical sets.
 #vowels(
   vs.join(),
   shift: to_shift.map(x => (x, 0, 0)),
-  shift-color: black,
+  shift-color: luma(100),
   shift-size: 1.5em
 )
 
@@ -611,7 +616,7 @@ Otherwise, we'll use symbols that best characterize lexical sets.
 #vowels(
   vs.join(),
   shift: to_shift.map(x => (x, 0, 0)),
-  shift-color: black,
+  shift-color: luma(100),
   shift-size: 1.5em
 )
 ```
@@ -622,6 +627,7 @@ Otherwise, we'll use symbols that best characterize lexical sets.
 ![](images/keyword.svg){fig-align="center" width="100%"}
 
 ## Vowels - Length
+
 In English
 
 ::: {.content-hidden when-format="typst"}
@@ -788,11 +794,11 @@ jean_base +
     show.legend = F
   )
 ```
+
 ::: {}
 Average \[[eɪ]{.ipa}\] and \[[oʊ]{.ipa}\] from one speaker from Philadelphia.
 :::
 ::::
-
 
 ## Vowels - Diphthongs
 

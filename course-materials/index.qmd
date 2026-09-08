@@ -5,4 +5,7 @@ editor: visual
 listing: 
   contents:
     - "lecture-notes/*/*.qmd"
+  sort:
+    - date
+    - order
 ---
