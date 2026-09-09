@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Dr.&nbsp;Josef Fruehwald">
-  <meta name="dcterms.date" content="2026-09-10">
-  <title>Lin300-2026 - Speech Sounds – Vowels</title>
+  <meta name="dcterms.date" content="2026-09-12">
+  <title>Lin300-2026 - Speech Sounds – Things Vowels Do</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -136,7 +136,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Vowels</h1>
+  <h1 class="title">Things Vowels Do</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -146,338 +146,206 @@ Dr.&nbsp;Josef Fruehwald
 </div>
 </div>
 
-  <p class="date">2026-09-10</p>
+  <p class="date">2026-09-12</p>
 </section>
-<section id="vowels" class="slide level2 center">
-<h2>Vowels</h2>
-<p>What is a vowel?</p>
-<ul>
-<li class="fragment">Not a consonant.</li>
-</ul>
+<section id="tone-intonation" class="slide level2 center">
+<h2>Tone &amp; Intonation</h2>
+
+<img data-src="../../../course-materials/lecture-notes/09_vowels2/./assets/typst-render/index/typst-block-1.svg" class="img-fluid r-stretch" alt="#import &quot;@preview/cetz:0.5.1&quot;
+
+#let tbox(content) = {
+  box(
+    fill: white, 
+    inset: 0.2em,
+    content
+  )
+}
+
+#set text(font: &quot;Noto Sans&quot;)
+#cetz.canvas({
+ import cetz.draw: *
+ line((0, 5), (3,5)"></section>
+<section id="tone" class="slide level2 center">
+<h2>Tone</h2>
+<p>It’s also common to see tone transcribed with small superscript numbers between 1 and 5.</p>
+<div class="ipa" style="font-size: 2em;text-align: center;">
+<p>[ma<sup>35</sup>] vs [ma<sup>13</sup>]</p>
+</div>
 </section>
-<section id="vowels-1" class="slide level2 center">
-<h2>Vowels</h2>
-<p>Clues in the name</p>
+<section id="vowel-variation-in-englishes" class="slide level2 center">
+<h2>Vowel Variation In Englishes</h2>
+<p>Back vowel fronting</p>
 <table class="caption-top">
 <colgroup>
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 24%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><span class="smallcaps">Goose</span></td>
+<td><span class="ipa">[ɨu ɨʉ y]</span></td>
+<td><span class="ipa">[uɫ]</span></td>
+<td><span class="smallcaps">Ghoul</span></td>
+</tr>
+<tr class="even">
+<td><span class="smallcaps">Goat</span></td>
+<td>[<span class="ipa">əʊ əʉ ø</span>]</td>
+<td><span class="ipa">[oɫ]</span></td>
+<td><span class="smallcaps">Goal</span></td>
+</tr>
+<tr class="odd">
+<td><span class="smallcaps">Mouth</span></td>
+<td><span class="ipa">[aʊ æʊ ɛɔ]</span></td>
+<td></td>
+<td><span class="smallcaps">Foul</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vowel-variation-in-englishes-1" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+
+<img data-src="../../../course-materials/lecture-notes/09_vowels2/./assets/typst-render/index/typst-block-2.svg" class="img-fluid r-stretch" alt="#import &quot;@preview/phonokit:0.5.15&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#sound-shift(
+  nodes: (
+    (label: &quot;I&quot;,    at: (0, 6)),
+    (label: &quot;E&quot;,    at: (1, 3.0)),
+    (label: &quot;2&quot;,    at: (8, 3.0)),"></section>
+<section id="vowel-variation-in-englishes-2" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+<p>pre-l laxing</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
 <col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 22%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>“peat”, “pit”</td>
+<td><span class="ipa">[pʰit], [pʰɪt]</span></td>
+<td><span id="ipa">[pʰɪɫ]</span></td>
+<td>“peel”, “pill”</td>
+</tr>
+<tr class="even">
+<td>“poot”, “put”</td>
+<td><span class="ipa">[pʰut], [pʰʊt]</span></td>
+<td>[<span class="ipa">pʰʊɫ</span>]</td>
+<td>“pool”, “pull”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vowel-variation-in-englishes-3" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+
+<img data-src="../../../course-materials/lecture-notes/09_vowels2/./assets/typst-render/index/typst-block-3.svg" class="img-fluid r-stretch" alt="#import &quot;@preview/phonokit:0.5.15&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#sound-shift(
+  nodes: (
+    (label: &quot;I&quot;,    at: (0, 6)),
+    (label: &quot;I \\darkl&quot;,    at: (1, 6)),    
+    (label: &quot;E&quot;,    at: "></section>
+<section id="vowel-variation-in-englishes-4" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+<p>“Short-a” ~stuff~</p>
+<table class="caption-top">
+<tbody>
+<tr class="odd">
+<td>“rap”</td>
+<td><span class="ipa">[ɹæp]</span></td>
+<td><span class="ipa">[ɹɛ̃ᵊm]</span></td>
+<td>“ram”</td>
+</tr>
+<tr class="even">
+<td>“mat”</td>
+<td><span class="ipa">[mæt]</span></td>
+<td><span class="ipa">[mɛ̃ᵊn]</span></td>
+<td>“man”</td>
+</tr>
+<tr class="odd">
+<td>“back”</td>
+<td><span class="ipa">[bæk]</span></td>
+<td><span class="ipa">[bɛ̃ᵊŋ]</span></td>
+<td>“bang”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vowel-variation-in-englishes-5" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+<p>Short vowel lowering</p>
+
+<img data-src="../../../course-materials/lecture-notes/09_vowels2/./assets/typst-render/index/typst-block-4.svg" class="img-fluid r-stretch" alt="#import &quot;@preview/phonokit:0.5.15&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+
+#sound-shift(
+  nodes: (
+    (label: &quot;I&quot;,    at: (0, 6)),
+    (label: &quot;E&quot;,    at: (1, 3.0)),
+    (label: &quot;2&quot;,    at: (8, 3.0)),"></section>
+<section id="vowel-variation-in-englishes-6" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+<p>[<span class="ipa">aɪ</span>]</p>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
-<th style="text-align: right;">English</th>
-<th style="text-align: right;">Dutch</th>
+<th>pattern 1</th>
+<th>pattern 2</th>
+<th>pattern 3</th>
+<th>pattern 4</th>
+<th>pattern 5?</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>V</td>
-<td style="text-align: right;"><span class="fragment" data-fragment-index="4">(sonant?)</span></td>
-<td style="text-align: right;"><span class="fragment" data-fragment-index="2">klinker</span></td>
+<td>“type”</td>
+<td><span class="ipa">[tʰɑɪp]</span></td>
+<td><span class="ipa">[tʰʌip]</span></td>
+<td><span class="ipa">[tʰɑɪp]</span></td>
+<td><span class="ipa">[tʰaːp]</span></td>
+<td><span class="ipa">[tʰʌip]</span></td>
 </tr>
 <tr class="even">
-<td>C</td>
-<td style="text-align: right;"><span class="fragment" data-fragment-index="1">consonant</span></td>
-<td style="text-align: right;"><span class="fragment" data-fragment-index="3">medeklinker</span></td>
+<td>“time”</td>
+<td><span class="ipa">[tʰɑɪm]</span></td>
+<td><span class="ipa">[tʰɑɪm]</span></td>
+<td><span class="ipa">[tʰaːm]</span></td>
+<td><span class="ipa">[tʰaːm]</span></td>
+<td><span class="ipa">[tʰaːm]</span></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="vowels-2" class="slide level2 center">
-<h2>Vowels</h2>
-<p>In general, a more open, unconstricted, artiulation compared to consonants.</p>
-</section>
-<section id="vowels---articulatory-dimensions" class="slide level2 smaller center">
-<h2>Vowels - Articulatory Dimensions</h2>
-<p>Tongue body and Tongue Root</p>
+<section id="vowel-variation-in-englishes-7" class="slide level2 center">
+<h2>Vowel Variation in Englishes</h2>
+<p>The Southern Shift</p>
 
-<img data-src="images/tb-tr.gif" class="quarto-figure quarto-figure-center r-stretch" alt="Tongue body and tongue root"></section>
-<section id="section" class="slide level2 smaller center" data-fullscreen="true">
-<h2></h2>
-<div class="topalign">
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;"></th>
-<th>Front</th>
-<th>Back</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;"><strong>High</strong></td>
-<td><img data-src="images/i-vowel.png" style="width:60.0%" alt="i"></td>
-<td><img data-src="images/u-vowel.png" style="width:60.0%" alt="u"></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><strong>Low</strong></td>
-<td><img data-src="images/ae-vowel.png" style="width:60.0%" alt="ae"></td>
-<td><img data-src="images/a-vowel.png" style="width:60.0%" alt="a"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="vowels---dimensions" class="slide level2 center">
-<h2>Vowels - Dimensions</h2>
 
-<img data-src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-1.svg" class="img-fluid quarto-figure quarto-figure-center r-stretch" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
+
+<img data-src="../../../course-materials/lecture-notes/09_vowels2/./assets/typst-render/index/typst-block-5.svg" class="img-fluid r-stretch" alt="#import &quot;@preview/phonokit:0.5.15&quot;: *
 #phonokit-init(font: &quot;Noto Sans&quot;)
 
-#vowels(
-  &quot;i \\ae a u A&quot;
-)
-"></section>
-<section id="vowels---transcription" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<p>Vowels <em>fundamentally</em> exist in a continuous phonetic space, making the transcription problem especially tricky.</p>
-<ul>
-<li><p>It can be tricky putting a categorical label on a continuous space.</p></li>
-<li><p>Many “conventional” transcriptions use symbols that aren’t technically accurate.</p></li>
-</ul>
-</section>
-<section id="vowels---transcription-1" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="ipa" style="text-align: center; font-size:3em;">
-<p>“goose”</p>
-<p>guːs</p>
-</div>
-<p>?</p>
-</section>
-<section id="vowels---transcription-2" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-8-1.svg" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Data from the Atlas of North American English</p>
-<p>1 point = 1 speaker</p>
-</div>
-</div>
-</div>
-</section>
-<section id="vowels---transcription-3" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<h3 id="high-vowels">High Vowels</h3>
-
-<img data-src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-2.svg" class="img-fluid quarto-figure quarto-figure-center r-stretch" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
-#phonokit-init(font: &quot;Noto Sans&quot;)
-
-
-#let focus = (
-  &quot;i&quot;,
-  &quot;y&quot;,
-  &quot;1&quot;,
-  &quot;0&quot;,
-  &quot;W&quot;,
-  &quot;u&quot;
-)
-
-#let redden(a) = {
-  a.map(x => (x, re"></section>
-<section id="vowel---transcription" class="slide level2 center">
-<h2>Vowel - Transcription</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-11-1.svg" class="quarto-figure quarto-figure-center r-stretch" width="384"></section>
-<section id="vowels---transcription-4" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="ipa" style="text-align: center;font-size:2em">
-<p>gɨs?</p>
-<p>gʉs?</p>
-</div>
-</section>
-<section id="vowels---transcription-5" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="ipa" style="text-align: center; font-size:2em;">
-<p>“thought”</p>
-<p>θɔt</p>
-</div>
-<p>?</p>
-</section>
-<section id="vowels---transcription-6" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Data from the Atlas of North American English</p>
-<p>1 point = 1 speaker</p>
-</div>
-</div>
-</div>
-</section>
-<section id="vowels---transcription-7" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<h3 id="back-vowels">Back Vowels</h3>
-
-<img data-src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-3.svg" class="img-fluid quarto-figure quarto-figure-center r-stretch" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
-#phonokit-init(font: &quot;Noto Sans&quot;)
-
-
-#let focus = (
- &quot;U&quot;, &quot;7&quot;, 
- &quot;o&quot;, &quot;2&quot;,  
- &quot;O&quot;, &quot;6&quot;,
- &quot;W&quot;, &quot;u&quot;,
- &quot;A&quot;
-)
-
-#let redden(a) = {
-  a.map("></section>
-<section id="vowels---transcription-8" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<div class="ipa" style="text-align:center;font-size:2em;">
-<p>θot?</p>
-<p>θɔt?</p>
-<p>θɒt?</p>
-</div>
-</section>
-<section id="vowels-3" class="slide level2 center">
-<h2>Vowels?</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-15-1.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="vowels---transcription-9" class="slide level2 center">
-<h2>Vowels - Transcription</h2>
-<p>If <em>all</em> we have is paper and ink to describe phonetic detail, we should try to use the closest IPA character.</p>
-<p>Otherwise, we’ll use symbols that best characterize lexical sets.</p>
-<div class="ipa" style="text-align:center;">
-<p>[uː] <span class="math inline">\(\in\)</span> {goose, coop, food}</p>
-</div>
-</section>
-<section id="vowels-4" class="slide level2 center">
-<h2>Vowels</h2>
-
-<img data-src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-4.svg" class="img-fluid quarto-figure quarto-figure-center r-stretch" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
-#phonokit-init(font: &quot;Noto Sans&quot;)
-#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
-#phonokit-init(font: &quot;Noto Sans&quot;"></section>
-<section id="vowels---english-keywords" class="slide level2 center">
-<h2>Vowels - English Keywords</h2>
-
-<img data-src="images/keyword.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="vowels---length" class="slide level2 center">
-<h2>Vowels - Length</h2>
-<p>In English</p>
-
-<img data-src="../../../course-materials/lecture-notes/08_vowels1/./assets/typst-render/index/typst-block-5.svg" class="img-fluid quarto-figure quarto-figure-center r-stretch" alt="#import &quot;@preview/phonokit:0.5.14&quot;: *
-#set text(font: &quot;Noto Sans&quot;)
-#phonokit-init(font: &quot;Noto Sans&quot;)
-
-#text(fill: red)[*long*] vs #text(fill: blue)[*short*]
-
-#let redden(a) = {
-  a.map(x => (x, red))."></section>
-<section id="vowels---length-1" class="slide level2 center">
-<h2>Vowels - Length</h2>
-<p>Length is transcribed with a <span class="ipa">ː</span> symbol (which is different from :)!</p>
-<div class="ipa" style="text-align:center;font-size:2em;">
-<p>iː</p>
-<p>uː</p>
-</div>
-</section>
-<section id="vowels---length-2" class="slide level2 center">
-<h2>Vowels - Length</h2>
-<p>In English, the mid long vowels tend to be diphthongized.</p>
-</section>
-<section id="vowel---length" class="slide level2 center">
-<h2>Vowel - Length</h2>
-<p>The mid long vowels in English tend to be diphthongized</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-22-1.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Average [<span class="ipa">eɪ</span>] and [<span class="ipa">oʊ</span>] from one speaker from Philadelphia.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="vowels---diphthongs" class="slide level2 center">
-<h2>Vowels - Diphthongs</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-24-1.svg" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Three diphthongs from a speaker from Philadelphia</p>
-</div>
-</div>
-</div>
-</section>
-<section>
-<section id="across-the-world" class="title-slide slide level1 center">
-<h1>Across the world</h1>
-
-</section>
-<section id="vowel-inventories" class="slide level2 center">
-<h2>Vowel Inventories</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-26-1.svg" width="768" class="r-stretch"></section>
-<section id="inventories" class="slide level2 center">
-<h2>Inventories</h2>
-<div class="cell quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-29-1.png" width="384"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-29-2.png" width="384"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="inventories-1" class="slide level2 center">
-<h2>Inventories</h2>
-
-
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-31-1.png" width="576" class="r-stretch"></section></section>
+#sound-shift(
+  nodes: (
+    (label: &quot;I&quot;,    at: (0, 6)),  
+    (label: &quot;E&quot;,    at: (1, 3.0)),
+    (label: &quot;2&quot;,    at: (8, 3.0)"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/logo_small.svg" class="slide-logo"></p>
