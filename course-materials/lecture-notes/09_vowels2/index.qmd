@@ -1,0 +1,335 @@
+---
+title: "Things Vowels Do"
+date: 2026-09-12
+order: 9
+format: 
+  revealjs: 
+    output-file: "09_vowels2.html"
+    revealjs-plugins:
+      - fullscreen    
+  html: default
+  typst: default
+editor: visual
+filters: 
+  - typst-render
+engine: knitr
+---
+
+```{r}
+source(here::here("_extensions/mcanouil/typst-render/_resources/typst_define.R"))
+source(here::here("_defaults.R"))
+library(tidyverse)
+library(ggdiagram)
+```
+
+## Tone & Intonation
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+#import "@preview/cetz:0.5.1"
+
+#let tbox(content) = {
+  box(
+    fill: white, 
+    inset: 0.2em,
+    content
+  )
+}
+
+#set text(font: "Noto Sans")
+#cetz.canvas({
+ import cetz.draw: *
+ line((0, 5), (3,5))
+ content((1.5, 5), tbox[ȁ])
+ 
+ line((0, 4), (3,4))
+ content((1.5, 4), tbox[à])
+ 
+ line((0, 3), (3,3))
+ content((1.5, 3), tbox[ā])
+ 
+ line((0, 2), (3,2))
+ content((1.5, 2), tbox[á])
+ 
+ line((0, 1), (3,1))
+ content((1.5, 1), tbox[a̋])
+
+ line((4, 3.2), (7,4), name: "rising1")
+ content(
+   ("rising1.start", 50%, "rising1.end"),
+   tbox[ǎ]
+ )
+
+  line((4, 2.9), (7,2), name: "falling")
+  content(
+   ("falling.start", 50%, "falling.end"),
+   tbox[â]
+  )
+
+  line((4, 4.1), (7,5.1), name: "rising2")
+  content(
+   ("rising2.start", 50%, "rising2.end"),
+   tbox[a᷄]
+  )
+
+  line((4, 1), (7,1.9), name: "rising3")
+  content(
+   ("rising3.start", 50%, "rising3.end"),
+   tbox[a᷅]
+  )
+
+  line((4, 4.3), (5.5, 5), (7, 3), name: "contour")
+  content(
+   ("contour.mid", 22%, "contour.end"),
+   tbox[a᷈]
+  )
+ 
+})
+
+```
+:::
+
+::: {.content-visible when-format="typst"}
+```{typst}
+//| results: asis
+#import "@preview/cetz:0.5.1"
+
+#let tbox(content) = {
+  box(
+    fill: white, 
+    inset: 0.2em,
+    content
+  )
+}
+
+#set text(font: "Noto Sans")
+#cetz.canvas({
+ import cetz.draw: *
+ line((0, 5), (3,5))
+ content((1.5, 5), tbox[ȁ])
+ 
+ line((0, 4), (3,4))
+ content((1.5, 4), tbox[à])
+ 
+ line((0, 3), (3,3))
+ content((1.5, 3), tbox[ā])
+ 
+ line((0, 2), (3,2))
+ content((1.5, 2), tbox[á])
+ 
+ line((0, 1), (3,1))
+ content((1.5, 1), tbox[a̋])
+
+ line((4, 3.2), (7,4), name: "rising1")
+ content(
+   ("rising1.start", 50%, "rising1.end"),
+   tbox[ǎ]
+ )
+
+  line((4, 2.9), (7,2), name: "falling")
+  content(
+   ("falling.start", 50%, "falling.end"),
+   tbox[â]
+  )
+
+  line((4, 4.1), (7,5.1), name: "rising2")
+  content(
+   ("rising2.start", 50%, "rising2.end"),
+   tbox[a᷄]
+  )
+
+  line((4, 1), (7,1.9), name: "rising3")
+  content(
+   ("rising3.start", 50%, "rising3.end"),
+   tbox[a᷅]
+  )
+
+  line((4, 4.3), (5.5, 5), (7, 3), name: "contour")
+  content(
+   ("contour.mid", 22%, "contour.end"),
+   tbox[a᷈]
+  )
+ 
+})
+
+```
+:::
+
+## Tone
+
+It's also common to see tone transcribed with small superscript numbers between 1 and 5.
+
+::: {.ipa style="font-size: 2em;text-align: center;"}
+\[ma^35^\] vs \[ma^13^\]
+:::
+
+## Vowel Variation In Englishes
+
+Back vowel fronting
+
+|                     |                      |                |                     |
+|------------------|-------------------|------------------|------------------|
+| [Goose]{.smallcaps} | [\[ɨu ɨʉ y\]]{.ipa}  | [\[uɫ\]]{.ipa} | [Ghoul]{.smallcaps} |
+| [Goat]{.smallcaps}  | \[[əʊ əʉ ø]{.ipa}\]  | [\[oɫ\]]{.ipa} | [Goal]{.smallcaps}  |
+| [Mouth]{.smallcaps} | [\[aʊ æʊ ɛɔ\]]{.ipa} |                | [Foul]{.smallcaps}  |
+
+## Vowel Variation in Englishes
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+#import "@preview/phonokit:0.5.15": *
+#phonokit-init(font: "Noto Sans")
+
+#sound-shift(
+  nodes: (
+    (label: "I",    at: (0, 6)),
+    (label: "E",    at: (1, 3.0)),
+    (label: "2",    at: (8, 3.0)),    
+    (label: "\\ae", at: (3, 0)),
+    (label: "A", at: (8, -1)),
+    (label: "i:", at: (-2, 8)),
+    (label: "eI", at: (-1, 4)),
+    (label: "u:", at: (10,8)),
+    (label: "u: \\darkl", at: (12,8)),    
+    (label: "oU", at: (10, 4)),  
+    (label: "oU \\darkl", at: (12, 4)),      
+    (label: "U",    at: (8, 6)),
+  ),
+  arrows: (
+    (from: "u:", to: (2,8)),
+    (from: "oU", to: (3.5,4)),
+    (from: "U", to: (3.7, 6)),
+    (from: "2", to: (3.9, 3))
+  )
+)
+
+
+```
+:::
+
+## Vowel Variation in Englishes
+
+pre-l laxing
+
+|               |                            |                  |                |
+|----------------|------------------------|----------------|----------------|
+| "peat", "pit" | [\[pʰit\], \[pʰɪt\]]{.ipa} | [\[pʰɪɫ\]]{#ipa} | "peel", "pill" |
+| "poot", "put" | [\[pʰut\], \[pʰʊt\]]{.ipa} | \[[pʰʊɫ]{.ipa}\] | "pool", "pull" |
+
+## Vowel Variation in Englishes
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+#import "@preview/phonokit:0.5.15": *
+#phonokit-init(font: "Noto Sans")
+
+#sound-shift(
+  nodes: (
+    (label: "I",    at: (0, 6)),
+    (label: "I \\darkl",    at: (1, 6)),    
+    (label: "E",    at: (1, 3.0)),
+    (label: "2",    at: (8, 3.0)),    
+    (label: "\\ae", at: (3, 0)),
+    (label: "A", at: (8, -1)),
+    (label: "i:", at: (-2, 8)),
+    (label: "i: \\darkl", at: (-1, 8)),    
+    (label: "eI", at: (-1, 4)),
+    (label: "u:", at: (10,8)),
+    (label: "u: \\darkl", at: (8.5,8)),    
+    (label: "oU", at: (10, 4)),  
+    (label: "U",    at: (8, 6)),
+    (label: "U \\darkl",    at: (7, 6)),    
+  ),
+  arrows: (
+    (from: "i: \\darkl", to: "I \\darkl"),
+    (from: "u: \\darkl", to: "U \\darkl"),    
+  ),
+  highlights: ("I \\darkl","U \\darkl")
+)
+```
+:::
+
+## Vowel Variation in Englishes
+
+"Short-a" \~stuff\~
+
+|        |                 |                  |        |
+|--------|-----------------|------------------|--------|
+| "rap"  | [\[ɹæp\]]{.ipa} | [\[ɹɛ̃ᵊm\]]{.ipa} | "ram"  |
+| "mat"  | [\[mæt\]]{.ipa} | [\[mɛ̃ᵊn\]]{.ipa} | "man"  |
+| "back" | [\[bæk\]]{.ipa} | [\[bɛ̃ᵊŋ\]]{.ipa} | "bang" |
+
+## Vowel Variation in Englishes
+
+Short vowel lowering
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+#import "@preview/phonokit:0.5.15": *
+#phonokit-init(font: "Noto Sans")
+
+#sound-shift(
+  nodes: (
+    (label: "I",    at: (0, 6)),
+    (label: "E",    at: (1, 3.0)),
+    (label: "2",    at: (8, 3.0)),    
+    (label: "\\ae", at: (3, 0)),
+    (label: "A", at: (8, -1)),
+    (label: "i:", at: (-2, 8)),
+    (label: "eI", at: (-1, 4)),
+    (label: "u:", at: (10,8)),
+    (label: "oU", at: (10, 4)),  
+    (label: "U",    at: (8, 6)),
+  ),
+  arrows: (
+    (from: "\\ae", to: (7,-0.8), curved: true, curve: -0.15),
+    (from: "E", to: "\\ae", curved: true, curve: -0.15),
+    (from: "I", to: "E", curved: true, curve: -0.15)
+  )
+)
+
+```
+:::
+
+## Vowel Variation in Englishes
+
+\[[aɪ]{.ipa}\]
+
+|   | pattern 1 | pattern 2 | pattern 3 | pattern 4 | pattern 5? |
+|------------|------------|------------|------------|------------|------------|
+| "type" | [\[tʰɑɪp\]]{.ipa} | [\[tʰʌip\]]{.ipa} | [\[tʰɑɪp\]]{.ipa} | [\[tʰaːp\]]{.ipa} | [\[tʰʌip\]]{.ipa} |
+| "time" | [\[tʰɑɪm\]]{.ipa} | [\[tʰɑɪm\]]{.ipa} | [\[tʰaːm\]]{.ipa} | [\[tʰaːm\]]{.ipa} | [\[tʰaːm\]]{.ipa} |
+
+## Vowel Variation in Englishes
+
+The Southern Shift
+
+::: {.content-hidden when-format="typst"}
+```{typst}
+#import "@preview/phonokit:0.5.15": *
+#phonokit-init(font: "Noto Sans")
+
+#sound-shift(
+  nodes: (
+    (label: "I",    at: (0, 6)),  
+    (label: "E",    at: (1, 3.0)),
+    (label: "2",    at: (8, 3.0)),    
+    (label: "\\ae", at: (3, 0)),
+    (label: "A", at: (8, -1)),
+    (label: "i:", at: (-2, 8)),   
+    (label: "eI", at: (-1, 4)),
+    (label: "u:", at: (10,8)),
+    (label: "oU", at: (10, 4)),  
+    (label: "U",    at: (8, 6)),
+    (label: "AI", at: (5,-1))
+  ),
+  arrows: (
+    (from: "AI", to: "A"),
+    (from: "eI", to: (3,-1), curved: true, curve: -0.2),
+    (from: "i:", to: "eI", curved: true, curve: -0.2),
+    (from: "I", to: "i:", curved: true, curve: -0.2),
+    (from: "E", to: "eI", curved: true, curve: -0.2)        
+  )
+)
+```
+:::

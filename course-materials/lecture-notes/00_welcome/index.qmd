@@ -1,5 +1,6 @@
 ---
 title: "Lin300  - Speech Sounds"
+date: 2026-08-25
 description: |
   Slides for syllabus day
 order: 0

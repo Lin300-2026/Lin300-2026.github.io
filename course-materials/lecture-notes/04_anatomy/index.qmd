@@ -1,5 +1,6 @@
 ---
 title: "Speech Anatomy 4"
+date: 2026-09-01
 subtitle: Supralaryngeal Vocal Tract
 order: 4
 editor: visual

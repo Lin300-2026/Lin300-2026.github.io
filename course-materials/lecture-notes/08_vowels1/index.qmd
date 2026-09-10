@@ -26,6 +26,7 @@ library(tidynorm)
 library(ggdensity)
 library(scales)
 library(geomtextpath)
+library(ggdist)
 ```
 
 ```{r}
@@ -71,7 +72,7 @@ Tongue body and Tongue Root
 
 ::: topalign
 |   | Front | Back |
-|------------------:|---------------------------|---------------------------|
+|-----------------------:|------------------------|------------------------|
 | **High** | ![i](images/i-vowel.png){width="60%"} | ![u](images/u-vowel.png){width="60%"} |
 | **Low** | ![ae](images/ae-vowel.png){width="60%"} | ![a](images/a-vowel.png){width="60%"} |
 :::
@@ -857,3 +858,284 @@ jean_base+
 Three diphthongs from a speaker from Philadelphia
 :::
 :::::
+
+# Across the world
+
+## Vowel Inventories
+
+```{r}
+#| echo: false
+url_ <- "https://github.com/phoible/dev/blob/master/data/phoible.csv?raw=true"
+col_types <- cols(InventoryID='i', Marginal='l', .default='c')
+phoible <- read_csv(url(url_), col_types=col_types)
+```
+
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-asp: 0.618
+#| fig-format: svg
+phoible |> 
+  filter(
+    SegmentClass == "vowel"
+  ) |> 
+  summarise(
+    .by = c(Glottocode, SpecificDialect),
+    vowels = n()
+  ) |> 
+  slice(
+    .by = Glottocode,
+    1
+  ) |>
+  identity() |> 
+  count(vowels) |> 
+  mutate(
+    inventory = case_when(
+      vowels > 20 ~ ">20",
+      .default = as.character(vowels)
+    ) |> 
+      fct_reorder(vowels)
+  ) |> 
+  summarise(
+    .by = inventory,
+    n = sum(n)
+  ) |> 
+  ggplot(
+    aes(
+      inventory, n
+    )
+  ) + 
+  geom_col() + 
+  scale_y_continuous(
+    expand = expansion(0)
+  ) +
+  labs(
+    x = "number of vowels",
+    y = "number of languages"
+  )
+```
+
+## Inventories
+
+```{r}
+phoible |> 
+  filter(
+    SegmentClass == "vowel"
+  ) |> 
+  mutate(
+    .by = c(Glottocode, SpecificDialect),
+    vowels = n()
+  ) |> 
+  count(
+    vowels, Phoneme
+  ) |> 
+  arrange(
+    desc(n)
+  ) |> 
+  slice(
+    .by = vowels,
+    1:first(vowels)
+  ) |> 
+  arrange(vowels) ->
+  vowel_counts
+```
+
+```{r}
+tribble(
+  ~Phoneme, ~y, ~x,
+  "ɑ", 0, 1,
+  "a", 0, 0,
+  "aː", 0, 0.6,
+  "ã", 0, -0.5,
+  "æ", 0, -0.7,
+  "e", 2, -1.2,
+  "eː", 2, -1.8,
+  "ẽ", 2, -0.8,
+  "ø", 2, -0.8,
+  "i", 3, -2,
+  "iː", 3, -2.4,
+  "y", 3, -1.6,
+  "ĩ", 3, -1.6,
+  "o", 2, 1.2,
+  "oː", 2, 1.7,
+  "õ",2, 0.8,
+  "ɤ", 2, 0.8,
+  "u", 3, 2,
+  "uː", 3, 2.6,
+  "ũ", 3, 1.6,
+  "ɯ", 3, 1.6,
+  "ɔ", 1, 0.8,
+  "ə", 1.5, 0,
+  "ɛ", 1, -0.8,
+  "œ", 1, -0.4,
+  "ɪ", 2.5, -1.8,
+  "ʏ", 2.5, -1.4,
+  "ʊ", 2.5, 1.8,
+  "ʊː", 2.5, 2.5,
+  "e̞", 1.5, -1.2,
+  "o̞", 1.5, 1.2,
+  "ɨ", 3, 0,
+  
+  # "ɯ", "ɪ", "ʊ", 
+) ->
+  vowel_coords
+```
+
+```{r}
+#| echo: false
+#| fig-width: 4
+#| fig-asp: 1.6
+#| layout-ncol: 2
+phoible |> 
+  filter(
+    SegmentClass == "vowel"
+  ) |> 
+  mutate(
+    .by = c(Glottocode, SpecificDialect, InventoryID),
+    vowels = n()
+  )  |> 
+  arrange(
+    Phoneme
+  ) |> 
+  summarise(
+    .by = c(Glottocode, SpecificDialect, , InventoryID, vowels),
+    Phoneme = str_c(Phoneme, collapse = "_")
+  ) |> 
+  count(
+    vowels, Phoneme
+  ) |> 
+  arrange(desc(n)) |> 
+  slice(
+    .by = vowels,
+    1:2
+  ) |> 
+  arrange(vowels) |> 
+  mutate(
+    .by = vowels,
+    rank = row_number()
+  ) |> 
+  filter(
+    vowels <= 11
+  ) |> 
+  mutate(
+    nlab = str_glue("n={n}")
+  ) ->
+  inventory_counts
+
+inventory_counts |> 
+  separate_longer_delim(
+    Phoneme, delim = "_"
+  ) |> 
+  left_join(
+    vowel_coords
+  ) ->
+  inventory_coord
+
+inventory_coord |> 
+  filter(vowels <= 6) |> 
+  ggplot(
+    aes(x, y)
+  ) + 
+  geom_text(
+    aes(label = Phoneme),
+    family = "Voces",
+     size = 4.5
+  ) +
+  geom_text(
+    data = inventory_counts |> filter(vowels <= 6),
+  
+    aes(
+      x = -2.5, y = 0,
+      label = nlab
+    ),
+    size = 3,
+    hjust = 0
+  ) +
+  facet_grid(vowels ~ rank, labeller = "label_both") +
+  scale_x_continuous(
+    expand = expansion(0.1),
+    limits = c(-2.6, 2.6)
+  ) +
+  scale_y_continuous(
+    expand = expansion(0.2)
+  ) +  
+  theme_no_x() + 
+  theme_no_y() +
+  theme_sub_panel(
+    border = element_rect()
+  )
+
+inventory_coord |> 
+  filter(vowels > 6) |> 
+  ggplot(
+    aes(x, y)
+  ) + 
+  geom_text(
+    aes(label = Phoneme),
+    family = "Voces",
+    size = 4.5
+  ) +
+  geom_text(
+    data = inventory_counts |> filter(vowels > 6),
+    aes(
+      x = -2.5, y = 0,
+      label = nlab
+    ),
+    size = 3,
+    hjust = 0
+  ) +  
+  facet_grid(vowels ~ rank, labeller = "label_both") +
+  scale_x_continuous(
+    expand = expansion(0.1),
+    limits = c(-2.6, 2.6)    
+  ) +
+  scale_y_continuous(
+    expand = expansion(0.2)
+  ) +  
+  theme_no_x() + 
+  theme_no_y() +
+  theme_sub_panel(
+    border = element_rect()
+  )
+```
+
+## Inventories
+
+```{r}
+#| echo: false
+phoible |> 
+  filter(SegmentClass == "vowel") |> 
+  mutate(
+    .by = InventoryID,
+    n = n(),
+    diacrit = any(str_detect(GlyphID, "\\+"))
+  ) |> 
+  arrange(desc(n)) |> 
+  filter(
+    !diacrit
+  ) |> 
+  filter(
+    n == 14
+  ) -> fourteen
+```
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-asp: 0.5
+fourteen |> 
+  left_join(vowel_coords) |> 
+  ggplot(
+    aes(x, y)
+  ) + 
+  geom_text(
+    aes(label = Phoneme),
+    family = "Voces"
+  ) + 
+  facet_wrap(~LanguageName) +
+  theme_no_x() + 
+  theme_no_y() +
+  theme_sub_panel(
+    border = element_rect()
+  )  
+```
