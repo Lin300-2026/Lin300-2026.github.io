@@ -683,7 +683,7 @@ praatpicture(
 )
 ```
 ::: {.content-hidden when-format="typst"}
-{{< audio file="audio/harmonics.wav" >}}
+{{< audio file="/data/audio/harmonics.wav" >}}
 :::
 
 ## Harmonics
