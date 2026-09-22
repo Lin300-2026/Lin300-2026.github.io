@@ -217,7 +217,7 @@ Dr.&nbsp;Josef Fruehwald
 <section id="complex-sounds" class="slide level2 center">
 <h2>Complex Sounds</h2>
 
-<img data-src="index_files/figure-html/unnamed-chunk-3-1.png" width="576" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="576" class="r-stretch"></section>
 <section id="complex-sounds-1" class="slide level2 center">
 <h2>Complex Sounds</h2>
 
@@ -227,10 +227,10 @@ Dr.&nbsp;Josef Fruehwald
 <div class="cell quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="index_files/figure-html/unnamed-chunk-5-1.png" width="480"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" width="480"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="index_files/figure-html/unnamed-chunk-5-2.png" width="480"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-5-2.png" width="480"></p>
 </div>
 </div>
 </div>
@@ -260,7 +260,7 @@ s: freq("880 ~")
 <h2>Complex Sounds</h2>
 <h3 id="interference">Interference</h3>
 
-<img data-src="index_files/figure-html/unnamed-chunk-6-1.png" width="576" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" width="576" class="r-stretch"></section>
 <section id="complex-sounds-5" class="slide level2 center">
 <h2>Complex Sounds</h2>
 <h3 id="interference-1">Interference</h3>
@@ -408,12 +408,12 @@ WL_n = \frac{2L}{n}
 <section id="harmonics-2" class="slide level2 center">
 <h2>Harmonics</h2>
 
-<img data-src="index_files/figure-html/unnamed-chunk-19-1.png" width="672" class="r-stretch"><figure class=""><audio controls="" src="/data/audio/harmonics.wav" type="audio/wav">Your browser does not support the audio tag.</audio><figcaption></figcaption></figure>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"><figure class=""><audio controls="" src="../../../data/audio/harmonics.wav" type="audio/wav">Your browser does not support the audio tag.</audio><figcaption></figcaption></figure>
 </section>
 <section id="harmonics-3" class="slide level2 center">
 <h2>Harmonics</h2>
 
-<img data-src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
 <section id="harmonics-4" class="slide level2 center">
 <h2>Harmonics</h2>
 
@@ -421,12 +421,12 @@ WL_n = \frac{2L}{n}
 <section id="harmonics-5" class="slide level2 center">
 <h2>Harmonics</h2>
 
-<img data-src="index_files/figure-html/unnamed-chunk-22-1.png" width="576" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-22-1.png" width="576" class="r-stretch"></section>
 <section id="standing-waves" class="slide level2 center">
 <h2>Standing Waves</h2>
 <h3 id="nodes-and-antinodes">Nodes and Antinodes</h3>
 
-<img data-src="images/nodes.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="images/nodes.gif" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"></section>
 <section id="from-the-source-to-the-filter" class="slide level2 center">
 <h2>From the source to the filter</h2>
 <ul>
@@ -700,6 +700,44 @@ L = \frac{(2n-1)c}{4F_n}
     window._ojs.selfContained = false;
     window._ojs.runtime.interpretFromScriptTags();
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
