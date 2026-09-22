@@ -1,0 +1,458 @@
+---
+title: "Hearing & Perception"
+date: 2026-09-15
+order: 10
+format:
+  revealjs:
+    output-file: "10_perception.html"
+  html: default
+  typst: default    
+editor: visual
+engine: knitr
+echo: false
+message: false
+warning: false
+filters: 
+  - typst-render
+resources: 
+  - audio/*
+  - images/*
+  - silent_center/silences/*
+---
+
+```{r}
+source(here::here("_extensions/mcanouil/typst-render/_resources/typst_define.R"))
+source(here::here("_defaults.R"))
+library(tidynorm)
+library(tidyverse)
+library(scales)
+```
+
+## Hearing vs Perception
+
+Hearing
+
+: Physical and anatomical processes in the ear
+
+Perception
+
+: Sense making of what was heard
+
+## Hearing vs Perception
+
+What you *hear* ≠ what you *percieve*
+
+## Anatomy
+
+Outer Ear
+
+- pinna
+
+- ear canal
+
+- tympanic membrane
+
+## Anatomy
+
+Middle Ear
+
+- [malleus](https://en.wiktionary.org/wiki/malleus#Latin)
+
+- [incus](https://en.wiktionary.org/wiki/incus#Latin)
+
+- [stapes](https://en.wiktionary.org/wiki/stapes#Latin)
+
+## Anatomy
+
+Inner Ear
+
+- Cochlea
+
+## Cochlea
+
+- The shortest possible refractory period of a nerve firing is about 0.5 ms
+
+- That means the highest frequency a nerve could *possibly* send signals at is 2000 Hz
+
+## Cochlea
+
+
+::::::: {.content-hidden when-format="typst"}
+:::::: {layout-ncol="3"}
+::: {}
+8000 Hz
+
+{{< audio "assets/hello.wav" >}}
+:::
+
+::: {}
+2000 Hz
+
+{{< audio "assets/hello_4000.wav" >}}
+:::
+
+::: {}
+1000 Hz
+
+{{< audio "assets/hello_2000.wav" >}}
+:::
+::::::
+::::::: 
+## Cochlea (unfurled)
+
+```{typst}
+#import "@preview/cetz:0.5.1"
+#set text(font: "Noto Sans")
+#let freq2mm(freq, A: 165.4, a: 2.1, length: 35, k: 0.88) = {
+  calc.log(
+    (freq/A) + k,
+    base: 10
+  ) * (length / a)
+}
+
+#let mm2freq(
+  mm,
+  A: 165.4, 
+  a: 2.1, 
+  length: 35, 
+  k: 0.88
+) = {
+  (calc.pow(10, (mm / (length / a))) - k) * A
+}
+
+#let cols = color.map.turbo
+#let ncol = cols.len() - 1
+
+#let lowest = 200
+#let highest = 16000
+#let frange = highest - lowest
+
+#let linear_f = range(0, ncol).map(
+   x => {
+     let pct = x/ncol
+     (pct * frange) + lowest
+   }
+)
+
+#let full_mm = range(0,(ncol + 1)).map(x => (x/ncol) * 35)
+#let full_hz = full_mm.map(x => mm2freq(x))
+#let hz_min = calc.min(..full_hz)
+#let hz_max = calc.max(..full_hz)
+#let hz_range = hz_max - hz_min
+#let hz_pct = full_hz.map(x => (x - hz_min)/hz_range)
+
+#full_mm.insert(0,0)
+#full_mm.push(35)
+
+#let pal = hz_pct.map(
+  x => {
+    let idx = int(calc.round((1-x) * ncol))
+    cols.at(idx)
+  }
+)
+
+#let xend = 22
+
+#let seqs = (
+  (
+    (0.1,-0.2),
+    ((xend - 2)/2,0.3),
+    (xend - 2,1)
+  ),
+  (
+    (xend - 2,1),
+    ((xend - 1), 2),
+    (xend - 2,3)
+  ),
+  (
+    (xend - 2,3),
+    ((xend - 2) / 2, 3.6),
+    (0.1,3.8)
+  )
+)
+
+#let seqs2 = (
+  (xend - 2,2.3),
+  (0,2),
+  (xend - 2,1.7)
+)
+
+#let fseq = (125, 250, 500, 1000, 2000, 4000, 8000, 16000)
+#let mmseq = fseq.map(x => 1-freq2mm(x)/35)
+#let xspot = mmseq.map(x => x * (xend - 0.8))
+
+#let n_mm = 7
+#let even_pct = range(0,n_mm).map(x => 1 - (x / (n_mm - 1)))
+#let even_mm = even_pct.map(x => x * 35)
+#let edges = (even_mm.remove(0), even_mm.remove(-1))
+#let even_hz = even_mm.map(x => calc.round(mm2freq(x)))
+
+#let sw = 2pt
+
+#cetz.canvas({
+  import cetz.draw: *
+  circle(
+    (0.1,0.9),
+    radius: (0.5,2.2/2),
+    stroke: sw,
+    name: "round-window"
+  )
+  circle(
+    (0.15,2.9),
+    radius: (0.4,1.8/2),
+    stroke: sw,
+    name: "oval-window"
+  )
+  compound-path({
+    for x in seqs {
+      bezier-through(..x)
+    }
+  },
+  stroke: sw
+)
+
+  compound-path({
+    line(
+      ..seqs2,
+      //close: true
+    )    
+    bezier-through(
+      (xend - 2, 1.7),
+      (xend - 1.8, 2),
+      (xend - 2, 2.3)
+    )
+  },
+  fill: gradient.linear(..pal.rev()),
+  stroke: none
+  )
+
+  for s_f in xspot.zip(fseq) {
+    circle(
+      (s_f.at(0), 2),
+      name: str(s_f.at(1)),
+      radius: 2pt,
+      fill: black
+    )
+    content(
+      (s_f.at(0),2.3),
+      [#highlight(fill: white.transparentize(30%))[#s_f.at(1) Hz]],
+      anchor: "west",
+      angle: 45deg
+    )
+  }
+
+  content(
+    "oval-window.north",
+    anchor: "south-west",
+    angle: 45deg,
+    padding: 0.1,
+    [oval window]
+  )
+
+  content(
+    "round-window.south",
+    anchor: "east",
+    angle: 45deg,
+    padding: 0.3,
+    [round window]
+  )
+  
+})
+
+```
+
+## Perception - Nonlinear
+
+```{r}
+#| fig-format: svg
+tibble(
+  Hz = seq(20, 20000, length = 20),
+  bark = hz_to_bark(Hz)
+) |> 
+  ggplot(
+    aes(Hz, bark)
+  ) +
+  geom_point() +
+  geom_line() +
+  theme(aspect.ratio = 1)
+```
+
+## Perception - The Brain
+
+> We do not understand exactly how the brain creates the perception of language.
+> (Zsiga, 2024).
+
+## Perception - Speech Variability
+
+```{r}
+data("pb52", package = "phonTools")
+```
+
+```{r}
+pb52 |> 
+  mutate(
+    id = row_number() 
+  ) |> 
+  pivot_longer(
+    f1:f3
+  ) |> 
+  mutate(
+    formant_n = str_extract(name, "\\d") |> 
+      as.numeric(),
+    delta_f = value / (formant_n - 0.5)
+  ) |> 
+  summarise(
+    .by = speaker,
+    delta_f = mean(delta_f)
+  ) |> 
+  mutate(
+    vtl = 34300/(2*delta_f)
+  ) ->
+  vtl_ests
+```
+
+```{r}
+#| fig-width: 5
+#| fig-asp: 1
+#| fig-align: "center"
+#| fig-format: svg
+pb52 |> 
+  left_join(vtl_ests) |> 
+  filter(
+    vtl == max(vtl) | vtl == min(vtl),
+    repetition == 1
+  ) |> 
+  mutate(
+    ipa = recode_values(
+      vowel,
+      "{"  ~ "æ",
+      "3'" ~ "ɝ",
+      "A"  ~ "ɑ",
+      "E"  ~ "ɛ",
+      "i"  ~ "iː",
+      "I"  ~ "ɪ",
+      "O"  ~ "ɔ",
+      "u"  ~ "uː",
+      "U"  ~ "ʊ",
+      "V"  ~ "ʌ"
+    )
+  ) |> 
+  ggplot(
+    aes(f2, f1, color = as.factor(speaker))
+  ) + 
+  ggforce::geom_mark_hull(
+    concavity = 4,
+    aes(fill = as.factor(speaker)),
+    alpha = 0.05
+  ) +  
+  geom_text(
+    aes(
+      label = ipa
+    ),
+    family = "Noto Sans"
+  ) + 
+  ggforce::geom_mark_hull(
+    concavity = 4
+  ) +
+  scale_x_continuous(
+    trans = c("log10", "reverse"),
+    expand = expansion(mult = 0.2)
+  ) +
+  scale_y_continuous(
+    trans = c("log10", "reverse"),
+    expand = expansion(mult = 0.2)
+  ) +
+  guides(
+    color = "none",
+    fill = "none"
+  ) +
+  coord_fixed()
+```
+
+## Perception - Speech Variability
+
+```{r}
+#| fig-width: 5
+#| fig-asp: 0.8
+#| fig-align: "center"
+#| fig-format: svg
+
+make_hull <- function(data) {
+  hull <- chull(x = data$x, y = data$y)
+  data.frame(x = data$x[hull], y = data$y[hull])
+}
+
+pb52 |> 
+  left_join(vtl_ests) |> 
+  mutate(
+    speaker = fct_reorder(
+      factor(speaker), vtl
+    )
+  ) |> 
+  ggplot(
+    aes(f2, f1, group = speaker)
+  ) + 
+  # stat_manual(
+  #   geom = "polygon",
+  #   fun  = make_hull,
+  #   aes(color = vtl),
+  #   fill = NA,
+  #   alpha = 0.6
+  # ) +
+  ggforce::geom_mark_hull(
+    aes(color = vtl),
+    concavity = 5,
+    alpha = 0.05,
+    alpha = 0.1
+  )  +
+  scale_x_continuous(
+    trans = c("log10", "reverse"),
+    expand = expansion(mult = 0.2)
+  ) +
+  scale_y_continuous(
+    trans = c("log10", "reverse"),
+    expand = expansion(mult = 0.2)
+  ) + 
+  scale_color_continuous(
+    labels = label_glue("{x} cm")
+  ) +
+  guides(
+    color = guide_colorsteps()
+  ) +
+  coord_fixed()
+```
+
+## Perception - Cue Integration
+
+{{< video https://www.youtube.com/watch?v=aFPtc8BVdJk width="800" height="500" >}}
+
+## Perception - Predictive
+
+```{ojs}
+viewof spect2 = {
+  const img = html`<img src="./images/silent_${step2}.svg"></img>`
+  return img;
+}
+viewof myAudio2 = {
+  const audio = html`<audio controls src="./silent_center/silences/clip_${step2}.wav"></audio>`;
+  // Expose the audio element's state or actions reactively
+  return audio;
+}
+viewof step2 = Inputs.range([1, 10], {value: 10, step: 1, label: "step"})
+```
+
+## Perception - Categorical (?)
+
+```{ojs}
+viewof spect = {
+  const img = html`<img src="./images/clip_${step}.svg"></img>`
+  return img;
+}
+viewof myAudio = {
+  const audio = html`<audio controls src="./audio/clip_${step}.wav"></audio>`;
+  // Expose the audio element's state or actions reactively
+  return audio;
+}
+viewof step = Inputs.range([1, 20], {value: 20, step: 1, label: "step"})
+
+```

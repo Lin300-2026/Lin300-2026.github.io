@@ -168,7 +168,7 @@ It's also common to see tone transcribed with small superscript numbers between 
 Back vowel fronting
 
 |                     |                      |                |                     |
-|------------------|-------------------|------------------|------------------|
+|---------------------|----------------------|----------------|---------------------|
 | [Goose]{.smallcaps} | [\[ɨu ɨʉ y\]]{.ipa}  | [\[uɫ\]]{.ipa} | [Ghoul]{.smallcaps} |
 | [Goat]{.smallcaps}  | \[[əʊ əʉ ø]{.ipa}\]  | [\[oɫ\]]{.ipa} | [Goal]{.smallcaps}  |
 | [Mouth]{.smallcaps} | [\[aʊ æʊ ɛɔ\]]{.ipa} |                | [Foul]{.smallcaps}  |
@@ -212,7 +212,7 @@ Back vowel fronting
 pre-l laxing
 
 |               |                            |                  |                |
-|----------------|------------------------|----------------|----------------|
+|---------------|----------------------------|------------------|----------------|
 | "peat", "pit" | [\[pʰit\], \[pʰɪt\]]{.ipa} | [\[pʰɪɫ\]]{#ipa} | "peel", "pill" |
 | "poot", "put" | [\[pʰut\], \[pʰʊt\]]{.ipa} | \[[pʰʊɫ]{.ipa}\] | "pool", "pull" |
 
@@ -296,7 +296,7 @@ Short vowel lowering
 \[[aɪ]{.ipa}\]
 
 |   | pattern 1 | pattern 2 | pattern 3 | pattern 4 | pattern 5? |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | "type" | [\[tʰɑɪp\]]{.ipa} | [\[tʰʌip\]]{.ipa} | [\[tʰɑɪp\]]{.ipa} | [\[tʰaːp\]]{.ipa} | [\[tʰʌip\]]{.ipa} |
 | "time" | [\[tʰɑɪm\]]{.ipa} | [\[tʰɑɪm\]]{.ipa} | [\[tʰaːm\]]{.ipa} | [\[tʰaːm\]]{.ipa} | [\[tʰaːm\]]{.ipa} |
 

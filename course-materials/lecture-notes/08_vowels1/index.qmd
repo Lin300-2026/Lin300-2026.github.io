@@ -236,7 +236,7 @@ Data from the Atlas of North American English
   "1",
   "0",
   "W",
-  "u"
+  "u",
 )
 
 #let redden(a) = {
@@ -266,7 +266,7 @@ Data from the Atlas of North American English
   "1",
   "0",
   "W",
-  "u"
+  "u",
 )
 
 #let redden(a) = {

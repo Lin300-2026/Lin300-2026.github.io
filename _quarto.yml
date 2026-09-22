@@ -50,5 +50,9 @@ format:
       - fonts/
     bibliographystyle: "apa"
 
+extensions:
+  typst-render:
+    font-path: fonts/
+
 editor: visual
 

@@ -72,6 +72,12 @@ bibliography: references.bib
 
 ## Voicing
 
+::: {}
+{{< video "videos/golden.MP4" width="350" align="center">}}
+:::
+
+## Voicing
+
 :::: {layout="[[30,30,90]]"}
 ![](images/front.png){fig-align="center" width="20%"}
 

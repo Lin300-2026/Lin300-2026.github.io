@@ -1,0 +1,684 @@
+---
+title: "_scratch"
+format: html
+editor: visual
+---
+
+---
+title: "Sound"
+format: revealjs
+editor: visual
+---
+
+## What is Sound?
+
+```{r}
+source(here::here("_defaults.R"))
+library(tidyverse)
+library(gganimate)
+library(emojifont)
+library(ggdiagram)
+library(scico)
+library(scales)
+library(geomtextpath)
+```
+
+```{r}
+make_cycle <- function(df){
+  df |> 
+    mutate(
+      nudge = case_when(
+        x <= cycle*2 ~ cos((x - cycle) * 2 * 2 * pi),
+        .default = cos((x - cycle) * 2 * 2 * pi) / ((((x/(cycle*2))-1)*5)+1)
+      )
+    )
+}
+
+make_cycle2 <- function(df){
+  df |> 
+    mutate(
+      nudge = cos((x - cycle) * 2 * 2 * pi)
+    )
+}
+
+make_cycle3 <- function(df){
+  df |> 
+    mutate(
+      nudge = cos((x + cycle) * 2 * 2 * pi)
+    )
+}
+
+make_sine <- function(df){
+  df |> 
+    mutate(
+      y =  case_when(
+        x <= cycle*2 ~ sin((x - cycle) * 2 * 2 * pi),
+        .default = sin((x - cycle) * 2 * 2 * pi) / ((((x/(cycle*2))-1)*5)+1)
+      )
+    )
+}
+
+make_sine2 <- function(df){
+  df |> 
+    mutate(
+      y =  sin((x - cycle) * 2 * 2 * pi)
+    )
+}
+
+make_sine3 <- function(df){
+  df |> 
+    mutate(
+      y =  sin((x + cycle) * 2 * 2 * pi)
+    )
+}
+```
+
+## Not Sound
+
+```{r}
+set.seed(2025)
+cloud <- tibble(
+  y = runif(1000),
+  x = runif(1000, min = 0, max = 2)
+) |> 
+  mutate(rowid = row_number())
+ 
+cloud |> 
+  ggplot(
+    aes(x, y)
+  )+
+  geom_point() +
+  geom_segment(
+    aes(
+      y = -0.2,
+      yend = -0.2,
+      x = 0, 
+      xend = 2
+    )
+  ) +
+  coord_fixed()+
+  theme_no_x()+
+  theme_no_y()  
+```
+
+## Sound
+
+```{r}
+uniform <- tibble(
+  x = seq(0, 2, length = 500)
+)
+
+seq(0, 3, length = 300) |> 
+  map(
+    \(.x) cloud |> mutate(cycle = .x)
+  ) |> 
+  list_rbind() ->
+  sound
+
+seq(0, 3, length = 300) |> 
+  map(
+    \(.x) uniform |> mutate(cycle = .x)
+  ) |> 
+  list_rbind() ->
+  wave
+
+freq <- 3
+nudge_scale <- 0.03
+amp <- 0.2
+
+sound |> 
+  ggplot(
+    aes(x,y, cycle = cycle)
+  ) +
+  geom_point(
+    aes(
+      nudge_x = after_stat(nudge) * nudge_scale
+    ),
+    stat = "manual",
+    fun = make_cycle,
+    position = position_nudge()
+  ) + 
+  # geom_line(
+  #   data = wave,
+  #   stat = "manual",
+  #   fun = make_sine,
+  #   aes(
+  #      y = (after_stat(y) * amp) - 0.2
+  #   )
+  # ) +
+ # geom_text(
+ #    data = sound |> filter(rowid == 1),
+ #    label = fontawesome("fa-user"),
+ #    family='fontawesome-webfont',
+ #    color = "red",
+ #    aes(
+ #      nudge_x = after_stat(nudge) * nudge_scale
+ #    ),
+ #    stat = "manual",
+ #    fun = make_cycle,
+ #    position = position_nudge()
+ #  ) +
+  transition_time(cycle) +
+  coord_fixed()+
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y()
+```
+
+## Sound
+
+```{r}
+sound |> 
+  ggplot(
+    aes(x,y, cycle = cycle)
+  ) +
+  geom_point(
+    aes(
+      nudge_x = after_stat(nudge) * nudge_scale
+    ),
+    stat = "manual",
+    fun = make_cycle2,
+    position = position_nudge()
+  ) + 
+  # geom_line(
+  #   data = wave,
+  #   stat = "manual",
+  #   fun = make_sine2,
+  #   aes(
+  #      y = (after_stat(y) * amp) - 0.2
+  #   )
+  # ) +
+ geom_text(
+    data = sound |> filter(rowid == 1),
+    label = fontawesome("fa-user"),
+    family='fontawesome-webfont',
+    color = "red",
+    aes(
+      nudge_x = after_stat(nudge) * nudge_scale
+    ),
+    stat = "manual",
+    fun = make_cycle2,
+    position = position_nudge()
+  ) +
+  transition_time(cycle) +
+  coord_fixed()+
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y()
+```
+
+Sound is not the air molecules from my lungs hitting your ears.
+
+## Sound
+
+```{r}
+sound |> 
+  filter(cycle == 0) |> 
+  ggplot(
+    aes(x, y, cycle = cycle)
+  ) +
+ geom_point(
+    aes(
+      nudge_x = after_stat(nudge) * 0.06
+    ),
+    stat = "manual",
+    fun = make_cycle2,
+    position = position_nudge()
+  ) +
+  geom_line(
+    data = wave |> filter(cycle == 0),
+    stat = "manual",
+    fun = make_sine2,
+    aes(
+       y = (after_stat(y) * amp) - 0.21
+    )
+  ) +
+  theme_no_x()+
+  theme_no_y()
+```
+
+Where air is tightly packed, there's high pressure.
+Where it's more spread out, low pressure.
+
+## Sound
+
+```{r}
+#| label: fig-sound
+sound |> 
+  ggplot(
+    aes(x,y, cycle = cycle)
+  ) +
+  geom_point(
+    aes(
+      nudge_x = after_stat(nudge) * 0.045
+    ),
+    stat = "manual",
+    fun = make_cycle2,
+    position = position_nudge()
+  ) + 
+  geom_line(
+    data = wave,
+    stat = "manual",
+    fun = make_sine2,
+    aes(
+       y = (after_stat(y) * amp) - 0.2
+    )
+  ) +
+  transition_time(cycle) +
+  coord_fixed()+
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y()
+```
+
+## Sounds
+
+```{r}
+#| fig-width: 6
+#| fig-height: 2
+tibble(
+  x = seq(0, 2, length = 500),
+  y = sin(x * 2 * 2 * pi)
+) |> 
+  data2shape(ob_point) |> 
+  ob_path()->
+  signal
+  
+tibble(
+  x = seq(0, 2, length = 500),
+  y = sin((x+0.125) * 2 * 2 * pi)
+) |> 
+  data2shape(ob_point) |> 
+  ob_path() ->
+  signal2
+
+peaks <- ob_point(
+  x = c(0.625, 0.625+ 0.5),
+  y = c(1,1),
+  color = ptol_red
+)
+```
+
+```{r}
+ggdiagram(linewidth = 1, font_size = 16) +
+  {
+    baseline <- ob_segment(
+      ob_point(0, 0),
+      ob_point(2, 0),
+      color = "grey50",
+      hjust = 0
+    ) 
+  } +
+  signal +
+  ob_segment(
+    ob_point(-0.125, -1) ,
+    ob_point(-0.125, 1),
+    color = "grey50",
+    label = ob_label("pressure", nudge_y = 0.3)
+  ) +
+  ob_label(
+    "space",
+    baseline@p1,
+    color = "grey50"
+  ) +  
+  peaks +
+  {
+    peak1 <- peaks[1]
+    peak1@x <- 0.125
+    peak1
+  } +
+  ob_label(
+    "peak",
+    peak1,
+    nudge_y = 0.08
+  ) +
+  {
+    trough <- ob_point(
+      0.125 + 0.25,
+      -1,
+      color = ptol_blue
+    )
+  } +
+  ob_label(
+    "trough",
+    trough,
+    nudge_y = -0.1
+  ) +
+  connect(
+    peaks[1], 
+    peaks[2],
+    label = "wavelength",
+    color = ptol_red
+  ) +
+  {
+    peak3 <- ob_point(
+      (0.5 * 3) + 0.125,
+      1,
+      color = ptol_green
+    )
+  } +
+  {
+    trough2 <- ob_point(
+      ((0.5 * 3) + 0.125) - 0.25,
+      -1,
+      color = ptol_green
+    )
+  } +
+  connect(
+    ob_point(
+      trough2@x,0
+    ),
+    trough2,
+    label = ob_label("amplitude")
+  ) +
+  connect(
+    ob_point(
+      peak3@x,0
+    ),
+    peak3,
+    label = ob_label("amplitude")
+  )  +
+  theme(
+    aspect.ratio = 1/2
+  )
+```
+
+## Sounds
+
+```{r}
+cols <- scico(5, palette = "glasgow")
+phase_shifts <- seq(0, 0.33, length = 5)
+
+imap(
+  phase_shifts,
+  \(p, idx){
+    tibble(
+      x = seq(0, 2, length = 200),
+      y = sin((x-p) * 2 * 2 * pi)
+    ) |> 
+    data2shape(ob_point) |> 
+    ob_path(
+      color = cols[idx]
+    )
+  }
+) -> 
+  phases
+
+imap(
+  phase_shifts,
+  \(p, idx){
+    ob_point(
+      0.125 + p,
+      1
+    )
+  }
+) -> 
+  phase_peaks
+
+ggdiagram(linewidth = 1, font_size = 16) + 
+  phases +
+  connect(
+    ob_point(0.125, 1.1),
+    ob_point(0.124 + 0.33, 1.1),
+    label = ob_label("phase")
+  ) +
+  theme(
+    aspect.ratio = 1/2
+  )
+```
+
+## Sounds - Frequency
+
+Frequency = how many high pressure zones per second
+
+This is going to be a function of both the wavelength and the speed of the wave.
+
+## Sounds - Frequency
+
+```{r}
+make_cycle3 <- function(df){
+  df |> 
+    mutate(
+      nudge = cos((x - cycle) * freq * 2 * pi) * nscale
+    )
+}
+
+make_sine3 <- function(df){
+  df |> 
+    mutate(
+      y =  sin((x - cycle) * freq * 2 * pi)
+    )
+}
+```
+
+```{r}
+#| fig-width: 5
+#| fig-height: 3
+wave |> 
+  ggplot(
+    aes(x, cycle = cycle, freq = 2)
+  ) +
+  geom_line(
+    data = wave |>  mutate(speed = "fast"),
+    stat = "manual",
+    fun = make_sine3,
+    aes(
+       y = (after_stat(y) ) 
+    )
+  ) + 
+  geom_line(
+    data = wave |>  mutate(speed = "slow"),
+    aes(
+      cycle = cycle * 0.3,
+      freq = 2,
+      y = after_stat(y) 
+    ),
+    stat = "manual",
+    fun = make_sine3
+  ) +   
+  transition_time(cycle) +
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y() + 
+  facet_wrap(~speed, ncol = 1)
+```
+
+## Sound - Frequency
+
+Because the speed of sound will usually be fixed, Wavelength $\propto$ Frequency
+
+$$
+34000 \frac{cm}{s}
+$$
+
+## Sound - Frequency
+
+Concert A is 440 Hz (that is, $\frac{1}{s}$)
+
+$$
+\frac{speed}{freq} = \frac{\frac{cm}{s}}{\frac{1}{s}}=\frac{cm}{s}\frac{s}{1} = cm
+$$
+
+```{r}
+#| echo: true
+34000/440
+```
+
+## Sound - Increasing Frequency
+
+```{r}
+sound |> 
+  ggplot(
+    aes(x,y, cycle = cycle, freq = 1.5 + (cycle/2), nscale = 0.03)
+  ) +
+  geom_point(
+    aes(
+      nudge_x = after_stat(nudge)
+    ),
+    stat = "manual",
+    fun = make_cycle3,
+    position = position_nudge()
+  ) + 
+  geom_line(
+    data = wave,
+    stat = "manual",
+    fun = make_sine3,
+    aes(
+       y = (after_stat(y) * amp) - 0.2
+    )
+  ) +
+  transition_time(cycle) +
+  coord_fixed()+
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y()
+```
+
+## Sound - Frequency
+
+Every time frequency doubles, we experience it as the frequency increasing 1 octave.
+
+<iframe src="https://strudel.cc/#ZnJlcSgiNTUiLm11bCgiPDEgMiA0IDggMTY%2BKjIiKSkKICAucygic2luZSIpCiAgLnNlZ21lbnQoNCkKICAuc2NvcGUoKQ%3D%3D" width="500" height="500">
+
+</iframe>
+
+## Sound - Intensity
+
+A relationship between frequency *and* amplitude
+
+```{r}
+#| fig-width: 5
+#| fig-height: 3
+expand_grid(
+  amplitude = seq(0.01, 0.05, length = 100),
+  frequency = c(110, 220, 440)
+) |> 
+  mutate(
+    intensity = 2 * (pi^2) * (amplitude^2) * (frequency^2)
+  ) |> 
+  ggplot(
+    aes(amplitude, intensity)
+  )+
+  geom_textline(
+    aes(
+      color = factor(frequency),
+      label = str_glue("{frequency} Hz")
+    ),
+    show.legend = F,
+    linewidth = 1,
+    size = 4
+  ) +
+  theme_sub_axis(
+    text = element_blank()
+  )
+```
+
+## Sound - Increasing Amplitude
+
+```{r}
+sound |> 
+  ggplot(
+    aes(x,y, cycle = cycle, freq = 1.5, nscale = 0.03 + (0.1 * (cycle/3)))
+  ) +
+  geom_point(
+    aes(
+      nudge_x = after_stat(nudge)
+    ),
+    stat = "manual",
+    fun = make_cycle3,
+    position = position_nudge()
+  ) + 
+  geom_line(
+    data = wave,
+    stat = "manual",
+    fun = make_sine3,
+    aes(
+       y = (after_stat(y) * (after_stat(nscale)*2)) - 0.3
+    )
+  ) +
+  transition_time(cycle) +
+  coord_fixed()+
+  ease_aes('linear') +
+  labs(title = 'cycle: {sprintf("%.2f", frame_time)}') +
+  theme_no_x()+
+  theme_no_y()
+```
+
+## Sound - Loudness
+
+Decibels (dB) are a measure of *relative* intensity.
+
+$$
+1 dB = 10\log_{10}\left(\frac{s_1}{s_2}\right)
+$$
+
+## Sound - Doppler Effect
+
+```{r}
+make_circle <- function(df){
+  df |> 
+    mutate(
+      z = x
+    ) |> 
+    reframe(
+      .by = z,
+      theta = seq(0, 2*pi, length = 100),
+      x = (cos(theta) * ((time-z)*1.2)) + z,
+      y = sin(theta) * ((time-z)*1.2),
+      across(
+        matches("[^xyz]"),
+        first
+      )
+    ) |> 
+    filter(
+      (time-z) >= 0
+    )
+}
+```
+
+```{r}
+expand_grid(
+  x = c(seq(0, 3, length = 10)),
+  time = c(seq(0,3, length = 10)),
+  dist1 = sqrt(((time-x)*1.2)^2)
+) ->
+  dop
+
+tibble(
+  x = seq(0, 3, length = 10),
+  dist_to_y = sqrt((x^2) + (0.5^2)),
+  time = (dist_to_y/1.2) + x
+) |> 
+  filter(time <= 3) ->
+  pulse
+
+dop |> 
+  ggplot(
+    aes(x, time = time)
+  ) + 
+  geom_point(
+    aes(x = time, y = 0)
+  )+
+  geom_polygon(
+    aes(color = x, group = x),
+    stat = "manual",
+    fun = make_circle,
+    fill = NA,
+    show.legend = F
+  )+
+  coord_fixed(ylim = c(-1,1), xlim = c(-0.2, 3))+
+  transition_time(time)+
+  theme_sub_axis(
+    text = element_blank()
+  )+
+  labs(
+    title = 'time: {sprintf("%.2f", ifelse(frame_time <= 3, frame_time, 3))}',
+    x = "space",
+    y = "space"
+  )
+```
