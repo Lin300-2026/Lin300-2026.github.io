@@ -682,6 +682,7 @@ praatpicture(
   spec_dynamicRange = 40
 )
 ```
+
 ::: {.content-hidden when-format="typst"}
 {{< audio file="/data/audio/harmonics.wav" >}}
 :::
@@ -839,7 +840,7 @@ anim_save(
 
 - Then, the air pressure waves propagate through your vocal tract, which introduces *resonances*.
 
-##  Resonance - From the Filter
+## Resonance - From the Filter
 
 ### Pressure
 
