@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Josef Fruehwald">
+
+<title>Abstraction &amp; Contrast – Lin300-2026 - Speech Sounds</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/logo_small.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e5bcdb3a787ab268c756645007037576.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7bedbd96ab1891dc478082ef8f0195f3.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e5bcdb3a787ab268c756645007037576.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-8be5f85bd5262bc60286f2c78715d0cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-f02e881c631e8aaf00aff0dc604b49f9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-8be5f85bd5262bc60286f2c78715d0cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+window._input_file = new TextDecoder('utf-8').decode(
+  Uint8Array.from(atob('LS0tCnRpdGxlOiAiQWJzdHJhY3Rpb24gJiBDb250cmFzdCIKZm9ybWF0OgogIHJldmVhbGpzOiAKICAgIG91dHB1dC1maWxlOiAiMTVfYWJzdHJhY3Rpb24iCiAgaHRtbDogZGVmYXVsdAogIHR5cHN0OiBkZWZhdWx0CmVkaXRvcjogdmlzdWFsCnJldmVhbGpzLXBsdWdpbnM6CiAgLSBlZGl0YWJsZQpmaWx0ZXJzOiAKICAtIHR5cHN0LXJlbmRlcgogIC0gZWRpdGFibGUKLS0tCgojIyBGcm9tIFBob25ldGljcyB0byBQaG9ub2xvZ3kKClRoZXJlIGlzIG5vIGRlZmluaXRpb24gb2YgdGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBQaG9uZXRpY3MgYW5kIFBob25vbG9neSB0aGF0IHdvbid0IG1ha2UgKnNvbWVvbmUqIGFuZ3J5LgoKIyMgV2hhdCBkbyB5b3UgKmtub3cqPwoKYGBge3J9CiN8IGVjaG86IGZhbHNlCnNvdXJjZShoZXJlOjpoZXJlKCJfZGVmYXVsdHMuUiIpKQpgYGAKCmBgYHs9aHRtbH0KPHN0eWxlPgogIC5lbXBoMSB7CiAgICBjb2xvcjogI2VlNjY3NzsKICB9CiAgCiAgLmVtcGgyIHsKICAgIGNvbG9yOiAjNDQ3N2FhOwogIH0KPC9zdHlsZT4KYGBgCgpMaW5ndWlzdGljcyBpcyBhbGwgYWJvdXQgYW5zd2VyaW5nIHRoZSBxdWVzdGlvbiAiV2hhdCBpcyB5b3VyIGtub3dsZWRnZSBvZiB5b3VyIGxhbmd1YWdlPyIKCiMjIEFzaWRlOiBLbm93bGVkZ2UKCjo6OiB7LmNvbnRlbnQtaGlkZGVuIHdoZW4tZm9ybWF0PSJ0eXBzdCJ9Cnt7PCByZXZlYWxqcyAiLi9rbm93bGVkZ2UvIj59fQo6OjoKCiMjIEtub3dsZWRnZSBvZiBzb3VuZHMKCjo6Ojo6IGNvbHVtbnMKOjo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQpbbG9uZy1sYWcgVk9UXXsuZW1waDF9CgohW10oL2NvdXJzZS1tYXRlcmlhbHMvbGVjdHVyZS1ub3Rlcy8wN19haXJzdHJlYW0vaW1hZ2VzL2xvbmctbGFnLmdpZil7ZmlnLWFsaWduPSJjZW50ZXIifQo6OjoKCjo6OiB7LmNvbHVtbiB3aWR0aD0iNTAlIn0KW3Nob3J0LWxhZyBWT1Rdey5lbXBoMn0KCiFbXSgvY291cnNlLW1hdGVyaWFscy9sZWN0dXJlLW5vdGVzLzA3X2FpcnN0cmVhbS9pbWFnZXMvc2hvcnQtbGFnLmdpZil7ZmlnLWFsaWduPSJjZW50ZXIifQo6OjoKOjo6OjoKCiMjIEtub3dsZWRnZSBvZiBTb3VuZHMKCkhvdyB3b3VsZCB5b3UgdHJhbnNjcmliZSB5b3VyIHByb251bmNpYXRpb24gb2YgYSBub3ZlbCB3b3JkIGxpa2U6Cgo6Ojoge3N0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogM2VtOyJ9CiJrb3dzcGllIgo6OjoKCiMjIEtub3dsZWRnZSBvZiBTb3VuZHMKCjo6OiB7LmlwYSBzdHlsZT0iZm9udC1zaXplOiAyZW0ifQp8ICAgICAgICAgICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfC0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS18CnwgICAgICAgICAgICAgIHwgW2vKsF17LmVtcGgxfSAgICAgICAgICAgICAgICB8IFtrXXsuZW1waDJ9ICAgICAgICAgICAgICAgIHwKfCBbcMqwXXsuZW1waDF9IHwgW2vKsF17LmVtcGgxfW9zW3DKsF17LmVtcGgxfWkgfCBba117LmVtcGgyfW9zW3DKsF17LmVtcGgxfWkgfAp8IFtwXXsuZW1waDJ9ICB8IFtryrBdey5lbXBoMX1vc1twXXsuZW1waDJ9aSAgfCBba117LmVtcGgyfW9zW3Bdey5lbXBoMn1pICB8Cjo6OgoKIyMgS25vd2xlZGdlIG9mIFNvdW5kcwoKWW91ciBwcmVmZXJlbmNlIChJJ20gZ3Vlc3NpbmchKSBmb3IgW1xbXXsuaXBhfVtryrBdey5lbXBoMX1vc1twXXsuZW1waDJ9aVxdLCBkZW1vbnN0cmF0ZXMgYSBraW5kIG9mIGtub3dsZWRnZSBhYm91dCB0aGUgc291bmRzIG9mIGxhbmd1YWdlIGJleW9uZCBqdXN0IHRoZSBmYWN0IHRoYXQgdGhlcmUgYXJlIGxvbmctbGFnIGFuZCBzaG9ydC1sYWcgVk9UIHNlZ21lbnRzLgoKIyMgQXNpZGU6IFd1Z3MKCjo6OiB7LmNvbnRlbnQtaGlkZGVuIHdoZW4tZm9ybWF0PSJ0eXBzdCJ9Cnt7PCByZXZlYWxqcyAiLi93dWdzLyI+fX0KOjo6CgojIyBLbm93bGVkZ2Ugb2YgU291bmRzCgo6Ojogey5pcGEgc3R5bGU9ImZvbnQtc2l6ZTogMS41ZW07In0KfCAgICAgICAgfCAgICAgICAgICAgICAgICAgICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgIHwgICAgICAgICAgIHwKfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLXwKfCAqcGxheSogfCDLiFsqKnDKsCoqXXsuZW1waDF9bGXJqiB8IGTJqi7LiHNbKipwKipdey5lbXBoMn1sZcmqIHwgKmRpc3BsYXkqIHwKfCAqY2FyZCogfCDLiFsqKmvKsCoqXXsuZW1waDF9yZHJuWQgfCBkyaouy4hzWyoqayoqXXsuZW1waDJ9yZHJuWQgfCAqZGlzY2FyZCogfAo6OjoKCiMjIEtub3dsZWRnZSBvZiBTb3VuZHMKCjo6OiB7LmlwYSBzdHlsZT0iZm9udC1zaXplOiAxLjVlbTsifQp8ICB8ICB8ICB8CnwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwKfCAqbG9uZyogfCBbKmxvbmdpbmcqXXsuZnJhZ21lbnQgZnJhZ21lbnQtaW5kZXg9IjEifSB8IFsqbG9uZ2VyKl17LmZyYWdtZW50IGZyYWdtZW50LWluZGV4PSIzIn0gfAp8IGzJlMWLIHwgW2zJlMWLyarFi117LmZyYWdtZW50IGZyYWdtZW50LWluZGV4PSIyIn0gfCBbbMmUxYtnybnMqV17LmZyYWdtZW50IGZyYWdtZW50LWluZGV4PSI0In0gfAo6OjoKCiMjIEtub3dsZWRnZSBvZiBTb3VuZHMKClVwc2hvdDogQWJzdHJhY3Rpb24gaXMgbmVjZXNzYXJ5CgojIyAiUGhvbmVtZSIKCj4gQSBsYWJlbCBmb3IgYSBzZXQgb2Ygc291bmRzIHRoYXQgYWxsIGNvdW50IGFzIGJhc2ljYWxseSB0aGUgc2FtZS4KCjo6Ojo6IGNvbHVtbnMKOjo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQpgYGB7dHlwc3R9Ci8vfCBvdXQtd2lkdGg6IDIwMCUKI2ltcG9ydCAiQHByZXZpZXcvY2V0ejowLjUuMSIKI2ltcG9ydCAiQHByZXZpZXcvZm9udGF3ZXNvbWU6MC42LjIiOiAqCi8vI3NldCBwYWdlKHdpZHRoOiBhdXRvLCBoZWlnaHQ6IGF1dG8pCiNzZXQgdGV4dChmb250OiAiTm90byBTYW5zIiwgc2l6ZTogMzZwdCkKCiNjZXR6LmNhbnZhcyh7CiAgaW1wb3J0IGNldHouZHJhdzogKgogIGNpcmNsZSgoMCwwKSwgbmFtZTogInBob25lbWUiLCByYWRpdXM6IDE1MHB0LCBzdHJva2U6IDNwdCkKICBjb250ZW50KAogICAgInBob25lbWUubm9ydGgtd2VzdCIsCgogICAgYm94KGZpbGw6IHdoaXRlLCBpbnNldDo1cHQpWy9wL10KICApCiAgY29udGVudCgKICAgICgicGhvbmVtZS5zb3V0aC13ZXN0IiwgMzAlLCAicGhvbmVtZS5ub3J0aC1lYXN0IiksCiAgICBbXFtwXF1dCiAgKQogIGNvbnRlbnQoCiAgICAoInBob25lbWUuc291dGgtd2VzdCIsIDcwJSwgInBob25lbWUubm9ydGgtZWFzdCIpLAogICAgW1xbcCNzdXBlcltoXVxdXQogICkKfSkKYGBgCjo6OgoKOjo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQpUaGUgcGhvbmVtZSAvcC8gaGFzIGF0IGxlYXN0IHR3byAqYWxsb3Bob25lcyosIFxbcFxdIGFuZCBcW3DKsFxdCjo6Ogo6Ojo6OgoKIyMgIlBob25lbWUiCgo6Ojo6OiBjb2x1bW5zCjo6OiB7LmNvbHVtbiB3aWR0aD0iNTAlIn0KYGBge3R5cHN0fQovL3wgb3V0LXdpZHRoOiAyMDAlCiNpbXBvcnQgIkBwcmV2aWV3L2NldHo6MC41LjEiCiNpbXBvcnQgIkBwcmV2aWV3L2ZvbnRhd2Vzb21lOjAuNi4yIjogKgovLyNzZXQgcGFnZSh3aWR0aDogYXV0bywgaGVpZ2h0OiBhdXRvKQojc2V0IHRleHQoZm9udDogIk5vdG8gU2FucyIsIHNpemU6IDM2cHQpCgojY2V0ei5jYW52YXMoewogIGltcG9ydCBjZXR6LmRyYXc6ICoKICBjaXJjbGUoKDAsMCksIG5hbWU6ICJwaG9uZW1lIiwgcmFkaXVzOiAxNTBwdCwgc3Ryb2tlOiAzcHQpCiAgY29udGVudCgKICAgICJwaG9uZW1lLm5vcnRoLXdlc3QiLAoKICAgIGJveChmaWxsOiB3aGl0ZSwgaW5zZXQ6NXB0KVsvI2ZhLWljb24oImNvZmZlZSIpL10KICApCiAgY29udGVudCgKICAgICgicGhvbmVtZS5zb3V0aC13ZXN0IiwgMzAlLCAicGhvbmVtZS5ub3J0aC1lYXN0IiksCiAgICBbXFtwXF1dCiAgKQogIGNvbnRlbnQoCiAgICAoInBob25lbWUuc291dGgtd2VzdCIsIDcwJSwgInBob25lbWUubm9ydGgtZWFzdCIpLAogICAgW1xbcCNzdXBlcltoXVxdXQogICkKfSkKYGBgCjo6OgoKOjo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQpXZSB1c2UgIi9wLyIgYXMgY29udmVuaWVudCBsYWJlbCBmb3IgdGhlIHBob25lbWUsIGJ1dCB0aGUgcGhvbmVtZSBpdHNlbGYgaXMgbm90IGEgc291bmQuCgpXZSBjb3VsZCBoYXZlIHVzZWQgInt7PCBmYSBjb2ZmZWUgPn19IiBhcyB0aGUgbGFiZWwgZm9yIHRoZSBwaG9uZW1lLCBidXQgaXQgd291bGQgYmUgbW9yZSBjb25mdXNpbmcgdG8gcmVhZC4KOjo6Cjo6Ojo6CgojIyAiTmF0dXJhbCBDbGFzc2VzIgoKR3JvdXBzIG9mIHBob25lbWVzIHRoYXQgcGF0dGVybiB0b2dldGhlciBhcmUgIm5hdHVyYWwgY2xhc3NlcyIKCmBgYHt0eXBzdH0KI2ltcG9ydCAiQHByZXZpZXcvY2V0ejowLjUuMSIKLy8jc2V0IHBhZ2Uod2lkdGg6IGF1dG8sIGhlaWdodDogYXV0bykKI3NldCB0ZXh0KGZvbnQ6ICJOb3RvIFNhbnMiLCBzaXplOiAyNHB0KQoKI2xldCByYWQgPSAyCiNjZXR6LmNhbnZhcyh7CiAgaW1wb3J0IGNldHouZHJhdzogKgogIGNpcmNsZSgoMCwwKSwgbmFtZTogInAiLCByYWRpdXM6IHJhZCwgc3Ryb2tlOiByYWQqMXB0KQogIGNpcmNsZSgocmVsOiAoMi41LDApLCB0bzogInAuZWFzdCIpLCBuYW1lOiAidCIsIHJhZGl1czogcmFkLCBzdHJva2U6IHJhZCoxcHQpCiAgY2lyY2xlKChyZWw6ICgyLjUsMCksIHRvOiAidC5lYXN0IiksIG5hbWU6ICJrIiwgcmFkaXVzOiByYWQsIHN0cm9rZTogcmFkKjFwdCkKICByZWN0KAogICAgKHJlbDogKC0ocmFkLzIpLCAtKHJhZC8yKSksIHRvOiAicC5zb3V0aC13ZXN0IiksCiAgICAocmVsOiAocmFkLzIscmFkLzIpLCB0bzogImsubm9ydGgtZWFzdCIpLAogICAgbmFtZTogIm5hdCIKICApCiAgY29udGVudCgKICAgICJuYXQubm9ydGgiLAogICAgYm94KGZpbGw6IHdoaXRlKVtuYXR1cmFsIGNsYXNzXQogICkKICBjb250ZW50KAogICAgInAubm9ydGgtd2VzdCIsCiAgICBib3goZmlsbDogd2hpdGUsIGluc2V0OiA1cHQpWy9wL10KICApCiAgY29udGVudCgKICAgICJ0Lm5vcnRoLXdlc3QiLAogICAgYm94KGZpbGw6IHdoaXRlLCBpbnNldDogNXB0KVsvdC9dCiAgKQogIGNvbnRlbnQoCiAgICAiay5ub3J0aC13ZXN0IiwKICAgIGJveChmaWxsOiB3aGl0ZSwgaW5zZXQ6IDVwdClbL2svXQogICkKfSkKYGBgCgojIyBBbGxvcGhvbmVzICYgTmF0dXJhbCBDbGFzc2VzCgpXaGljaCBzb3VuZHMgYXJlIGFsbG9waG9uZXMgb2Ygd2hpY2ggcGhvbmVtZXMsIGFuZCB3aGljaCBwaG9uZW1lcyBmb3JtIG5hdHVyYWwgY2xhc3NlcywgYXJlIGFsbCBsYW5ndWFnZSBzcGVjaWZpYy4KCiMjIFBob25lbWljIENvbnRyYXN0CgpJZiB0d28gc291bmRzIGFyZSAqbm90KiBiYXNpY2FsbHkgdGhlIHNhbWUsIHRoZW4gdGhleSBhcmUgKmNvbnRyYXN0aXZlKiwgYW5kIGFyZSBhbGxvcGhvbmVzIG9mIGRpZmZlcmVudCBwaG9uZW1lcy4KCjo6OiB7LmlwYSBzdHlsZT0iZm9udC1zaXplOiAxLjVlbSJ9CnwgICAgICAgICAgICAgICAgICAgfCAgICAgICAgICAgICAgICAgICB8CnwtLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18CnwgKmV0aGVyKiAgICAgICAgICAgfCAqZWl0aGVyKiAgICAgICAgICB8CnwgXFtpW864XXsuZW1waDF9ybnMqVxdIHwgXFtpW8OwXXsuZW1waDF9ybnMqVxdIHwKOjo6CgojIyBQaG9uZW1pYyBDb250cmFzdAoKIyMjIE1pbmltYWwgUGFpcnMKClR3byB3b3JkcyB0aGF0IGFyZSBpZGVudGljYWwgZXhjZXB0IGZvciB0aGUgb25lIHBob25lbWUgaW4gcXVlc3Rpb24KCjo6Ojo6OjogY29sdW1ucwo6Ojo6IHsuY29sdW1uIC5pcGEgd2lkdGg9IjUwJSIgc3R5bGU9ImZvbnQtc2l6ZTogM2VtOyB0ZXh0LWFsaWduOiBjZW50ZXI7In0KZAoKOjo6IHsuZWRpdGFibGUgc3R5bGU9ImZvbnQtc2l6ZTogMC4zZW0ifQo/Cjo6Ogo6Ojo6Cgo6Ojo6IHsuY29sdW1uIC5pcGEgd2lkdGg9IjUwJSIgc3R5bGU9ImZvbnQtc2l6ZTogM2VtOyB0ZXh0LWFsaWduOiBjZW50ZXI7In0Kw7AKCjo6OiB7LmVkaXRhYmxlIHN0eWxlPSJmb250LXNpemU6IDAuM2VtIn0KPwo6OjoKOjo6Ogo6Ojo6Ojo6CgojIyBBbGxvcGhvbmljIEFsdGVybmF0aW9uCgojIyMgQ29tcGxlbWVudGFyeSBEaXN0cmlidXRpb24KCklmIHR3byBzb3VuZHMgbmV2ZXIgYXBwZWFyIGluIHRoZSBzYW1lIGNvbnRleHRzLCB0aGV5IGFyZSBpbiBhIGNvbXBsZW1lbnRhcnkgZGlzdHJpYnV0aW9uLgoKIyMgQWxsb3Bob25pYyBBbHRlcm5hdGlvbgoKU3BhbmlzaDoKCjo6Ojo6Ojo6Ojo6IGNvbHVtbnMKOjo6Ojo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQo6Ojoge2xheW91dC1uY29sPSIyIn0KXFtkYW1hXF0KCipsYWR5Kgo6OjoKCjo6OiB7bGF5b3V0LW5jb2w9IjIifQpcW2R1bHNlXF0KCipzd2VldCoKOjo6Cgo6Ojoge2xheW91dC1uY29sPSIyIn0KXFtkaXNmcnV0YXNcXQoKKmRpc2d1aXNlKgo6OjoKOjo6Ojo6Cgo6Ojo6Ojogey5jb2x1bW4gd2lkdGg9IjUwJSJ9Cjo6OiB7bGF5b3V0LW5jb2w9IjIifQpcW2xhw7BvXF0KCipzaWRlKgo6OjoKCjo6OiB7bGF5b3V0LW5jb2w9IjIifQpcW3VuaXZlcnNpw7Bhw7BcXQoKKnVuaXZlcnNpdHkqCjo6OgoKOjo6IHtsYXlvdXQtbmNvbD0iMiJ9ClxbZ3JhbmHDsGFcXQoKKkdyYW5hZGEqCjo6Ogo6Ojo6OjoKOjo6Ojo6Ojo6OjoKCgojIyBQaG9ub2xvZ2ljYWwgYW5hbHlzaXMKCjo6Ojo6IGNvbHVtbnMKOjo6IHsuY29sdW1uIHdpZHRoPSI1MCUifQpFbmdsaXNoOgpgYGB7dHlwc3R9Ci8vfCBmaWctYWxpZ246IGNlbnRlcgojaW1wb3J0ICJAcHJldmlldy9jZXR6OjAuNS4xIgojaW1wb3J0ICJAcHJldmlldy9mb250YXdlc29tZTowLjYuMiI6ICoKLy8jc2V0IHBhZ2Uod2lkdGg6IGF1dG8sIGhlaWdodDogYXV0bykKI3NldCB0ZXh0KGZvbnQ6ICJOb3RvIFNhbnMiLCBzaXplOiAzMnB0KQoKI2xldCByYWQgPSAzCiNjZXR6LmNhbnZhcyh7CiAgaW1wb3J0IGNldHouZHJhdzogKgogIGNpcmNsZSgKICAgICgwLDApLAogICAgcmFkaXVzOiByYWQsCiAgICBzdHJva2U6IHJhZCoxcHQsCiAgICBuYW1lOiAiZCIKICApCiAgY29udGVudCgKICAgICJkLm5vcnRoLXdlc3QiLAogICAgYm94KGZpbGw6IHdoaXRlLCBpbnNldDogM3B0KVsvZC9dCiAgKQogIGNvbnRlbnQoCiAgICAiZC5jZW50ZXIiLAogICAgYm94KGZpbGw6IHdoaXRlLCBpbnNldDogM3B0KVtcW2RcXV0KICApCiAgCiAgY2lyY2xlKAogICAgKHJlbDogKHJhZCoyLjUsMCksIHRvOiAiZCIpLAogICAgcmFkaXVzOiByYWQsCiAgICBzdHJva2U6IHJhZCoxcHQsCiAgICBuYW1lOiAiZGgiCiAgKQogIGNvbnRlbnQoCiAgICAiZGgubm9ydGgtd2VzdCIsCiAgICBib3goZmlsbDogd2hpdGUsIGluc2V0OiAzcHQpWy/DsC9dCiAgKQogIGNvbnRlbnQoCiAgICAiZGguY2VudGVyIiwKICAgIGJveChmaWxsOiB3aGl0ZSwgaW5zZXQ6IDNwdClbXFvDsFxdXQogICkKfSkKYGBgCgo6OjoKCjo6OiB7LmNvbHVtbiB3aWR0aD0iNTAlIn0KU3BhbmlzaDogCmBgYHt0eXBzdH0KLy98IGZpZy1hbGlnbjogY2VudGVyCiNpbXBvcnQgIkBwcmV2aWV3L2NldHo6MC41LjEiCiNpbXBvcnQgIkBwcmV2aWV3L2ZvbnRhd2Vzb21lOjAuNi4yIjogKgovLyNzZXQgcGFnZSh3aWR0aDogYXV0bywgaGVpZ2h0OiBhdXRvKQojc2V0IHRleHQoZm9udDogIk5vdG8gU2FucyIsIHNpemU6MzJwdCkKCiNsZXQgcmFkID0gMwojY2V0ei5jYW52YXMoewogIGltcG9ydCBjZXR6LmRyYXc6ICoKICBjaXJjbGUoCiAgICAoMCwwKSwKICAgIHJhZGl1czogcmFkLAogICAgc3Ryb2tlOiByYWQqMXB0LAogICAgbmFtZTogImQiCiAgKQogIGNvbnRlbnQoCiAgICAiZC5ub3J0aC13ZXN0IiwKICAgIGJveChmaWxsOiB3aGl0ZSwgaW5zZXQ6IDNwdClbL2QvXQogICkKICBjb250ZW50KAogICAgKCJkLnNvdXRoLXdlc3QiLCA1MCUsICJkLmNlbnRlciIsKSwKICAgIGJveChmaWxsOiB3aGl0ZSwgaW5zZXQ6IDNwdClbXFtkXF1dCiAgKQogIGNvbnRlbnQoCiAgICAoImQubm9ydGgtZWFzdCIsIDUwJSwgImQuY2VudGVyIiwpLAogICAgYm94KGZpbGw6IHdoaXRlLCBpbnNldDogM3B0KVtcW8OwXF1dCiAgKQp9KQpgYGAKOjo6Cjo6Ojo6Cgo='), function(c) { return c.charCodeAt(0); })
+);
+window._input_filename = '/Users/joseffruehwald/Documents/courses/Lin300-2026.github.io/course-materials/lecture-notes/15_abstraction/index.qmd';
+</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+  }
+  </style>
+  
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/logo_small.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../assets/logo_small.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Lin300-2026 - Speech Sounds</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../course-materials/index.html" aria-current="page"> 
+<span class="menu-text">Course Materials</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/15_abstraction/index.html">Abstraction &amp; Contrast</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/logo.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/lecture-notes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/00_welcome/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lin300 - Speech Sounds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/01_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/02_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/03_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/04_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/07_airstream/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voicing and Airstream</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/08_vowels1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vowels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/09_vowels2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Things Vowels Do</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/10_perception1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hearing &amp; Perception</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/05_place-manner/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Place &amp; Manner</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/11_sound/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/14_audio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/13_formants/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spectrograms, Vowels &amp; Formants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/12_resonance/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Harmonics &amp; Resonance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/lecture-notes/15_abstraction/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Abstraction &amp; Contrast</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/15_abstraction/knowledge/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">‘Knowledge’</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/15_abstraction/wugs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Wug Test</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#from-phonetics-to-phonology" id="toc-from-phonetics-to-phonology" class="nav-link active" data-scroll-target="#from-phonetics-to-phonology">From Phonetics to Phonology</a></li>
+  <li><a href="#what-do-you-know" id="toc-what-do-you-know" class="nav-link" data-scroll-target="#what-do-you-know">What do you <em>know</em>?</a></li>
+  <li><a href="#aside-knowledge" id="toc-aside-knowledge" class="nav-link" data-scroll-target="#aside-knowledge">Aside: Knowledge</a></li>
+  <li><a href="#knowledge-of-sounds" id="toc-knowledge-of-sounds" class="nav-link" data-scroll-target="#knowledge-of-sounds">Knowledge of sounds</a></li>
+  <li><a href="#knowledge-of-sounds-1" id="toc-knowledge-of-sounds-1" class="nav-link" data-scroll-target="#knowledge-of-sounds-1">Knowledge of Sounds</a></li>
+  <li><a href="#knowledge-of-sounds-2" id="toc-knowledge-of-sounds-2" class="nav-link" data-scroll-target="#knowledge-of-sounds-2">Knowledge of Sounds</a></li>
+  <li><a href="#knowledge-of-sounds-3" id="toc-knowledge-of-sounds-3" class="nav-link" data-scroll-target="#knowledge-of-sounds-3">Knowledge of Sounds</a></li>
+  <li><a href="#aside-wugs" id="toc-aside-wugs" class="nav-link" data-scroll-target="#aside-wugs">Aside: Wugs</a></li>
+  <li><a href="#knowledge-of-sounds-4" id="toc-knowledge-of-sounds-4" class="nav-link" data-scroll-target="#knowledge-of-sounds-4">Knowledge of Sounds</a></li>
+  <li><a href="#knowledge-of-sounds-5" id="toc-knowledge-of-sounds-5" class="nav-link" data-scroll-target="#knowledge-of-sounds-5">Knowledge of Sounds</a></li>
+  <li><a href="#knowledge-of-sounds-6" id="toc-knowledge-of-sounds-6" class="nav-link" data-scroll-target="#knowledge-of-sounds-6">Knowledge of Sounds</a></li>
+  <li><a href="#phoneme" id="toc-phoneme" class="nav-link" data-scroll-target="#phoneme">“Phoneme”</a></li>
+  <li><a href="#phoneme-1" id="toc-phoneme-1" class="nav-link" data-scroll-target="#phoneme-1">“Phoneme”</a></li>
+  <li><a href="#natural-classes" id="toc-natural-classes" class="nav-link" data-scroll-target="#natural-classes">“Natural Classes”</a></li>
+  <li><a href="#allophones-natural-classes" id="toc-allophones-natural-classes" class="nav-link" data-scroll-target="#allophones-natural-classes">Allophones &amp; Natural Classes</a></li>
+  <li><a href="#phonemic-contrast" id="toc-phonemic-contrast" class="nav-link" data-scroll-target="#phonemic-contrast">Phonemic Contrast</a></li>
+  <li><a href="#phonemic-contrast-1" id="toc-phonemic-contrast-1" class="nav-link" data-scroll-target="#phonemic-contrast-1">Phonemic Contrast</a>
+  <ul class="collapse">
+  <li><a href="#minimal-pairs" id="toc-minimal-pairs" class="nav-link" data-scroll-target="#minimal-pairs">Minimal Pairs</a></li>
+  </ul></li>
+  <li><a href="#allophonic-alternation" id="toc-allophonic-alternation" class="nav-link" data-scroll-target="#allophonic-alternation">Allophonic Alternation</a>
+  <ul class="collapse">
+  <li><a href="#complementary-distribution" id="toc-complementary-distribution" class="nav-link" data-scroll-target="#complementary-distribution">Complementary Distribution</a></li>
+  </ul></li>
+  <li><a href="#allophonic-alternation-1" id="toc-allophonic-alternation-1" class="nav-link" data-scroll-target="#allophonic-alternation-1">Allophonic Alternation</a></li>
+  <li><a href="#phonological-analysis" id="toc-phonological-analysis" class="nav-link" data-scroll-target="#phonological-analysis">Phonological analysis</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="15_abstraction.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/15_abstraction/index.html">Abstraction &amp; Contrast</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Abstraction &amp; Contrast</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Josef Fruehwald </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="from-phonetics-to-phonology" class="level2">
+<h2 class="anchored" data-anchor-id="from-phonetics-to-phonology">From Phonetics to Phonology</h2>
+<p>There is no definition of the difference between Phonetics and Phonology that won’t make <em>someone</em> angry.</p>
+</section>
+<section id="what-do-you-know" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-you-know">What do you <em>know</em>?</h2>
+<style>
+  .emph1 {
+    color: #ee6677;
+  }
+  
+  .emph2 {
+    color: #4477aa;
+  }
+</style>
+<p>Linguistics is all about answering the question “What is your knowledge of your language?”</p>
+</section>
+<section id="aside-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="aside-knowledge">Aside: Knowledge</h2>
+    <p><a href="./knowledge/" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="./knowledge/" height="475px" width="100%"></iframe>
+    </div>
+  
+</section>
+<section id="knowledge-of-sounds" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds">Knowledge of sounds</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="emph1">long-lag VOT</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/images/long-lag.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><span class="emph2">short-lag VOT</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/07_airstream/images/short-lag.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="knowledge-of-sounds-1" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-1">Knowledge of Sounds</h2>
+<p>How would you transcribe your pronunciation of a novel word like:</p>
+<div style="text-align: center; font-size: 3em;">
+<p>“kowspie”</p>
+</div>
+</section>
+<section id="knowledge-of-sounds-2" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-2">Knowledge of Sounds</h2>
+<div class="ipa" style="font-size: 2em">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 40%">
+<col style="width: 39%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><span class="emph1">kʰ</span></td>
+<td><span class="emph2">k</span></td>
+</tr>
+<tr class="even">
+<td><span class="emph1">pʰ</span></td>
+<td><span class="emph1">kʰ</span>os<span class="emph1">pʰ</span>i</td>
+<td><span class="emph2">k</span>os<span class="emph1">pʰ</span>i</td>
+</tr>
+<tr class="odd">
+<td><span class="emph2">p</span></td>
+<td><span class="emph1">kʰ</span>os<span class="emph2">p</span>i</td>
+<td><span class="emph2">k</span>os<span class="emph2">p</span>i</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="knowledge-of-sounds-3" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-3">Knowledge of Sounds</h2>
+<p>Your preference (I’m guessing!) for <span class="ipa">[</span><span class="emph1">kʰ</span>os<span class="emph2">p</span>i], demonstrates a kind of knowledge about the sounds of language beyond just the fact that there are long-lag and short-lag VOT segments.</p>
+</section>
+<section id="aside-wugs" class="level2">
+<h2 class="anchored" data-anchor-id="aside-wugs">Aside: Wugs</h2>
+    <p><a href="./wugs/" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="./wugs/" height="475px" width="100%"></iframe>
+    </div>
+  
+</section>
+<section id="knowledge-of-sounds-4" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-4">Knowledge of Sounds</h2>
+<div class="ipa" style="font-size: 1.5em;">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><em>play</em></td>
+<td>ˈ<span class="emph1"><strong>pʰ</strong></span>leɪ</td>
+<td>dɪ.ˈs<span class="emph2"><strong>p</strong></span>leɪ</td>
+<td><em>display</em></td>
+</tr>
+<tr class="even">
+<td><em>card</em></td>
+<td>ˈ<span class="emph1"><strong>kʰ</strong></span>ɑɹd</td>
+<td>dɪ.ˈs<span class="emph2"><strong>k</strong></span>ɑɹd</td>
+<td><em>discard</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="knowledge-of-sounds-5" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-5">Knowledge of Sounds</h2>
+<div class="ipa" style="font-size: 1.5em;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><em>long</em></td>
+<td><span class="fragment" data-fragment-index="1"><em>longing</em></span></td>
+<td><span class="fragment" data-fragment-index="3"><em>longer</em></span></td>
+</tr>
+<tr class="even">
+<td>lɔŋ</td>
+<td><span class="fragment" data-fragment-index="2">lɔŋɪŋ</span></td>
+<td><span class="fragment" data-fragment-index="4">lɔŋgɹ̩</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="knowledge-of-sounds-6" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-of-sounds-6">Knowledge of Sounds</h2>
+<p>Upshot: Abstraction is necessary</p>
+</section>
+<section id="phoneme" class="level2">
+<h2 class="anchored" data-anchor-id="phoneme">“Phoneme”</h2>
+<blockquote class="blockquote">
+<p>A label for a set of sounds that all count as basically the same.</p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/15_abstraction/./assets/typst-render/index/typst-block-1.svg" class="img-fluid" data-out-width="200%" alt="#import &quot;@preview/cetz:0.5.1&quot;
+#import &quot;@preview/fontawesome:0.6.2&quot;: *
+//#set page(width: auto, height: auto)
+#set text(font: &quot;Noto Sans&quot;, size: 36pt)
+
+#cetz.canvas({
+  import cetz.draw: *
+  circle((0,"></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p>The phoneme /p/ has at least two <em>allophones</em>, [p] and [pʰ]</p>
+</div>
+</div>
+</section>
+<section id="phoneme-1" class="level2">
+<h2 class="anchored" data-anchor-id="phoneme-1">“Phoneme”</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/15_abstraction/./assets/typst-render/index/typst-block-2.svg" class="img-fluid" data-out-width="200%" alt="#import &quot;@preview/cetz:0.5.1&quot;
+#import &quot;@preview/fontawesome:0.6.2&quot;: *
+//#set page(width: auto, height: auto)
+#set text(font: &quot;Noto Sans&quot;, size: 36pt)
+
+#cetz.canvas({
+  import cetz.draw: *
+  circle((0,"></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p>We use “/p/” as convenient label for the phoneme, but the phoneme itself is not a sound.</p>
+<p>We could have used “<i class="fa-solid fa-coffee" aria-label="coffee"></i>” as the label for the phoneme, but it would be more confusing to read.</p>
+</div>
+</div>
+</section>
+<section id="natural-classes" class="level2">
+<h2 class="anchored" data-anchor-id="natural-classes">“Natural Classes”</h2>
+<p>Groups of phonemes that pattern together are “natural classes”</p>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/15_abstraction/./assets/typst-render/index/typst-block-3.svg" class="img-fluid" alt="#import &quot;@preview/cetz:0.5.1&quot;
+//#set page(width: auto, height: auto)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#let rad = 2
+#cetz.canvas({
+  import cetz.draw: *
+  circle((0,0), name: &quot;p&quot;, radius: rad,"></p>
+</div>
+</section>
+<section id="allophones-natural-classes" class="level2">
+<h2 class="anchored" data-anchor-id="allophones-natural-classes">Allophones &amp; Natural Classes</h2>
+<p>Which sounds are allophones of which phonemes, and which phonemes form natural classes, are all language specific.</p>
+</section>
+<section id="phonemic-contrast" class="level2">
+<h2 class="anchored" data-anchor-id="phonemic-contrast">Phonemic Contrast</h2>
+<p>If two sounds are <em>not</em> basically the same, then they are <em>contrastive</em>, and are allophones of different phonemes.</p>
+<div class="ipa" style="font-size: 1.5em">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><em>ether</em></td>
+<td><em>either</em></td>
+</tr>
+<tr class="even">
+<td>[i<span class="emph1">θ</span>ɹ̩]</td>
+<td>[i<span class="emph1">ð</span>ɹ̩]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="phonemic-contrast-1" class="level2">
+<h2 class="anchored" data-anchor-id="phonemic-contrast-1">Phonemic Contrast</h2>
+<section id="minimal-pairs" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-pairs">Minimal Pairs</h3>
+<p>Two words that are identical except for the one phoneme in question</p>
+<div class="columns">
+<div class="column ipa" style="font-size: 3em; text-align: center;">
+<p>d</p>
+<div class="editable" style="font-size: 0.3em">
+<p>?</p>
+</div>
+</div><div class="column ipa" style="font-size: 3em; text-align: center;">
+<p>ð</p>
+<div class="editable" style="font-size: 0.3em">
+<p>?</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="allophonic-alternation" class="level2">
+<h2 class="anchored" data-anchor-id="allophonic-alternation">Allophonic Alternation</h2>
+<section id="complementary-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="complementary-distribution">Complementary Distribution</h3>
+<p>If two sounds never appear in the same contexts, they are in a complementary distribution.</p>
+</section>
+</section>
+<section id="allophonic-alternation-1" class="level2">
+<h2 class="anchored" data-anchor-id="allophonic-alternation-1">Allophonic Alternation</h2>
+<p>Spanish:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[dama]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>lady</em></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[dulse]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>sweet</em></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[disfrutas]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>disguise</em></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[laðo]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>side</em></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[universiðað]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>university</em></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>[granaða]</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><em>Granada</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="phonological-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="phonological-analysis">Phonological analysis</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>English:</p>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/15_abstraction/./assets/typst-render/index/typst-block-4.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/cetz:0.5.1&quot;
+#import &quot;@preview/fontawesome:0.6.2&quot;: *
+//#set page(width: auto, height: auto)
+#set text(font: &quot;Noto Sans&quot;, size: 32pt)
+
+#let rad = 3
+#cetz.canvas({
+  import cetz.draw: *"></p>
+</figure>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Spanish:</p>
+<div class="cell">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../course-materials/lecture-notes/15_abstraction/./assets/typst-render/index/typst-block-5.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="#import &quot;@preview/cetz:0.5.1&quot;
+#import &quot;@preview/fontawesome:0.6.2&quot;: *
+//#set page(width: auto, height: auto)
+#set text(font: &quot;Noto Sans&quot;, size:32pt)
+
+#let rad = 3
+#cetz.canvas({
+  import cetz.draw: *
+"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Lin300-2026\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
