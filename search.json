@@ -69,6 +69,20 @@
     "text": "From Phonetics to Phonology\nThere is no definition of the difference between Phonetics and Phonology that won’t make someone angry."
   },
   {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#phonetics",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#phonetics",
+    "title": "Abstraction & Contrast",
+    "section": "Phonetics",
+    "text": "Phonetics"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#phonology",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#phonology",
+    "title": "Abstraction & Contrast",
+    "section": "Phonology",
+    "text": "Phonology"
+  },
+  {
     "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#what-do-you-know",
     "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#what-do-you-know",
     "title": "Abstraction & Contrast",
@@ -153,6 +167,34 @@
     "text": "“Phoneme”\n\n\n\n\n\n\nWe use “/p/” as convenient label for the phoneme, but the phoneme itself is not a sound.\nWe could have used “” as the label for the phoneme, but it would be more confusing to read."
   },
   {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\n\nNot every phoneme has the same number of allophones.\nThere isn’t a universal set of relationships between allophones and phonemes."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-1",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-1",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\n\n\n\nAmerican English\n\n\n\n\n\n\n\n\n\nScottish English"
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-2",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-2",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\nThere isn’t always a 1-to-1 relationship between phones and phonemes."
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-3",
+    "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#allophones-3",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\nAmerican English"
+  },
+  {
     "objectID": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#natural-classes",
     "href": "course-materials/lecture-notes/15_abstraction/15_abstraction.html#natural-classes",
     "title": "Abstraction & Contrast",
@@ -219,6 +261,30 @@
     "title": "Abstraction & Contrast",
     "section": "",
     "text": "There is no definition of the difference between Phonetics and Phonology that won’t make someone angry.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#phonetics",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#phonetics",
+    "title": "Abstraction & Contrast",
+    "section": "Phonetics",
+    "text": "Phonetics",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#phonology",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#phonology",
+    "title": "Abstraction & Contrast",
+    "section": "Phonology",
+    "text": "Phonology",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
@@ -363,6 +429,54 @@
     "title": "Abstraction & Contrast",
     "section": "“Phoneme”",
     "text": "“Phoneme”\n\n\n\n\n\n\nWe use “/p/” as convenient label for the phoneme, but the phoneme itself is not a sound.\nWe could have used “” as the label for the phoneme, but it would be more confusing to read.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#allophones",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#allophones",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\n\nNot every phoneme has the same number of allophones.\nThere isn’t a universal set of relationships between allophones and phonemes.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#allophones-1",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#allophones-1",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\n\n\n\nAmerican English\n\n\n\n\n\n\n\n\n\nScottish English",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#allophones-2",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#allophones-2",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\nThere isn’t always a 1-to-1 relationship between phones and phonemes.",
+    "crumbs": [
+      "Course Materials",
+      "Lecture Notes",
+      "Abstraction & Contrast"
+    ]
+  },
+  {
+    "objectID": "course-materials/lecture-notes/15_abstraction/index.html#allophones-3",
+    "href": "course-materials/lecture-notes/15_abstraction/index.html#allophones-3",
+    "title": "Abstraction & Contrast",
+    "section": "Allophones",
+    "text": "Allophones\nAmerican English",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
@@ -6430,7 +6544,7 @@
     "href": "course-materials/lecture-notes/15_abstraction/knowledge/index.html#what-is-knowledge-2",
     "title": "‘Knowledge’",
     "section": "What is “Knowledge?”",
-    "text": "What is “Knowledge?”\nBefore the anatomy portion of this course, you’d lived a long life of mostly not getting food or drink down your esophagus. Could you have told me that’s because your epiglottis closes down over your larynx like a lid?",
+    "text": "What is “Knowledge?”\nBefore the anatomy portion of this course, you’d lived a long life of mostly not getting food or drink down your trachea. Could you have told me that’s because your epiglottis closes down over your larynx like a lid?",
     "crumbs": [
       "Course Materials",
       "Lecture Notes",
