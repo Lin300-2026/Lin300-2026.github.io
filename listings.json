@@ -17,13 +17,8 @@
       "/course-materials/lecture-notes/13_formants/index.html",
       "/course-materials/lecture-notes/14_audio/index.html",
       "/course-materials/lecture-notes/15_abstraction/index.html",
-      "/course-materials/lecture-notes/16_phonemic-analysis/index.html"
-    ]
-  },
-  {
-    "listing": "/course-materials/handouts/index.html",
-    "items": [
-      "/course-materials/handouts/01_phonemic-analysis/index.html"
+      "/course-materials/lecture-notes/16_phonemic-analysis/index.html",
+      "/course-materials/lecture-notes/17_phonotactics/index.html"
     ]
   },
   {
@@ -43,10 +38,18 @@
       "/course-materials/lecture-notes/14_audio/index.html",
       "/course-materials/lecture-notes/12_resonance/index.html",
       "/course-materials/lecture-notes/16_phonemic-analysis/index.html",
+      "/course-materials/lecture-notes/17_phonotactics/index.html",
       "/course-materials/lecture-notes/05_place-manner/index.html",
       "/course-materials/lecture-notes/11_sound/index.html",
       "/course-materials/lecture-notes/13_formants/index.html",
       "/course-materials/lecture-notes/15_abstraction/wugs/index.html"
+    ]
+  },
+  {
+    "listing": "/course-materials/handouts/index.html",
+    "items": [
+      "/course-materials/handouts/02_alternations/index.html",
+      "/course-materials/handouts/01_phonemic-analysis/index.html"
     ]
   }
 ]
