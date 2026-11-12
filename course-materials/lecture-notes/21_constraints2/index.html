@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Josef Fruehwald">
+
+<title>Optimality Theory: The good and the bad – Lin300-2026 - Speech Sounds</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/logo_small.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e5bcdb3a787ab268c756645007037576.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7bedbd96ab1891dc478082ef8f0195f3.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e5bcdb3a787ab268c756645007037576.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-5cca268fbc196ae32d84f01991c1f577.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-8402cb3a1ba4143bf2ebe3cb994a4d48.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5cca268fbc196ae32d84f01991c1f577.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/logo_small.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../assets/logo_small.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Lin300-2026 - Speech Sounds</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../course-materials/index.html" aria-current="page"> 
+<span class="menu-text">Course Materials</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/21_constraints2/index.html">Optimality Theory: The good and the bad</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/logo.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../../assets/logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/lecture-notes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/00_welcome/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lin300 - Speech Sounds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/01_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/02_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/03_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/04_anatomy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speech Anatomy 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/07_airstream/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voicing and Airstream</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/08_vowels1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vowels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/09_vowels2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Things Vowels Do</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/10_perception1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hearing &amp; Perception</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/20_constraints/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Constraint Based Phonology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/05_place-manner/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Place &amp; Manner</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/18_features/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Distinctive Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/11_sound/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/14_audio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/13_formants/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spectrograms, Vowels &amp; Formants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/21_constraints2/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Optimality Theory: The good and the bad</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/12_resonance/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Harmonics &amp; Resonance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/16_phonemic-analysis/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phonemic Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/17_phonotactics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phonotactics &amp; Alternations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/19_rules/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phonological Rules &amp; Derivation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/lecture-notes/15_abstraction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abstraction &amp; Contrast</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/15_abstraction/knowledge/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">‘Knowledge’</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/lecture-notes/15_abstraction/wugs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Wug Test</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../course-materials/handouts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Handouts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/handouts/05_more-alternations/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More Phonology Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/handouts/01_phonemic-analysis/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phonemic Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/handouts/04_features/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Filterable Distinctive Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/handouts/03_opacity/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rule Interaction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-materials/handouts/02_alternations/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alternations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#typology-and-conspiracies" id="toc-typology-and-conspiracies" class="nav-link active" data-scroll-target="#typology-and-conspiracies">Typology and Conspiracies</a></li>
+  <li><a href="#typology" id="toc-typology" class="nav-link" data-scroll-target="#typology">Typology</a></li>
+  <li><a href="#typology-1" id="toc-typology-1" class="nav-link" data-scroll-target="#typology-1">Typology</a></li>
+  <li><a href="#typology-2" id="toc-typology-2" class="nav-link" data-scroll-target="#typology-2">Typology</a></li>
+  <li><a href="#typology-3" id="toc-typology-3" class="nav-link" data-scroll-target="#typology-3">Typology</a></li>
+  <li><a href="#typology-4" id="toc-typology-4" class="nav-link" data-scroll-target="#typology-4">Typology</a></li>
+  <li><a href="#typology-5" id="toc-typology-5" class="nav-link" data-scroll-target="#typology-5">Typology</a></li>
+  <li><a href="#typology-6" id="toc-typology-6" class="nav-link" data-scroll-target="#typology-6">Typology</a></li>
+  <li><a href="#typology-7" id="toc-typology-7" class="nav-link" data-scroll-target="#typology-7">Typology</a></li>
+  <li><a href="#typology-8" id="toc-typology-8" class="nav-link" data-scroll-target="#typology-8">Typology</a></li>
+  <li><a href="#conspiracy" id="toc-conspiracy" class="nav-link" data-scroll-target="#conspiracy">Conspiracy</a></li>
+  <li><a href="#conspiracy-1" id="toc-conspiracy-1" class="nav-link" data-scroll-target="#conspiracy-1">Conspiracy</a></li>
+  <li><a href="#conspiracy-2" id="toc-conspiracy-2" class="nav-link" data-scroll-target="#conspiracy-2">Conspiracy</a></li>
+  <li><a href="#conspiracy-3" id="toc-conspiracy-3" class="nav-link" data-scroll-target="#conspiracy-3">Conspiracy</a></li>
+  <li><a href="#conspiracy-4" id="toc-conspiracy-4" class="nav-link" data-scroll-target="#conspiracy-4">Conspiracy</a></li>
+  <li><a href="#conspiracy-5" id="toc-conspiracy-5" class="nav-link" data-scroll-target="#conspiracy-5">Conspiracy</a></li>
+  <li><a href="#conspiracy-6" id="toc-conspiracy-6" class="nav-link" data-scroll-target="#conspiracy-6">Conspiracy</a></li>
+  <li><a href="#conspiracy-7" id="toc-conspiracy-7" class="nav-link" data-scroll-target="#conspiracy-7">Conspiracy</a></li>
+  <li><a href="#conspiracy-8" id="toc-conspiracy-8" class="nav-link" data-scroll-target="#conspiracy-8">Conspiracy</a></li>
+  <li><a href="#conspiracy-9" id="toc-conspiracy-9" class="nav-link" data-scroll-target="#conspiracy-9">Conspiracy</a></li>
+  <li><a href="#shortcomings-opacity" id="toc-shortcomings-opacity" class="nav-link" data-scroll-target="#shortcomings-opacity">Shortcomings: Opacity</a></li>
+  <li><a href="#shorcomings-opacity" id="toc-shorcomings-opacity" class="nav-link" data-scroll-target="#shorcomings-opacity">Shorcomings: Opacity</a></li>
+  <li><a href="#shortcomings-opacity-1" id="toc-shortcomings-opacity-1" class="nav-link" data-scroll-target="#shortcomings-opacity-1">Shortcomings: Opacity</a></li>
+  <li><a href="#shortcomings-opacity-2" id="toc-shortcomings-opacity-2" class="nav-link" data-scroll-target="#shortcomings-opacity-2">Shortcomings: Opacity</a></li>
+  <li><a href="#shortomings-opacity" id="toc-shortomings-opacity" class="nav-link" data-scroll-target="#shortomings-opacity">Shortomings: Opacity</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="21_constraints2.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../course-materials/index.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/index.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../../../course-materials/lecture-notes/21_constraints2/index.html">Optimality Theory: The good and the bad</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Optimality Theory: The good and the bad</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Josef Fruehwald </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="typology-and-conspiracies" class="level2">
+<h2 class="anchored" data-anchor-id="typology-and-conspiracies">Typology and Conspiracies</h2>
+<p>Two strengths of OT is how it can account for</p>
+<ul>
+<li><p>Typological patterns (cross-linguistic comparisons)</p></li>
+<li><p>“Conspiracies” within languages.</p></li>
+</ul>
+</section>
+<section id="typology" class="level2">
+<h2 class="anchored" data-anchor-id="typology">Typology</h2>
+<p>There are many asymmetries in syllable structure patterns cross-linguistically</p>
+<p><strong>Codas</strong></p>
+<ul>
+<li><p>Some languages disallow codas altogether</p>
+<ul>
+<li>CV, *CVC</li>
+</ul></li>
+<li><p>Some languages allow codas</p>
+<ul>
+<li>CV, CVC</li>
+</ul></li>
+<li><p>No language <em>requires</em> a coda</p>
+<ul>
+<li>*CV, CVC</li>
+</ul></li>
+</ul>
+</section>
+<section id="typology-1" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="typology-1">Typology</h2>
+<p>Maybe there’s a <span class="smallcaps">NoCoda</span> markedness constraint</p>
+<p><strong>Languages that Disallow Codas</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-1.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;\\C \\V \\C&quot;,
+  candidates: (&quot;\\C \\V \\C&quot;, &quot;\\C \\V&quot;),
+  constraint"></p>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-2.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;\\C \\V&quot;,
+  candidates: (&quot;\\C \\V \\C&quot;, &quot;\\C \\V&quot;),
+  constraints: ("></p>
+</div>
+</div>
+</div>
+</section>
+<section id="typology-2" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="typology-2">Typology</h2>
+<p>Maybe there’s a <span class="smallcaps">NoCoda</span> markedness constraint</p>
+<p><strong>Languages that Allow Codas</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-3.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\C \\V \\C&quot;,
+  candidates: (&quot;\\C \\V \\C&quot;, &quot;\\C \\V&quot;),
+  constrain"></p>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-4.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\C \\V&quot;,
+  candidates: (&quot;\\C \\V \\C&quot;, &quot;\\C \\V&quot;),
+  constraints: "></p>
+</div>
+</div>
+</div>
+</section>
+<section id="typology-3" class="level2">
+<h2 class="anchored" data-anchor-id="typology-3">Typology</h2>
+<ul>
+<li><p>There’s no way to rank <span class="smallcaps">NoCoda</span>, <span class="smallcaps">Max</span> and <span class="smallcaps">Dep</span> in a way that winds up <em>requiring</em> a coda.</p></li>
+<li><p>There’s also no language that requires a coda.</p></li>
+</ul>
+</section>
+<section id="typology-4" class="level2">
+<h2 class="anchored" data-anchor-id="typology-4">Typology</h2>
+<p><strong>Onsets</strong></p>
+<ul>
+<li><p>Some languages require syllables to have onsets</p>
+<ul>
+<li>CV, CVC, *VC, *V</li>
+</ul></li>
+<li><p>Some languages allow onsetless syllables</p>
+<ul>
+<li>CV, CVC, VC, V</li>
+</ul></li>
+<li><p>No language <em>disallows</em> onsets</p>
+<ul>
+<li>*CV, *CVC, VC, V</li>
+</ul></li>
+</ul>
+</section>
+<section id="typology-5" class="level2">
+<h2 class="anchored" data-anchor-id="typology-5">Typology</h2>
+<p>Maybe there’s an <span class="smallcaps">Onset</span> markedness constraint</p>
+<p><strong>Languages that require onsets</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-5.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\C \\V \\C&quot;,
+  constraints: (&quot;Onset&quot;, &quot;Max&quot;, &quot;Dep&quot;),
+  candidates:"></p>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-6.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\V \\C&quot;,
+  constraints: (&quot;Onset&quot;, &quot;Max&quot;, &quot;Dep&quot;),
+  candidates: (&quot;\"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="typology-6" class="level2">
+<h2 class="anchored" data-anchor-id="typology-6">Typology</h2>
+<p>Maybe there’s an <span class="smallcaps">Onset</span> markedness constraint</p>
+<p><strong>Languages that don’t require onsets</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-7.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\C \\V \\C&quot;,
+  constraints: (&quot;Max&quot;, &quot;Dep&quot;, &quot;Onset&quot;),
+  candidates:"></p>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-8.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+
+#tableau(
+  input: &quot;\\V \\C&quot;,
+  constraints: (&quot;Max&quot;, &quot;Dep&quot;, &quot;Onset&quot;),
+  candidates: (&quot;\"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="typology-7" class="level2">
+<h2 class="anchored" data-anchor-id="typology-7">Typology</h2>
+<ul>
+<li><p>There’s no way to rank <span class="smallcaps">Onset</span>, <span class="smallcaps">Max</span> and <span class="smallcaps">Dep</span> in a way that <em>disallows</em> onsets.</p></li>
+<li><p>There’s also no language that disallows onsets.</p></li>
+</ul>
+</section>
+<section id="typology-8" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="typology-8">Typology</h2>
+<p>Other typological asymmetries:</p>
+<p><strong>Complex Onsets &amp; Codas</strong></p>
+<ul>
+<li><p>Some languages disallow complex onsets and/or codas</p></li>
+<li><p>Some languages allow complex onsets and/or codas</p></li>
+<li><p>No language <em>requires</em> complex onsets and/or codas</p></li>
+</ul>
+<p><strong>Word Final Devoicing</strong></p>
+<ul>
+<li><p>Some languages disallow voiced obstruents at the end of words.</p></li>
+<li><p>Some languages allow voiced obstruents at the end of words.</p></li>
+<li><p>No language <em>requires</em> voiced obstruents at the end of words.</p></li>
+</ul>
+</section>
+<section id="conspiracy" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy">Conspiracy</h2>
+<p>Sometimes, languages seem to do multiple different things to avoid a single kind of outcome.</p>
+</section>
+<section id="conspiracy-1" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-1">Conspiracy</h2>
+<p>Japanese doesn’t like having the sequence [tu]</p>
+<div class="cell ipa2">
+<div class="cell-output-display">
+<script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_h7hhfqhaqlnfp06uqwmc = TinyTable.createTableFunctions("tinytable_h7hhfqhaqlnfp06uqwmc");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '2', j: 1 }, { i: '2', j: 2 } ], css_id: 'tinytable_css_vi0qhrpt69ttiaf5z1sf',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_w8dy7quje58c8fp3cwwp',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_h7hhfqhaqlnfp06uqwmc.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_h7hhfqhaqlnfp06uqwmc td.tinytable_css_vi0qhrpt69ttiaf5z1sf, #tinytable_h7hhfqhaqlnfp06uqwmc th.tinytable_css_vi0qhrpt69ttiaf5z1sf {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_h7hhfqhaqlnfp06uqwmc td.tinytable_css_w8dy7quje58c8fp3cwwp, #tinytable_h7hhfqhaqlnfp06uqwmc th.tinytable_css_w8dy7quje58c8fp3cwwp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_h7hhfqhaqlnfp06uqwmc" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">UR</th>
+                <th scope="col" data-row="0" data-col="2">SR</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">kɑtu</td>
+                  <td data-row="1" data-col="2">kɑt͡su</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">tunɑmi</td>
+                  <td data-row="2" data-col="2">t͡sunɑmi</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="conspiracy-2" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-2">Conspiracy</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-9.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;tunAmi&quot;,
+  candidates: (
+    &quot;tunAmi&quot;,
+    &quot;\\t ts unAmi&quot;,
+    &quot;unAm"></p>
+</div>
+</section>
+<section id="conspiracy-3" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-3">Conspiracy</h2>
+<p>When borrowing words, Japanese tends to epenthesize [u] to conform to its CV syllable structure.</p>
+<div class="cell ipa2">
+<div class="cell-output-display">
+<script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_ujnv46aq74d3zfnrpazw = TinyTable.createTableFunctions("tinytable_ujnv46aq74d3zfnrpazw");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '1', j: 1 }, { i: '1', j: 2 } ], css_id: 'tinytable_css_mlrh9iqyos79nhwo6psq',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_3tbi0pjylv7wyoi397vf',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_ujnv46aq74d3zfnrpazw.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_ujnv46aq74d3zfnrpazw td.tinytable_css_mlrh9iqyos79nhwo6psq, #tinytable_ujnv46aq74d3zfnrpazw th.tinytable_css_mlrh9iqyos79nhwo6psq {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_ujnv46aq74d3zfnrpazw td.tinytable_css_3tbi0pjylv7wyoi397vf, #tinytable_ujnv46aq74d3zfnrpazw th.tinytable_css_3tbi0pjylv7wyoi397vf {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_ujnv46aq74d3zfnrpazw" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">UR</th>
+                <th scope="col" data-row="0" data-col="2">SR</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">besbɔl</td>
+                  <td data-row="1" data-col="2">besubɑru</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="conspiracy-4" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-4">Conspiracy</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-10.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;besbOl&quot;,
+  candidates: (
+    &quot;besbAr&quot;,
+    &quot;beba&quot;,
+    &quot;besubaru&quot;,
+ "></p>
+</div>
+</section>
+<section id="conspiracy-5" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-5">Conspiracy</h2>
+<p><em>But</em>, when we need to epenthesize a vowel to break up a cluster with [t], Japanese uses [o].</p>
+<div class="cell ipa2">
+<div class="cell-output-display">
+<script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_8nvukyrl6c08sskpfxqt = TinyTable.createTableFunctions("tinytable_8nvukyrl6c08sskpfxqt");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '1', j: 1 }, { i: '1', j: 2 } ], css_id: 'tinytable_css_xqn45psd3o68k0bl40x9',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_e6h8nyluu5b0jcw5ls93',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_8nvukyrl6c08sskpfxqt.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_8nvukyrl6c08sskpfxqt td.tinytable_css_xqn45psd3o68k0bl40x9, #tinytable_8nvukyrl6c08sskpfxqt th.tinytable_css_xqn45psd3o68k0bl40x9 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_8nvukyrl6c08sskpfxqt td.tinytable_css_e6h8nyluu5b0jcw5ls93, #tinytable_8nvukyrl6c08sskpfxqt th.tinytable_css_e6h8nyluu5b0jcw5ls93 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_8nvukyrl6c08sskpfxqt" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">UR</th>
+                <th scope="col" data-row="0" data-col="2">SR</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">stɹaik</td>
+                  <td data-row="1" data-col="2">sut<b>o</b>raiku</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="conspiracy-6" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-6">Conspiracy</h2>
+<p>Both of these look like a “conspiracy” to avoid [tu].</p>
+<ul>
+<li><p>Assibilate <span class="ipa2">[tu]</span> to <span class="ipa2">[t͡su]</span> to avoid the <span class="ipa2">[tu]</span> sequence.</p></li>
+<li><p>Epenthesize <span class="ipa2">[u]</span> to break up clusters, unless that would create the <span class="ipa2">[tu]</span> sequence, in which case use <span class="ipa2">[o]</span></p></li>
+</ul>
+</section>
+<section id="conspiracy-7" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-7">Conspiracy</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-11.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;straik&quot;,
+  candidates: (
+    &quot;straik&quot;,
+    &quot;sai&quot;,
+    &quot;suturaiku&quot;,
+ "></p>
+</div>
+</section>
+<section id="conspiracy-8" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-8">Conspiracy</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-12.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;besbOl&quot;,
+  candidates: (
+    &quot;besbAr&quot;,
+    &quot;beba&quot;,
+    &quot;besubaru&quot;,
+ "></p>
+</div>
+</section>
+<section id="conspiracy-9" class="level2">
+<h2 class="anchored" data-anchor-id="conspiracy-9">Conspiracy</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-13.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;tunAmi&quot;,
+  candidates: (
+    &quot;tunAmi&quot;,
+    &quot;tonAmi&quot;,
+    &quot;\\t ts unA"></p>
+</div>
+</section>
+<section id="shortcomings-opacity" class="level2">
+<h2 class="anchored" data-anchor-id="shortcomings-opacity">Shortcomings: Opacity</h2>
+<p>Let’s cast our mind back to the Bosnian-Serbian-Croatian Data</p>
+<div class="cell ipa">
+<div class="cell-output-display">
+<script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_fqf5n5gusktos1dfegou = TinyTable.createTableFunctions("tinytable_fqf5n5gusktos1dfegou");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 5 } ], css_id: 'tinytable_css_v3lg016suwcgnb5bgum9',}, 
+          { positions: [ { i: '2', j: 5 }, { i: '3', j: 5 } ], css_id: 'tinytable_css_12v1jgzgoqqycirc04td',}, 
+          { positions: [ { i: '1', j: 5 } ], css_id: 'tinytable_css_yt7ga68qib7lpkihvh41',}, 
+          { positions: [ { i: '4', j: 2 }, { i: '4', j: 3 }, { i: '4', j: 4 } ], css_id: 'tinytable_css_uj5ryuhwju8hx37ywszw',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '1', j: 3 }, { i: '1', j: 4 } ], css_id: 'tinytable_css_fa7qb80sw67mwnbwavq6',}, 
+          { positions: [ { i: '4', j: 1 } ], css_id: 'tinytable_css_nwgnygwx5x1a75ikpkyu',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 } ], css_id: 'tinytable_css_onsu2r4u54sbrqpyq3vj',}, 
+          { positions: [ { i: '1', j: 1 } ], css_id: 'tinytable_css_5gdy3mliv6fwogbke3qx',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_fqf5n5gusktos1dfegou.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_v3lg016suwcgnb5bgum9, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_v3lg016suwcgnb5bgum9 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_12v1jgzgoqqycirc04td, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_12v1jgzgoqqycirc04td { font-weight: bold }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_yt7ga68qib7lpkihvh41, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_yt7ga68qib7lpkihvh41 {  position: relative; --border-bottom: 0; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_uj5ryuhwju8hx37ywszw, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_uj5ryuhwju8hx37ywszw {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_fa7qb80sw67mwnbwavq6, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_fa7qb80sw67mwnbwavq6 {  position: relative; --border-bottom: 0; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_nwgnygwx5x1a75ikpkyu, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_nwgnygwx5x1a75ikpkyu {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-variant: small-caps }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_onsu2r4u54sbrqpyq3vj, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_onsu2r4u54sbrqpyq3vj { font-variant: small-caps }
+    #tinytable_fqf5n5gusktos1dfegou td.tinytable_css_5gdy3mliv6fwogbke3qx, #tinytable_fqf5n5gusktos1dfegou th.tinytable_css_5gdy3mliv6fwogbke3qx {  position: relative; --border-bottom: 0; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --line-type-bottom: solid; --line-type-left: solid; --line-type-right: solid; --line-type-top: solid; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-variant: small-caps }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_fqf5n5gusktos1dfegou" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">UR</td>
+                  <td data-row="1" data-col="2">ledn-i</td>
+                  <td data-row="1" data-col="3">ledn</td>
+                  <td data-row="1" data-col="4">bel</td>
+                  <td data-row="1" data-col="5">okrugl</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Epenthesis</td>
+                  <td data-row="2" data-col="2">--</td>
+                  <td data-row="2" data-col="3">ledan</td>
+                  <td data-row="2" data-col="4">--</td>
+                  <td data-row="2" data-col="5">okrugal</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">L-Vocalization</td>
+                  <td data-row="3" data-col="2">---</td>
+                  <td data-row="3" data-col="3">---</td>
+                  <td data-row="3" data-col="4">beo</td>
+                  <td data-row="3" data-col="5">okrugao</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">SR</td>
+                  <td data-row="4" data-col="2">ledni</td>
+                  <td data-row="4" data-col="3">ledan</td>
+                  <td data-row="4" data-col="4">beo</td>
+                  <td data-row="4" data-col="5">okrugao</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="shorcomings-opacity" class="level2">
+<h2 class="anchored" data-anchor-id="shorcomings-opacity">Shorcomings: Opacity</h2>
+<p>We can come up with constraints and constraint rankings to give us each of the transparent forms, but we can’t capture the opaque form.</p>
+</section>
+<section id="shortcomings-opacity-1" class="level2">
+<h2 class="anchored" data-anchor-id="shortcomings-opacity-1">Shortcomings: Opacity</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-14.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;ledn&quot;,
+  constraints: (
+    &quot;*Obs-Son#&quot;,
+    &quot;*L#&quot;,
+    &quot;Max&quot;,
+    &quot;"></p>
+</div>
+</section>
+<section id="shortcomings-opacity-2" class="level2">
+<h2 class="anchored" data-anchor-id="shortcomings-opacity-2">Shortcomings: Opacity</h2>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-15.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;bel&quot;,
+  constraints: (
+    &quot;*Obs-Son#&quot;,
+    &quot;*L#&quot;,
+    &quot;Max&quot;,
+    &quot;D"></p>
+</div>
+</section>
+<section id="shortomings-opacity" class="level2">
+<h2 class="anchored" data-anchor-id="shortomings-opacity">Shortomings: Opacity</h2>
+<p>The wrong candidate wins</p>
+<div class="cell">
+<p><img src="../../../course-materials/lecture-notes/21_constraints2/./assets/typst-render/index/typst-block-16.svg" class="img-fluid" alt="#import &quot;@preview/phonokit:0.8.0&quot;: *
+#phonokit-init(font: &quot;Noto Sans&quot;)
+#set text(font: &quot;Noto Sans&quot;, size: 24pt)
+#tableau(
+  input: &quot;okrugl&quot;,
+  constraints: (
+    &quot;*Obs-Son#&quot;,
+    &quot;*L#&quot;,
+    &quot;Max&quot;,
+   "></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Lin300-2026\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
