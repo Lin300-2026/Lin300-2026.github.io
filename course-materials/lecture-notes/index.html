@@ -92,7 +92,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
@@ -276,8 +277,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../course-materials/lecture-notes/25_stress/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Footing and Stress</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../course-materials/lecture-notes/20_constraints/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Constraint Based Phonology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-materials/lecture-notes/23_syllables/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prosodic Structure: Syllables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -344,6 +357,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../course-materials/lecture-notes/19_rules/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Phonological Rules &amp; Derivation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prosodic Hierarchy</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -887,7 +906,40 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-listing-file-modified-sort="1790086547058" data-listing-reading-time-sort="21" data-listing-word-count-sort="4110">
+<div class="quarto-post image-right" data-index="14" data-listing-file-modified-sort="1795546063369" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
+<div class="thumbnail"><a href="../../course-materials/lecture-notes/25_stress/index.html" class="no-external">
+
+<p class="card-img-top"><img loading='lazy' src="25_stress/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/phonokit:0.8.2": *
+#phonokit-init(font: "Noto Sans")
+#set text(font: "Noto Sans", size: 24pt)
+
+#table(
+  stroke: none,
+  columns: (auto, auto, auto),
+  [0], [1], [0],
+  ipa("k@n"), i"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../course-materials/lecture-notes/25_stress/index.html" class="no-external">Footing and Stress</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../course-materials/lecture-notes/25_stress/index.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="../../course-materials/lecture-notes/25_stress/index.html" class="no-external">
+Cross-linguistically, stress is an alternating prominence on syllables.
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../course-materials/lecture-notes/25_stress/index.html" class="no-external">
+<div class="listing-author">
+Dr.&nbsp;Josef Fruehwald
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-listing-file-modified-sort="1790086547058" data-listing-reading-time-sort="21" data-listing-word-count-sort="4110">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/12_resonance/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="12_resonance/index_files/figure-revealjs/unnamed-chunk-3-1.png"  class="thumbnail-image card-img"/></p>
@@ -912,7 +964,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-listing-file-modified-sort="1794509124802" data-listing-reading-time-sort="9" data-listing-word-count-sort="1739">
+<div class="quarto-post image-right" data-index="16" data-listing-file-modified-sort="1794509124802" data-listing-reading-time-sort="9" data-listing-word-count-sort="1739">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/21_constraints2/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="21_constraints2/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/phonokit:0.8.0": *
@@ -943,7 +995,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-listing-file-modified-sort="1792014601207" data-listing-reading-time-sort="13" data-listing-word-count-sort="2537">
+<div class="quarto-post image-right" data-index="17" data-listing-file-modified-sort="1792014601207" data-listing-reading-time-sort="13" data-listing-word-count-sort="2537">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/16_phonemic-analysis/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="16_phonemic-analysis/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/cetz:0.5.1"
@@ -975,7 +1027,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-listing-file-modified-sort="1793730147252" data-listing-reading-time-sort="16" data-listing-word-count-sort="3001">
+<div class="quarto-post image-right" data-index="18" data-listing-file-modified-sort="1793730147252" data-listing-reading-time-sort="16" data-listing-word-count-sort="3001">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/19_rules/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="19_rules/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/phonokit:0.7.0": *
@@ -1005,7 +1057,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-listing-file-modified-sort="1794941476616" data-listing-reading-time-sort="7" data-listing-word-count-sort="1260">
+<div class="quarto-post image-right" data-index="19" data-listing-file-modified-sort="1794941476616" data-listing-reading-time-sort="7" data-listing-word-count-sort="1260">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/22_variation/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="22_variation/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/phonokit:0.8.0": *
@@ -1036,7 +1088,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-listing-file-modified-sort="1792499218404" data-listing-reading-time-sort="7" data-listing-word-count-sort="1382">
+<div class="quarto-post image-right" data-index="20" data-listing-file-modified-sort="1792499218404" data-listing-reading-time-sort="7" data-listing-word-count-sort="1382">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/17_phonotactics/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="17_phonotactics/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/cetz:0.5.1"
@@ -1073,7 +1125,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1788408000000" data-listing-file-modified-sort="1790082324812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1838">
+<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1788408000000" data-listing-file-modified-sort="1790082324812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1838">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/05_place-manner/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="05_place-manner/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/staves:0.1.0": stave
@@ -1108,7 +1160,73 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-listing-file-modified-sort="1790082325581" data-listing-reading-time-sort="29" data-listing-word-count-sort="5711">
+<div class="quarto-post image-right" data-index="22" data-listing-file-modified-sort="1795543312486" data-listing-reading-time-sort="4" data-listing-word-count-sort="725">
+<div class="thumbnail"><a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="no-external">
+
+<p class="card-img-top"><img loading='lazy' src="24_prosodic-hierarchy/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/tdtr:0.6.1": *
+#import "@preview/phonokit:0.8.2": *
+#phonokit-init(font: "Noto Sans")
+#set text(font: "Noto Sans")
+
+#tidy-tree-graph(
+  node-stroke: none,
+  draw-edge: (marks: "-"),
+"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="no-external">Prosodic Hierarchy</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="no-external">
+Syllables group together segments into rhythmic units.
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../course-materials/lecture-notes/24_prosodic-hierarchy/index.html" class="no-external">
+<div class="listing-author">
+Dr.&nbsp;Josef Fruehwald
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-listing-file-modified-sort="1795546235262" data-listing-reading-time-sort="12" data-listing-word-count-sort="2272">
+<div class="thumbnail"><a href="../../course-materials/lecture-notes/23_syllables/index.html" class="no-external">
+
+<p class="card-img-top"><img loading='lazy' src="23_syllables/assets/typst-render/index/typst-block-1.svg" alt="#set text(font: "Noto Sans", size: 48pt)
+#import "@preview/phonokit:0.7.0": *
+#phonokit-init(font: "Noto Sans")
+
+l #sym.arrow #ipa("\\darkl") / #blank() \#
+
+#align(center)[#text(size: 0.5em)[-or-]]
+
+#"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../course-materials/lecture-notes/23_syllables/index.html" class="no-external">Prosodic Structure: Syllables</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../course-materials/lecture-notes/23_syllables/index.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="../../course-materials/lecture-notes/23_syllables/index.html" class="no-external">
+?
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../course-materials/lecture-notes/23_syllables/index.html" class="no-external">
+<div class="listing-author">
+Dr.&nbsp;Josef Fruehwald
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-listing-file-modified-sort="1790082325581" data-listing-reading-time-sort="29" data-listing-word-count-sort="5711">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/11_sound/index.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="11_sound/images/noise.gif"  class="thumbnail-image card-img"/></p>
@@ -1133,10 +1251,10 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-listing-file-modified-sort="1790338408644" data-listing-reading-time-sort="46" data-listing-word-count-sort="9188">
+<div class="quarto-post image-right" data-index="25" data-listing-file-modified-sort="1790338408644" data-listing-reading-time-sort="46" data-listing-word-count-sort="9188">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/13_formants/index.html" class="no-external">
 
-<p class="card-img-top"><img loading='lazy' src="13_formants/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/cetz:0.5.1"
+<p class="card-img-top"><img loading='lazy' data-src="13_formants/assets/typst-render/index/typst-block-1.svg" alt="#import "@preview/cetz:0.5.1"
 #set text(font: "Noto Sans", size: 32pt)
 
 #cetz.canvas({
@@ -1167,7 +1285,7 @@ Dr.&nbsp;Josef Fruehwald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-listing-file-modified-sort="1791837205924" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="quarto-post image-right" data-index="26" data-listing-file-modified-sort="1791837205924" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
 <div class="thumbnail"><a href="../../course-materials/lecture-notes/15_abstraction/wugs/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1194,6 +1312,9 @@ Dr.&nbsp;Josef Fruehwald
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
